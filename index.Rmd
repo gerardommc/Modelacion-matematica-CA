@@ -1,0 +1,13 @@
+---
+title: "Modelación Matemática"
+description: "Licenciatura en Ciencias Ambientales"
+author: "Gerardo Martín"
+output:
+   prettydoc::html_pretty:
+      theme: architect
+      highlight: github
+---
+
+### Sobre este curso
+
+El curso **Modelación Matemática** es... El programa completo del curso está [aquí](Programa-curso.pdf).
