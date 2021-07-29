@@ -1,0 +1,13 @@
+sobre-este-curso
+criterios-de-evaluación
+unidad-i-modelos-determinísticos
+funciones-básicas-y-su-representación-en-el-plano-cartesiano
+la-línea-recta
+funciones-complementarias-y-su-representación-en-dos-y-tres-dimensiones
+la-línea-recta-como-modelo-universal
+modelación-de-sistemas-sociales-y-ambientales
+methods
+applications
+example-one
+example-two
+final-words

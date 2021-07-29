@@ -1,0 +1,13 @@
+# Unidad I: Modelos determinísticos
+
+## Funciones básicas y su representación en el plano cartesiano
+
+```{r echo = F, child="Unidad-I/Funciones-basicas.Rmd"}
+
+```
+
+## Funciones complementarias y su representación en dos y tres dimensiones
+
+## La línea recta como modelo “universal”
+
+## Modelación de sistemas sociales y ambientales
