@@ -77,7 +77,7 @@
 
 \title{Modelación matemática}
 \author{Gerardo Martín}
-\date{2021-07-29}
+\date{2021-07-30}
 
 \begin{document}
 \maketitle
@@ -94,22 +94,44 @@ En el curso \textbf{Modelación matemática} aprenderemos a utilizar algunas her
 \hypertarget{criterios-de-evaluaciuxf3n}{%
 \chapter{Criterios de evaluación}\label{criterios-de-evaluaciuxf3n}}
 
-Las constribuciones a cada calificación parcial serán por igual (25\% cada uno):
+Las constribuciones a cada calificación parcial serán:
 
 \begin{itemize}
 \tightlist
 \item
-  Asistencia
+  Asistencia (25\%)
 \item
-  Trabajos de clase cumplidos
+  Trabajos de clase cumplidos (50\%)
 \item
-  Participación
+  Examen (25\%)
 \item
-  Examen
+  Participación (2 puntos extra máximo)
 \end{itemize}
+
+Cabe señalar, que la asistencia no corresponderá con su presencia en las sesiones sincrónicas, sino con el cumplimiento de los trabajos de clase. La participación se medirá tanto por participación directa en las sesiones sincrónicas como por el seguimiento que uds den a la clase por correo electrónico.
 
 \hypertarget{unidad-i-modelos-determinuxedsticos}{%
 \chapter{Unidad I: Modelos determinísticos}\label{unidad-i-modelos-determinuxedsticos}}
+
+\hypertarget{introducciuxf3n-a-la-modelaciuxf3n}{%
+\section{Introducción a la modelación}\label{introducciuxf3n-a-la-modelaciuxf3n}}
+
+Imaginemos a seis personas invidentes, con la tarea de encontrar qué es el objeto que está frente a ellas usando únicamente el tacto. En la parábola de los seis hombres ciegos, el objeto es un elefante, de modo que la imágen que cada uno de ellos se forma del objeto depende enteramente de la parte del elefante que están tocando.
+
+\begin{figure}
+
+{\centering \includegraphics[width=16.17in]{Unidad-I/elefante} 
+
+}
+
+\caption{La parábola de los seis hombres ciegos inspeccionando un elefante.}\label{fig:unnamed-chunk-5}
+\end{figure}
+
+Quien toque los colmillos podrá pensar que se trata de una lanza, la trompa podría tratarse de una serpiente, la cola de una cuerda, las patas troncos de árbol y el cuerpo una pared. Es evidente que todas las hipótesis presentadas después de la inspección fueron erróneas, y que cuando estudiamos al mundo lo haremos igual, con la descripción de tan sólo una fracción de éste. Un séptimo hombre que pregunte a los otros seis qué fue lo que vieron podría formarse una imágen más completa del \emph{sistema} para proponer otra hipótesis: se trata de un objeto grande reposando sobre cuatro columnas con apéndices adelante y atrás.
+
+Al estudiar los sistemas ecológicos, al igual que los ciegos, no sabremos que estamos frente a un elefante. Los sistemas ecológicos, al igual que los elefantes, también tienen componentes interconectados, y nosotros los ecólogos somos como los hombres ciegos, sólo podemos observar ciertas partes de los ecosistemas. En nuestro trabajo entonces, aprender a identificar y proponer hipótesis sobre cómo funcionan los sistemas ecológicos.
+
+Las hipótesis propuestas por los seis hombres representan modelos, es decir simplificaciones del mundo que nos ayudan a entenderlo. Los modelos matemáticos son simplificaciones formales del mundo utilizando otro lenguaje, las matemáticas.
 
 \hypertarget{funciones-buxe1sicas-y-su-representaciuxf3n-en-el-plano-cartesiano}{%
 \section{Funciones básicas y su representación en el plano cartesiano}\label{funciones-buxe1sicas-y-su-representaciuxf3n-en-el-plano-cartesiano}}
@@ -117,7 +139,63 @@ Las constribuciones a cada calificación parcial serán por igual (25\% cada uno
 \hypertarget{la-luxednea-recta}{%
 \subsection{La línea recta}\label{la-luxednea-recta}}
 
-La línea recta es\ldots{}
+Una línea recta se puede representar matemáticamente de varias maneras, la más común de ellas es por medio de una función. Una función, en cambio es una expresión matemática que indica una serie de operaciones (aritméticas por ejemplo), que serán aplicadas a un conjunto de números en sucesión (los números reales, p.~ej.) para producir otro conjunto. Así la, función lineal más sencilla puede ser:
+
+\begin{equation}
+    y(x) = x
+\end{equation}
+
+Lo que quiere decir que \(y\) es una función de \(x\), y cada valor de \(y\) será igual a cada valor de \(x\). En lenguaje matemático, el conjunto de números de \(x\) se llama el dominio, y \(y(x)\) el codominio. Algunas funciones lineales más complejas son:
+
+\begin{equation}
+    y(x) = ax
+\end{equation}
+
+donde \(a\) es una constante, lo que quiere decir que cada valor de \(y(x)\) será producido por el producto \(a \times x\). Finalmente, la expresión más común de una ecuación lineal es:
+
+\begin{equation}
+    y(x) = b + ax
+\end{equation}
+
+donde \(b\) también es una constante que se llama intercepto, y \(a\) es la pendiente, pues esta última determina la inclinación de la línea recta representada en el plano cartesiano.
+
+\hypertarget{representaciones-gruxe1ficas-de-la-recta}{%
+\subsubsection{Representaciones gráficas de la recta}\label{representaciones-gruxe1ficas-de-la-recta}}
+
+Comencemos por dar un repaso del plano cartesiano. Este consiste de la representación de dos conjuntos de números reales en los que representamos una función, como una regla de correspondencia entre los valores de cada conjunto, de modo que a cada valor de \(x\) corresponde uno y sólo uno de los valores de \(y\). Cada conjunto se puede representar como una recta, y cuando éstas se disponen perperdiculares dan origen al plano.
+
+\begin{figure}
+
+{\centering \includegraphics{Model-mate_files/figure-latex/unnamed-chunk-6-1} 
+
+}
+
+\caption{Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$.}\label{fig:unnamed-chunk-6}
+\end{figure}
+
+Ahora veamos, con un ejemplo gráfico por qué la constante \(a\) recibe el nombre de \emph{pendiente}.
+
+\begin{figure}
+
+{\centering \includegraphics{Model-mate_files/figure-latex/unnamed-chunk-7-1} 
+
+}
+
+\caption{Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$.}\label{fig:unnamed-chunk-7}
+\end{figure}
+
+Como podemos ver, de manera más general, la línea recta es generada por una regla de correspondencia muy sencilla, un conjunto de valores \(X\) son multiplicados por un escalar \(a\), a los que se les puede añadir un \emph{intercepto} \(b\). El intercepto siempre es el valor de \(y(x)\) cuando \(x = 0\).
+
+Ya se podrán imaginar que puede existir un sinnúmero de modelos lineales distintos, por ejemplo si \(y\) es una función de un gran número de conjuntos \(X\):
+
+\begin{equation}
+y(x_1, x_2, \dots, x_{n-1}, x_n) = b + a_1 x_1 + a_2 x_2 + \dots + a_{n-1} x_{n-1} + a_n x_n
+\end{equation}
+
+Gráficamente, estamos prácticamente limitados a explorar \(y(x_1, x_2)\), pero existen muchas herramientas matemáticas para entender modelos lineales más complejos que veremos más adelante. Estas herramientas y las implicaciones generales de la simplicidad del modelo lineal lo hacen uno de los modelos más útiles con que contamos para estudiar matemáticamente fenómenos dinámicos (que cambian de estado a lo largo del tiempo), como para estudiarlos de manera probabilística (con estadística). De hecho, el modelo lineal nos puede servir para entender modelos, como la parábola y el exponencial, que geométricamente no se parecen a la línea recta.
+
+\hypertarget{la-paruxe1bola}{%
+\subsection{La parábola}\label{la-paruxe1bola}}
 
 \hypertarget{funciones-complementarias-y-su-representaciuxf3n-en-dos-y-tres-dimensiones}{%
 \section{Funciones complementarias y su representación en dos y tres dimensiones}\label{funciones-complementarias-y-su-representaciuxf3n-en-dos-y-tres-dimensiones}}

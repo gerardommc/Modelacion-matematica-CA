@@ -1,8 +1,14 @@
+fig:unnamed-chunk-5
+fig:unnamed-chunk-6
+fig:unnamed-chunk-7
 sobre-este-curso
 criterios-de-evaluación
 unidad-i-modelos-determinísticos
+introducción-a-la-modelación
 funciones-básicas-y-su-representación-en-el-plano-cartesiano
 la-línea-recta
+representaciones-gráficas-de-la-recta
+la-parábola
 funciones-complementarias-y-su-representación-en-dos-y-tres-dimensiones
 la-línea-recta-como-modelo-universal
 modelación-de-sistemas-sociales-y-ambientales

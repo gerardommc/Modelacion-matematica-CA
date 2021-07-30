@@ -1,10 +1,22 @@
 # Unidad I: Modelos determinísticos
 
-## Funciones básicas y su representación en el plano cartesiano
+## Introducción a la modelación
 
-```{r echo = F, child="Unidad-I/Funciones-basicas.Rmd"}
+```{r echo = F, child = "Unidad-I/El-modelo.Rmd"}
 
 ```
+
+
+## Funciones básicas y su representación en el plano cartesiano
+
+```{r echo = F, child="Unidad-I/Recta.Rmd"}
+
+```
+
+```{r echo = F, child = "Unidad-I/Parabola.Rmd"}
+
+```
+
 
 ## Funciones complementarias y su representación en dos y tres dimensiones
 
