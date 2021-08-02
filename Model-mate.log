@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2021.6.30)  30 JUL 2021 17:30
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2021.6.30)  2 AUG 2021 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -801,69 +801,97 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 
 ]
 Chapter 1.
-[5] [6
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Overfull \hbox (490.04456pt too wide) in paragraph at lines 92--92
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[5]
+Overfull \vbox (206.01605pt too high) has occurred while \output is active []
+
+[6] [7] [8
 
 ]
 Chapter 2.
-[7] [8
+[9] [10
 
 ]
 Chapter 3.
 File: Unidad-I/elefante.png Graphic file (type bmp)
 <Unidad-I/elefante.png>
 
-Overfull \hbox (515.47562pt too wide) in paragraph at lines 123--124
+Overfull \hbox (515.47562pt too wide) in paragraph at lines 125--126
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 24.05469pt on input line 128.
+LaTeX Warning: Float too large for page by 24.05469pt on input line 130.
 
-[9] [10]
-File: Model-mate_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pd
-f)
-<use Model-mate_files/figure-latex/unnamed-chunk-6-1.pdf>
+[11] [12]
 File: Model-mate_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pd
 f)
 <use Model-mate_files/figure-latex/unnamed-chunk-7-1.pdf>
+File: Model-mate_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pd
+f)
+<use Model-mate_files/figure-latex/unnamed-chunk-8-1.pdf>
 
-Overfull \hbox (54.38123pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 3.2.  FUNCIONES BÁSICAS Y SU REPRESENTACIÓN EN EL PLANO CARTESI
-ANO \TU/lmr/m/n/10 11
- []
-
-[11] [12]
 Overfull \hbox (54.38123pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 3.2.  FUNCIONES BÁSICAS Y SU REPRESENTACIÓN EN EL PLANO CARTESI
 ANO \TU/lmr/m/n/10 13
  []
 
-[13]
-Underfull \hbox (badness 3039) in paragraph at lines 201--201
+[13] [14]
+Overfull \hbox (54.38123pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.2.  FUNCIONES BÁSICAS Y SU REPRESENTACIÓN EN EL PLANO CARTESI
+ANO \TU/lmr/m/n/10 15
+ []
+
+[15]
+File: Model-mate_files/figure-latex/parabola-1.pdf Graphic file (type pdf)
+<use Model-mate_files/figure-latex/parabola-1.pdf>
+[16]
+File: Model-mate_files/figure-latex/parabola-2-1.pdf Graphic file (type pdf)
+<use Model-mate_files/figure-latex/parabola-2-1.pdf>
+
+Overfull \hbox (54.38123pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.2.  FUNCIONES BÁSICAS Y SU REPRESENTACIÓN EN EL PLANO CARTESI
+ANO \TU/lmr/m/n/10 17
+ []
+
+[17]
+File: Model-mate_files/figure-latex/parabola-3-1.pdf Graphic file (type pdf)
+<use Model-mate_files/figure-latex/parabola-3-1.pdf>
+
+Underfull \hbox (badness 3039) in paragraph at lines 266--266
 []\TU/lmr/bx/n/14.4 Funciones complementarias y su repre-
  []
 
-[14]
+[18]
 Chapter 4.
-[15
+[19
 
-] [16
+] [20
 
 ]
 Chapter 5.
 No file Model-mate.bbl.
-[17] (./Model-mate.aux)
+[21] (./Model-mate.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 18390 strings out of 477220
- 322796 string characters out of 5832722
- 806734 words of memory out of 5000000
- 37819 multiletter control sequences out of 15000+600000
+ 18424 strings out of 477220
+ 323862 string characters out of 5832722
+ 807135 words of memory out of 5000000
+ 37850 multiletter control sequences out of 15000+600000
  409881 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,6n,122p,710b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 98i,6n,122p,710b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Model-mate.pdf (17 pages).
+Output written on Model-mate.pdf (21 pages).

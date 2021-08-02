@@ -1,7 +1,10 @@
-fig:unnamed-chunk-5
 fig:unnamed-chunk-6
 fig:unnamed-chunk-7
-sobre-este-curso
+fig:unnamed-chunk-8
+fig:parabola
+fig:parabola-2
+fig:parabola-3
+preámbulo
 criterios-de-evaluación
 unidad-i-modelos-determinísticos
 introducción-a-la-modelación

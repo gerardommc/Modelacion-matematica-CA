@@ -77,7 +77,7 @@
 
 \title{Modelación matemática}
 \author{Gerardo Martín}
-\date{2021-07-30}
+\date{2021-08-02}
 
 \begin{document}
 \maketitle
@@ -86,8 +86,10 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{sobre-este-curso}{%
-\chapter{Sobre este curso}\label{sobre-este-curso}}
+\hypertarget{preuxe1mbulo}{%
+\chapter{Preámbulo}\label{preuxe1mbulo}}
+
+\begin{center}\includegraphics[width=20.83in]{logo} \end{center}
 
 En el curso \textbf{Modelación matemática} aprenderemos a utilizar algunas herramientas matemáticas para analizar y entender los procesos de interés en ciencias ambientales. Los contenidos del índice se apegan al \href{Programa-curso.pdf}{programa completo del curso}, el cual se impartirá en los \href{Horario.pdf}{horarios normales establecidos}. Para conocer cuándo, cómo y qué temas se se impartirán puedes consultar la \href{Estrategia-docente.pdf}{estrategia docente}.
 
@@ -124,7 +126,7 @@ Imaginemos a seis personas invidentes, con la tarea de encontrar qué es el obje
 
 }
 
-\caption{La parábola de los seis hombres ciegos inspeccionando un elefante.}\label{fig:unnamed-chunk-5}
+\caption{La parábola de los seis hombres ciegos inspeccionando un elefante.}\label{fig:unnamed-chunk-6}
 \end{figure}
 
 Quien toque los colmillos podrá pensar que se trata de una lanza, la trompa podría tratarse de una serpiente, la cola de una cuerda, las patas troncos de árbol y el cuerpo una pared. Es evidente que todas las hipótesis presentadas después de la inspección fueron erróneas, y que cuando estudiamos al mundo lo haremos igual, con la descripción de tan sólo una fracción de éste. Un séptimo hombre que pregunte a los otros seis qué fue lo que vieron podría formarse una imágen más completa del \emph{sistema} para proponer otra hipótesis: se trata de un objeto grande reposando sobre cuatro columnas con apéndices adelante y atrás.
@@ -166,22 +168,22 @@ Comencemos por dar un repaso del plano cartesiano. Este consiste de la represent
 
 \begin{figure}
 
-{\centering \includegraphics{Model-mate_files/figure-latex/unnamed-chunk-6-1} 
+{\centering \includegraphics{Model-mate_files/figure-latex/unnamed-chunk-7-1} 
 
 }
 
-\caption{Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$.}\label{fig:unnamed-chunk-6}
+\caption{Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$.}\label{fig:unnamed-chunk-7}
 \end{figure}
 
 Ahora veamos, con un ejemplo gráfico por qué la constante \(a\) recibe el nombre de \emph{pendiente}.
 
 \begin{figure}
 
-{\centering \includegraphics{Model-mate_files/figure-latex/unnamed-chunk-7-1} 
+{\centering \includegraphics{Model-mate_files/figure-latex/unnamed-chunk-8-1} 
 
 }
 
-\caption{Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$.}\label{fig:unnamed-chunk-7}
+\caption{Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$.}\label{fig:unnamed-chunk-8}
 \end{figure}
 
 Como podemos ver, de manera más general, la línea recta es generada por una regla de correspondencia muy sencilla, un conjunto de valores \(X\) son multiplicados por un escalar \(a\), a los que se les puede añadir un \emph{intercepto} \(b\). El intercepto siempre es el valor de \(y(x)\) cuando \(x = 0\).
@@ -196,6 +198,69 @@ Gráficamente, estamos prácticamente limitados a explorar \(y(x_1, x_2)\), pero
 
 \hypertarget{la-paruxe1bola}{%
 \subsection{La parábola}\label{la-paruxe1bola}}
+
+Geométricamente, la parábola es muy distinta de la recta:
+
+\begin{figure}
+
+{\centering \includegraphics{Model-mate_files/figure-latex/parabola-1} 
+
+}
+
+\caption{Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x^2$, donde los puntos corresponden a los pares de valores $(x = -1, y = 1), (-0.5, 0.25), (0, 0), (0.5, 0.25), (1, 1)$.}\label{fig:parabola}
+\end{figure}
+
+La función matemática más sencilla que puede describir esta forma en el plano cartesiano es:
+
+\begin{equation}
+    y(x) = x^2
+\end{equation}
+
+Al igual que con los modelos lineales, las parábolas pueden representarse matemáticamente de otras formas más complejas:
+
+\begin{itemize}
+\tightlist
+\item
+  \(y(x) = a + bx + cx^2\)
+\item
+  \(y(x) = a + cx^2\)
+\item
+  \(y(x) = -x^2\)
+\end{itemize}
+
+Si uno es observador, se dará cuenta de que estas ecuaciones son muy similares a la recta, y es que es posible considerar que \(x^2\) se puede considerar como otro conjunto tal que \(x' = x^2\), resultando así en funciones perferctamente lineales:
+
+\begin{itemize}
+\tightlist
+\item
+  \(y(x) = a + bx + cx'\)
+\item
+  \(y(x) = a + cx'\)
+\item
+  \(y(x) = -x'\)
+\end{itemize}
+
+Entonce, lo que realmente distingue matemáticamente a una parábola de una recta, es la doble ocurrencia de cada valor de \(y\) para los distintos valores de \(x\):
+
+\begin{figure}
+
+{\centering \includegraphics{Model-mate_files/figure-latex/parabola-2-1} 
+
+}
+
+\caption{Correspondencia de dos valores distintos de $x$ para el mismo valor de $y$}\label{fig:parabola-2}
+\end{figure}
+
+Cuando esto ocurre, las funciones tiene un solo punto a lo largo de todos los valores de \(x\), donde sólo va a ocurrir un valor único de \(y\). A estos puntos se les conocen como mínimos (par de valores con coordenadas \((0, 0)\) en la figura \ref{fig:parabola-2}). Los máximos, en cambio están ilustrados en la figura \ref{fig:parabola-3}.
+
+\begin{figure}
+
+{\centering \includegraphics{Model-mate_files/figure-latex/parabola-3-1} 
+
+}
+
+\caption{Correspondencia de valores para $y = -x^2$.}\label{fig:parabola-3}
+\end{figure}
 
 \hypertarget{funciones-complementarias-y-su-representaciuxf3n-en-dos-y-tres-dimensiones}{%
 \section{Funciones complementarias y su representación en dos y tres dimensiones}\label{funciones-complementarias-y-su-representaciuxf3n-en-dos-y-tres-dimensiones}}

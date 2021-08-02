@@ -24,7 +24,7 @@
 <meta name="author" content="Gerardo Martín" />
 
 
-<meta name="date" content="2021-07-30" />
+<meta name="date" content="2021-08-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -73,7 +73,7 @@
 <li><a href="./">Modelación matemática</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Sobre este curso</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preámbulo</a></li>
 <li class="chapter" data-level="2" data-path="criterios-de-evaluación.html"><a href="criterios-de-evaluación.html"><i class="fa fa-check"></i><b>2</b> Criterios de evaluación</a></li>
 <li class="chapter" data-level="3" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html"><i class="fa fa-check"></i><b>3</b> Unidad I: Modelos determinísticos</a>
 <ul>
@@ -119,7 +119,7 @@
 <div id="introducción-a-la-modelación" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Introducción a la modelación</h2>
 <p>Imaginemos a seis personas invidentes, con la tarea de encontrar qué es el objeto que está frente a ellas usando únicamente el tacto. En la parábola de los seis hombres ciegos, el objeto es un elefante, de modo que la imágen que cada uno de ellos se forma del objeto depende enteramente de la parte del elefante que están tocando.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-5"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-6"></span>
 <img src="Unidad-I/elefante.png" alt="La parábola de los seis hombres ciegos inspeccionando un elefante." width="582" />
 <p class="caption">
 Figura 3.1: La parábola de los seis hombres ciegos inspeccionando un elefante.
@@ -149,15 +149,15 @@ Figura 3.1: La parábola de los seis hombres ciegos inspeccionando un elefante.
 <div id="representaciones-gráficas-de-la-recta" class="section level4" number="3.2.1.1">
 <h4><span class="header-section-number">3.2.1.1</span> Representaciones gráficas de la recta</h4>
 <p>Comencemos por dar un repaso del plano cartesiano. Este consiste de la representación de dos conjuntos de números reales en los que representamos una función, como una regla de correspondencia entre los valores de cada conjunto, de modo que a cada valor de <span class="math inline">\(x\)</span> corresponde uno y sólo uno de los valores de <span class="math inline">\(y\)</span>. Cada conjunto se puede representar como una recta, y cuando éstas se disponen perperdiculares dan origen al plano.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-6"></span>
-<img src="Model-mate_files/figure-html/unnamed-chunk-6-1.png" alt="Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$." width="384" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-7"></span>
+<img src="Model-mate_files/figure-html/unnamed-chunk-7-1.png" alt="Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$." width="384" />
 <p class="caption">
 Figura 3.2: Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para <span class="math inline">\(y(x) = x\)</span>, donde los puntos corresponden a los pares de valores <span class="math inline">\((x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)\)</span>.
 </p>
 </div>
 <p>Ahora veamos, con un ejemplo gráfico por qué la constante <span class="math inline">\(a\)</span> recibe el nombre de <em>pendiente</em>.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-7"></span>
-<img src="Model-mate_files/figure-html/unnamed-chunk-7-1.png" alt="Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$." width="384" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-8"></span>
+<img src="Model-mate_files/figure-html/unnamed-chunk-8-1.png" alt="Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$." width="384" />
 <p class="caption">
 Figura 3.3: Gráficas de las funciones <span class="math inline">\(y(x) = 0.5 x\)</span> (en rojo) y <span class="math inline">\(y(x) = 0.5 + 0.5 x\)</span> (azul). Las líneas punteadas en colores indican el efecto de las constantes <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, mientas que Δ<span class="math inline">\(x\)</span> denota el cambio de una unidad de <span class="math inline">\(x\)</span>.
 </p>
@@ -172,6 +172,43 @@ y(x_1, x_2, \dots, x_{n-1}, x_n) = b + a_1 x_1 + a_2 x_2 + \dots + a_{n-1} x_{n-
 </div>
 <div id="la-parábola" class="section level3" number="3.2.2">
 <h3><span class="header-section-number">3.2.2</span> La parábola</h3>
+<p>Geométricamente, la parábola es muy distinta de la recta:</p>
+<div class="figure" style="text-align: center"><span id="fig:parabola"></span>
+<img src="Model-mate_files/figure-html/parabola-1.png" alt="Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x^2$, donde los puntos corresponden a los pares de valores $(x = -1, y = 1), (-0.5, 0.25), (0, 0), (0.5, 0.25), (1, 1)$." width="384" />
+<p class="caption">
+Figura 3.4: Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para <span class="math inline">\(y(x) = x^2\)</span>, donde los puntos corresponden a los pares de valores <span class="math inline">\((x = -1, y = 1), (-0.5, 0.25), (0, 0), (0.5, 0.25), (1, 1)\)</span>.
+</p>
+</div>
+<p>La función matemática más sencilla que puede describir esta forma en el plano cartesiano es:</p>
+<p><span class="math display">\[\begin{equation}
+    y(x) = x^2
+\end{equation}\]</span></p>
+<p>Al igual que con los modelos lineales, las parábolas pueden representarse matemáticamente de otras formas más complejas:</p>
+<ul>
+<li><span class="math inline">\(y(x) = a + bx + cx^2\)</span></li>
+<li><span class="math inline">\(y(x) = a + cx^2\)</span></li>
+<li><span class="math inline">\(y(x) = -x^2\)</span></li>
+</ul>
+<p>Si uno es observador, se dará cuenta de que estas ecuaciones son muy similares a la recta, y es que es posible considerar que <span class="math inline">\(x^2\)</span> se puede considerar como otro conjunto tal que <span class="math inline">\(x&#39; = x^2\)</span>, resultando así en funciones perferctamente lineales:</p>
+<ul>
+<li><span class="math inline">\(y(x) = a + bx + cx&#39;\)</span></li>
+<li><span class="math inline">\(y(x) = a + cx&#39;\)</span></li>
+<li><span class="math inline">\(y(x) = -x&#39;\)</span></li>
+</ul>
+<p>Entonce, lo que realmente distingue matemáticamente a una parábola de una recta, es la doble ocurrencia de cada valor de <span class="math inline">\(y\)</span> para los distintos valores de <span class="math inline">\(x\)</span>:</p>
+<div class="figure" style="text-align: center"><span id="fig:parabola-2"></span>
+<img src="Model-mate_files/figure-html/parabola-2-1.png" alt="Correspondencia de dos valores distintos de $x$ para el mismo valor de $y$" width="384" />
+<p class="caption">
+Figura 3.5: Correspondencia de dos valores distintos de <span class="math inline">\(x\)</span> para el mismo valor de <span class="math inline">\(y\)</span>
+</p>
+</div>
+<p>Cuando esto ocurre, las funciones tiene un solo punto a lo largo de todos los valores de <span class="math inline">\(x\)</span>, donde sólo va a ocurrir un valor único de <span class="math inline">\(y\)</span>. A estos puntos se les conocen como mínimos (par de valores con coordenadas <span class="math inline">\((0, 0)\)</span> en la figura <a href="unidad-i-modelos-determinísticos.html#fig:parabola-2">3.5</a>). Los máximos, en cambio están ilustrados en la figura <a href="unidad-i-modelos-determinísticos.html#fig:parabola-3">3.6</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:parabola-3"></span>
+<img src="Model-mate_files/figure-html/parabola-3-1.png" alt="Correspondencia de valores para $y = -x^2$." width="384" />
+<p class="caption">
+Figura 3.6: Correspondencia de valores para <span class="math inline">\(y = -x^2\)</span>.
+</p>
+</div>
 </div>
 </div>
 <div id="funciones-complementarias-y-su-representación-en-dos-y-tres-dimensiones" class="section level2" number="3.3">
