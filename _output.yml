@@ -5,7 +5,7 @@ bookdown::gitbook:
       before: |
         <li><a href="./">Modelación matemática</a></li>
       after: |
-        <li><a href="https://github.com/gerardommc" target="blank">Publicado con bookdown</a></li>
+        <li><a href="https://gerardommc.github.io" target="blank">Volver al labo</a></li>
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
