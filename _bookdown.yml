@@ -7,4 +7,5 @@ language:
     fig: 'Figura '
     tab: 'Tabla '
     eq: 'Equación '
+    ref: 'Literatura citada'
 output_dir: "docs"

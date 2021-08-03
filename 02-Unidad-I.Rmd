@@ -17,8 +17,17 @@
 
 ```
 
+```{r echo = F, child = "Unidad-I/Conicas.Rmd"}
+
+```
+
+```{r echo = F, child = "Unidad-I/Curva-normal.Rmd"}
+
+```
 
 ## Funciones complementarias y su representación en dos y tres dimensiones
+
+
 
 ## La línea recta como modelo “universal”
 

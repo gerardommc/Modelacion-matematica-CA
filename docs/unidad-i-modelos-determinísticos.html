@@ -24,7 +24,7 @@
 <meta name="author" content="Gerardo Martín" />
 
 
-<meta name="date" content="2021-08-02" />
+<meta name="date" content="2021-08-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -74,7 +74,12 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preámbulo</a></li>
-<li class="chapter" data-level="2" data-path="criterios-de-evaluación.html"><a href="criterios-de-evaluación.html"><i class="fa fa-check"></i><b>2</b> Criterios de evaluación</a></li>
+<li class="chapter" data-level="2" data-path="criterios-de-evaluación.html"><a href="criterios-de-evaluación.html"><i class="fa fa-check"></i><b>2</b> Criterios de evaluación</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="criterios-de-evaluación.html"><a href="criterios-de-evaluación.html#cómo-se-darán-las-clases"><i class="fa fa-check"></i><b>2.1</b> ¿Cómo se darán las clases?</a></li>
+<li class="chapter" data-level="2.2" data-path="criterios-de-evaluación.html"><a href="criterios-de-evaluación.html#reglas-del-salón"><i class="fa fa-check"></i><b>2.2</b> Reglas del salón</a></li>
+<li class="chapter" data-level="2.3" data-path="criterios-de-evaluación.html"><a href="criterios-de-evaluación.html#contacto"><i class="fa fa-check"></i><b>2.3</b> Contacto</a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html"><i class="fa fa-check"></i><b>3</b> Unidad I: Modelos determinísticos</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#introducción-a-la-modelación"><i class="fa fa-check"></i><b>3.1</b> Introducción a la modelación</a></li>
@@ -82,6 +87,8 @@
 <ul>
 <li class="chapter" data-level="3.2.1" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#la-línea-recta"><i class="fa fa-check"></i><b>3.2.1</b> La línea recta</a></li>
 <li class="chapter" data-level="3.2.2" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#la-parábola"><i class="fa fa-check"></i><b>3.2.2</b> La parábola</a></li>
+<li class="chapter" data-level="3.2.3" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#cónicas"><i class="fa fa-check"></i><b>3.2.3</b> Cónicas</a></li>
+<li class="chapter" data-level="3.2.4" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#la-curva-normal"><i class="fa fa-check"></i><b>3.2.4</b> La curva normal</a></li>
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#funciones-complementarias-y-su-representación-en-dos-y-tres-dimensiones"><i class="fa fa-check"></i><b>3.3</b> Funciones complementarias y su representación en dos y tres dimensiones</a></li>
 <li class="chapter" data-level="3.4" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#la-línea-recta-como-modelo-universal"><i class="fa fa-check"></i><b>3.4</b> La línea recta como modelo “universal”</a></li>
@@ -119,7 +126,7 @@
 <div id="introducción-a-la-modelación" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Introducción a la modelación</h2>
 <p>Imaginemos a seis personas invidentes, con la tarea de encontrar qué es el objeto que está frente a ellas usando únicamente el tacto. En la parábola de los seis hombres ciegos, el objeto es un elefante, de modo que la imágen que cada uno de ellos se forma del objeto depende enteramente de la parte del elefante que están tocando.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-6"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-8"></span>
 <img src="Unidad-I/elefante.png" alt="La parábola de los seis hombres ciegos inspeccionando un elefante." width="582" />
 <p class="caption">
 Figura 3.1: La parábola de los seis hombres ciegos inspeccionando un elefante.
@@ -149,15 +156,15 @@ Figura 3.1: La parábola de los seis hombres ciegos inspeccionando un elefante.
 <div id="representaciones-gráficas-de-la-recta" class="section level4" number="3.2.1.1">
 <h4><span class="header-section-number">3.2.1.1</span> Representaciones gráficas de la recta</h4>
 <p>Comencemos por dar un repaso del plano cartesiano. Este consiste de la representación de dos conjuntos de números reales en los que representamos una función, como una regla de correspondencia entre los valores de cada conjunto, de modo que a cada valor de <span class="math inline">\(x\)</span> corresponde uno y sólo uno de los valores de <span class="math inline">\(y\)</span>. Cada conjunto se puede representar como una recta, y cuando éstas se disponen perperdiculares dan origen al plano.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-7"></span>
-<img src="Model-mate_files/figure-html/unnamed-chunk-7-1.png" alt="Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$." width="384" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-9"></span>
+<img src="Model-mate_files/figure-html/unnamed-chunk-9-1.png" alt="Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$." width="384" />
 <p class="caption">
 Figura 3.2: Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para <span class="math inline">\(y(x) = x\)</span>, donde los puntos corresponden a los pares de valores <span class="math inline">\((x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)\)</span>.
 </p>
 </div>
 <p>Ahora veamos, con un ejemplo gráfico por qué la constante <span class="math inline">\(a\)</span> recibe el nombre de <em>pendiente</em>.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-8"></span>
-<img src="Model-mate_files/figure-html/unnamed-chunk-8-1.png" alt="Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$." width="384" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-10"></span>
+<img src="Model-mate_files/figure-html/unnamed-chunk-10-1.png" alt="Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$." width="384" />
 <p class="caption">
 Figura 3.3: Gráficas de las funciones <span class="math inline">\(y(x) = 0.5 x\)</span> (en rojo) y <span class="math inline">\(y(x) = 0.5 + 0.5 x\)</span> (azul). Las líneas punteadas en colores indican el efecto de las constantes <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, mientas que Δ<span class="math inline">\(x\)</span> denota el cambio de una unidad de <span class="math inline">\(x\)</span>.
 </p>
@@ -202,11 +209,64 @@ Figura 3.4: Ejemplo del plano cartesiado mostrando en rojo la correspondencia de
 Figura 3.5: Correspondencia de dos valores distintos de <span class="math inline">\(x\)</span> para el mismo valor de <span class="math inline">\(y\)</span>
 </p>
 </div>
-<p>Cuando esto ocurre, las funciones tiene un solo punto a lo largo de todos los valores de <span class="math inline">\(x\)</span>, donde sólo va a ocurrir un valor único de <span class="math inline">\(y\)</span>. A estos puntos se les conocen como mínimos (par de valores con coordenadas <span class="math inline">\((0, 0)\)</span> en la figura <a href="unidad-i-modelos-determinísticos.html#fig:parabola-2">3.5</a>). Los máximos, en cambio están ilustrados en la figura <a href="unidad-i-modelos-determinísticos.html#fig:parabola-3">3.6</a>.</p>
+<p>Cuando esto ocurre, las funciones tiene un solo punto a lo largo de todos los valores de <span class="math inline">\(x\)</span>, donde sólo va a ocurrir un valor único de <span class="math inline">\(y\)</span>. A estos puntos se les conocen como mínimos (par de valores con coordenadas <span class="math inline">\((0, 0)\)</span> en la figura <a href="unidad-i-modelos-determinísticos.html#fig:parabola-2">3.5</a>). Los máximos, en cambio están ilustrados en la figura <a href="unidad-i-modelos-determinísticos.html#fig:parabola-3">3.6</a>, e igual corresponde al punto con coordenadas <span class="math inline">\((0, 0)\)</span>.</p>
 <div class="figure" style="text-align: center"><span id="fig:parabola-3"></span>
 <img src="Model-mate_files/figure-html/parabola-3-1.png" alt="Correspondencia de valores para $y = -x^2$." width="384" />
 <p class="caption">
 Figura 3.6: Correspondencia de valores para <span class="math inline">\(y = -x^2\)</span>.
+</p>
+</div>
+<p>En los modelos parabólicos más sencillos (<span class="math inline">\(y(x) = x^2, y(x) = -x^2\)</span>), los puntos mínimos y máximos siempre estarán en las coordenadas <span class="math inline">\((x = 0, y = 0)\)</span>, pero es posible alterarlos. Por ejemplo en <span class="math inline">\(y(x) = 2 + x^2\)</span>, el mínimo estará en <span class="math inline">\((x = 0, y = 2)\)</span>. Para verificarlo resuelve <span class="math inline">\(y(x) = 2 + x^2\)</span> para <span class="math inline">\(y(0)\)</span>, sustituyendo <span class="math inline">\(x\)</span> por <span class="math inline">\(0\)</span>.</p>
+<div id="ejercicio" class="section level4" number="3.2.2.1">
+<h4><span class="header-section-number">3.2.2.1</span> Ejercicio</h4>
+<p>A estas alturas, ya te podrás haber dado cuenta de ciertas propiedades de las parábolas, contesta las siguientes preguntas:</p>
+<ol style="list-style-type: decimal">
+<li><p>¿Qué tipo de punto único (mínimo o máximo) habrá en las siguientes parábolas?</p>
+<p>1.1. <span class="math inline">\(y(x) = 2 - x^2\)</span>
+1.2. <span class="math inline">\(y(x) = 2x - 2x^2\)</span>
+1.3. <span class="math inline">\(y(x) = 1 - x + 3x^2\)</span>
+1.4. <span class="math inline">\(y(x) = x/2 - 4x^2/x\)</span>
+1.5. <span class="math inline">\(y(x) = (5x)^2 - 3x + 1\)</span></p></li>
+</ol>
+</div>
+</div>
+<div id="cónicas" class="section level3" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Cónicas</h3>
+<p>De manera muy general, una cónica es el conjunto de soluciones para una ecuación cuadrática cuando menos en dos variables. En este sentido, las parábolas, vistas en la sección anterior, son un tipo de cónica. Ejemplos:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(x^2 + y^2 = -1\)</span></li>
+<li><span class="math inline">\(x^2 + y^2 = 0\)</span></li>
+<li><span class="math inline">\(x^2 - y^2 = 0\)</span></li>
+<li><span class="math inline">\(xy - 1 = 0\)</span></li>
+<li><span class="math inline">\(x^2 - y = 0\)</span></li>
+</ol>
+<p>Debido a la generalidad de la definición de <em>cónicas</em>, las ecuaciones 1-5 tienen una variedad de formas muy distintas, en comparación con las secciones de rectas y parábolas (Figura <a href="unidad-i-modelos-determinísticos.html#fig:conicas">3.7</a>). La mayoría de estas forman surgen como solución a la intersección de un plano bidimensional con una línea rotando sobre un eje definido dentro de ella en un espacio tridimencional (<a href="https://www.mathplanet.com/Oldsite/media/28029/conic.png">ver ejemplo</a>)</p>
+<div class="figure" style="text-align: center"><span id="fig:conicas"></span>
+<img src="Unidad-I/conicas.png" alt="Representación gráfica de las ecuaciones 1-5." width="500" />
+<p class="caption">
+Figura 3.7: Representación gráfica de las ecuaciones 1-5.
+</p>
+</div>
+</div>
+<div id="la-curva-normal" class="section level3" number="3.2.4">
+<h3><span class="header-section-number">3.2.4</span> La curva normal</h3>
+<p>En el curso de probabilidad y estadística, se acordarán, se mencionó repetidamente a la distribución normal. En cuestión de matemáticas, la distribución normal puede ser representada como una ecuación:</p>
+<p><span class="math display" id="eq:normal">\[\begin{equation}
+    y(x) = \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}} \tag{3.1}
+\end{equation}\]</span></p>
+<p>donde <span class="math inline">\(\mu\)</span> es la media aritmética, <span class="math inline">\(\sigma^2\)</span> es la varianza y <span class="math inline">\(x\)</span> son todos los valores de la variable que observamos. Cuando tenemos datos de un experimento y los analizamos haciendo el cálculo del promedio estimamos justamente a <span class="math inline">\(\mu\)</span> de la ecuación <a href="unidad-i-modelos-determinísticos.html#eq:normal">(3.1)</a>, y al estimar la varianza obtenemos a <span class="math inline">\(\sigma^2\)</span> de la misma ecuación. Como es importante notar, al hacer estos cálculos estamos asumiendo que nuestros datos tienen una distribución (un histograma) que puede ser descrita por la ecuación <a href="unidad-i-modelos-determinísticos.html#eq:normal">(3.1)</a>.</p>
+<p>Como vimos en la sección de parábolas, las funciones que no son monótonas (los valores de <span class="math inline">\(y\)</span> no aumentan o disminuyen a lo largo de <span class="math inline">\(x\)</span>), tienen un punto máximo o mínimo. La curva normal, tiene propiedades similares, aunque debido a la presencia de la función exponencial (<span class="math inline">\(e^{\dots}\)</span>), los valores de <span class="math inline">\(y(x)\)</span> <strong>siempre serán positivos</strong>. Por lo tanto, la curva normal tiene un punto máximo que corresponde a <span class="math inline">\(y(\mu)\)</span>, o sea, <span class="math inline">\(y\)</span> alcanza su punto máximo cuando <span class="math inline">\(x=\mu\)</span> (Figura <a href="unidad-i-modelos-determinísticos.html#fig:normal">3.8</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:normal"></span>
+<img src="Model-mate_files/figure-html/normal-1.png" alt="Representación gráfica de la curva normal." width="384" />
+<p class="caption">
+Figura 3.8: Representación gráfica de la curva normal.
+</p>
+</div>
+<p>En estadística, esta función representa en el eje de las <span class="math inline">\(y\)</span> la <em>densidad</em> de la variable <span class="math inline">\(x\)</span>. Densidad se refiere a la proporción de observaciones de <span class="math inline">\(x\)</span> dentro de un intervalo definido de <span class="math inline">\(x\)</span>. Por lo tanto, la curva normal, representa la probabilidad de observar ese valor de <span class="math inline">\(x\)</span>, de ahí que <span class="math inline">\(\mu\)</span> sea el valor teórico más probable. En lo que respecta a <span class="math inline">\(\sigma^2\)</span>, éste representa qué tan concentrados estarán los valores de <span class="math inline">\(x\)</span> alrededor de <span class="math inline">\(\mu\)</span>. Altos valores de <span class="math inline">\(\sigma\)</span> se traducirán en baja concentración alrededor de <span class="math inline">\(\mu\)</span> (Figura <a href="unidad-i-modelos-determinísticos.html#fig:vari">3.9</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:vari"></span>
+<img src="Model-mate_files/figure-html/vari-1.png" alt="Efecto de  la varianza sobre la la dispersión alrededor de la media." width="384" />
+<p class="caption">
+Figura 3.9: Efecto de la varianza sobre la la dispersión alrededor de la media.
 </p>
 </div>
 </div>

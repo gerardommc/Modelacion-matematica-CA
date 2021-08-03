@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2021.6.30)  2 AUG 2021 17:15
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2021.6.30)  3 AUG 2021 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -778,21 +778,21 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ] (./Model-mate.toc
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 4.
+(Font)              scaled to size 7.0pt on input line 3.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 4.
+(Font)              scaled to size 5.0pt on input line 3.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 4.
+(Font)              scaled to size 10.00092pt on input line 3.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 4.
+(Font)              scaled to size 7.00064pt on input line 3.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 4.
+(Font)              scaled to size 5.00046pt on input line 3.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 4.
+(Font)              scaled to size 9.99893pt on input line 3.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 4.
+(Font)              scaled to size 6.99925pt on input line 3.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 4.
+(Font)              scaled to size 4.99947pt on input line 3.
 )
 \tf@toc=\write3
 \openout3 = `Model-mate.toc'.
@@ -818,27 +818,27 @@ Overfull \vbox (206.01605pt too high) has occurred while \output is active []
 
 ]
 Chapter 2.
-[9] [10
-
-]
+[9] [10]
 Chapter 3.
 File: Unidad-I/elefante.png Graphic file (type bmp)
 <Unidad-I/elefante.png>
 
-Overfull \hbox (515.47562pt too wide) in paragraph at lines 125--126
+Overfull \hbox (515.47562pt too wide) in paragraph at lines 157--158
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 24.05469pt on input line 130.
+LaTeX Warning: Float too large for page by 24.05469pt on input line 162.
 
-[11] [12]
-File: Model-mate_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pd
+[11
+
+] [12]
+File: Model-mate_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pd
 f)
-<use Model-mate_files/figure-latex/unnamed-chunk-7-1.pdf>
-File: Model-mate_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pd
-f)
-<use Model-mate_files/figure-latex/unnamed-chunk-8-1.pdf>
+<use Model-mate_files/figure-latex/unnamed-chunk-9-1.pdf>
+File: Model-mate_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (type p
+df)
+<use Model-mate_files/figure-latex/unnamed-chunk-10-1.pdf>
 
 Overfull \hbox (54.38123pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 3.2.  FUNCIONES BÁSICAS Y SU REPRESENTACIÓN EN EL PLANO CARTESI
@@ -866,32 +866,60 @@ ANO \TU/lmr/m/n/10 17
 [17]
 File: Model-mate_files/figure-latex/parabola-3-1.pdf Graphic file (type pdf)
 <use Model-mate_files/figure-latex/parabola-3-1.pdf>
+[18]
+File: Unidad-I/conicas.png Graphic file (type bmp)
+<Unidad-I/conicas.png>
 
-Underfull \hbox (badness 3039) in paragraph at lines 266--266
+Overfull \hbox (571.75282pt too wide) in paragraph at lines 340--341
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 24.11166pt on input line 345.
+
+File: Model-mate_files/figure-latex/normal-1.pdf Graphic file (type pdf)
+<use Model-mate_files/figure-latex/normal-1.pdf>
+
+Overfull \hbox (54.38123pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.2.  FUNCIONES BÁSICAS Y SU REPRESENTACIÓN EN EL PLANO CARTESI
+ANO \TU/lmr/m/n/10 19
+ []
+
+[19] [20]
+Overfull \hbox (54.38123pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.2.  FUNCIONES BÁSICAS Y SU REPRESENTACIÓN EN EL PLANO CARTESI
+ANO \TU/lmr/m/n/10 21
+ []
+
+[21]
+File: Model-mate_files/figure-latex/vari-1.pdf Graphic file (type pdf)
+<use Model-mate_files/figure-latex/vari-1.pdf>
+
+Underfull \hbox (badness 3039) in paragraph at lines 381--381
 []\TU/lmr/bx/n/14.4 Funciones complementarias y su repre-
  []
 
-[18]
+[22]
 Chapter 4.
-[19
+[23
 
-] [20
+] [24
 
 ]
 Chapter 5.
 No file Model-mate.bbl.
-[21] (./Model-mate.aux)
+[25] (./Model-mate.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 18424 strings out of 477220
- 323862 string characters out of 5832722
- 807135 words of memory out of 5000000
- 37850 multiletter control sequences out of 15000+600000
+ 18463 strings out of 477220
+ 324833 string characters out of 5832722
+ 809689 words of memory out of 5000000
+ 37886 multiletter control sequences out of 15000+600000
  409881 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  98i,6n,122p,710b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Model-mate.pdf (21 pages).
+Output written on Model-mate.pdf (25 pages).
