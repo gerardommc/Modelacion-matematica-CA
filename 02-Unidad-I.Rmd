@@ -27,6 +27,9 @@
 
 ## Funciones complementarias y su representación en dos y tres dimensiones
 
+```{r echo = F, child="Unidad-I/Trigonometricas.Rmd"}
+
+```
 
 
 ## La línea recta como modelo “universal”

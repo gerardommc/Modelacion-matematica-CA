@@ -1,6 +1,6 @@
-fig:unnamed-chunk-8
 fig:unnamed-chunk-9
 fig:unnamed-chunk-10
+fig:unnamed-chunk-11
 fig:parabola
 fig:parabola-2
 fig:parabola-3
@@ -8,6 +8,8 @@ fig:conicas
 eq:normal
 fig:normal
 fig:vari
+fig:trian-prop
+fig:nomen-trig
 preámbulo
 criterios-de-evaluación
 cómo-se-darán-las-clases
@@ -23,6 +25,9 @@ ejercicio
 cónicas
 la-curva-normal
 funciones-complementarias-y-su-representación-en-dos-y-tres-dimensiones
+funciones-trigonométricas
+nomenclatura-de-triángulos-para-trigonometría-básica
+las-funciones-trigonométricas-básicas
 la-línea-recta-como-modelo-universal
 modelación-de-sistemas-sociales-y-ambientales
 methods

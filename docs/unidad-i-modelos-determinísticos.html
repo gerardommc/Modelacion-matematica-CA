@@ -24,7 +24,7 @@
 <meta name="author" content="Gerardo Martín" />
 
 
-<meta name="date" content="2021-08-03" />
+<meta name="date" content="2021-08-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -90,7 +90,10 @@
 <li class="chapter" data-level="3.2.3" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#cónicas"><i class="fa fa-check"></i><b>3.2.3</b> Cónicas</a></li>
 <li class="chapter" data-level="3.2.4" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#la-curva-normal"><i class="fa fa-check"></i><b>3.2.4</b> La curva normal</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#funciones-complementarias-y-su-representación-en-dos-y-tres-dimensiones"><i class="fa fa-check"></i><b>3.3</b> Funciones complementarias y su representación en dos y tres dimensiones</a></li>
+<li class="chapter" data-level="3.3" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#funciones-complementarias-y-su-representación-en-dos-y-tres-dimensiones"><i class="fa fa-check"></i><b>3.3</b> Funciones complementarias y su representación en dos y tres dimensiones</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#funciones-trigonométricas"><i class="fa fa-check"></i><b>3.3.1</b> Funciones trigonométricas</a></li>
+</ul></li>
 <li class="chapter" data-level="3.4" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#la-línea-recta-como-modelo-universal"><i class="fa fa-check"></i><b>3.4</b> La línea recta como modelo “universal”</a></li>
 <li class="chapter" data-level="3.5" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#modelación-de-sistemas-sociales-y-ambientales"><i class="fa fa-check"></i><b>3.5</b> Modelación de sistemas sociales y ambientales</a></li>
 </ul></li>
@@ -126,7 +129,7 @@
 <div id="introducción-a-la-modelación" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Introducción a la modelación</h2>
 <p>Imaginemos a seis personas invidentes, con la tarea de encontrar qué es el objeto que está frente a ellas usando únicamente el tacto. En la parábola de los seis hombres ciegos, el objeto es un elefante, de modo que la imágen que cada uno de ellos se forma del objeto depende enteramente de la parte del elefante que están tocando.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-8"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-9"></span>
 <img src="Unidad-I/elefante.png" alt="La parábola de los seis hombres ciegos inspeccionando un elefante." width="582" />
 <p class="caption">
 Figura 3.1: La parábola de los seis hombres ciegos inspeccionando un elefante.
@@ -156,15 +159,15 @@ Figura 3.1: La parábola de los seis hombres ciegos inspeccionando un elefante.
 <div id="representaciones-gráficas-de-la-recta" class="section level4" number="3.2.1.1">
 <h4><span class="header-section-number">3.2.1.1</span> Representaciones gráficas de la recta</h4>
 <p>Comencemos por dar un repaso del plano cartesiano. Este consiste de la representación de dos conjuntos de números reales en los que representamos una función, como una regla de correspondencia entre los valores de cada conjunto, de modo que a cada valor de <span class="math inline">\(x\)</span> corresponde uno y sólo uno de los valores de <span class="math inline">\(y\)</span>. Cada conjunto se puede representar como una recta, y cuando éstas se disponen perperdiculares dan origen al plano.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-9"></span>
-<img src="Model-mate_files/figure-html/unnamed-chunk-9-1.png" alt="Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$." width="384" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-10"></span>
+<img src="Model-mate_files/figure-html/unnamed-chunk-10-1.png" alt="Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$." width="384" />
 <p class="caption">
 Figura 3.2: Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para <span class="math inline">\(y(x) = x\)</span>, donde los puntos corresponden a los pares de valores <span class="math inline">\((x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)\)</span>.
 </p>
 </div>
 <p>Ahora veamos, con un ejemplo gráfico por qué la constante <span class="math inline">\(a\)</span> recibe el nombre de <em>pendiente</em>.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-10"></span>
-<img src="Model-mate_files/figure-html/unnamed-chunk-10-1.png" alt="Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$." width="384" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-11"></span>
+<img src="Model-mate_files/figure-html/unnamed-chunk-11-1.png" alt="Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$." width="384" />
 <p class="caption">
 Figura 3.3: Gráficas de las funciones <span class="math inline">\(y(x) = 0.5 x\)</span> (en rojo) y <span class="math inline">\(y(x) = 0.5 + 0.5 x\)</span> (azul). Las líneas punteadas en colores indican el efecto de las constantes <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, mientas que Δ<span class="math inline">\(x\)</span> denota el cambio de una unidad de <span class="math inline">\(x\)</span>.
 </p>
@@ -273,6 +276,43 @@ Figura 3.9: Efecto de la varianza sobre la la dispersión alrededor de la media.
 </div>
 <div id="funciones-complementarias-y-su-representación-en-dos-y-tres-dimensiones" class="section level2" number="3.3">
 <h2><span class="header-section-number">3.3</span> Funciones complementarias y su representación en dos y tres dimensiones</h2>
+<div id="funciones-trigonométricas" class="section level3" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Funciones trigonométricas</h3>
+<p>En esta sección revisaremos algunas de las funciones trigonométricas y cómo se representan en el plano cartesiano.</p>
+<p>La trigonometría es una rama de las matemáticas que se comenzó a desarrollar a partir de la necesidad de medir distancias de manera indirecta. Por ejemplo, la distancia entre la luna y la tierra y la tierra y el sol, la distancia entre dos barcos, la distancia entre un barco y el puero más cercano. Las herramientas trigonométricas entonces se comenzaron a desarrollar utilizando la geometría de triángulos rectángulos. Aquí es preciso describir el teorema de los triángulos proporcionales, dados dos triángulos con ángulos internos idénticos y longitudes de lados diferentes, los cocientes de las longitudes de sus lados serán iguales (Figura <a href="unidad-i-modelos-determinísticos.html#fig:trian-prop">3.10</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:trian-prop"></span>
+<img src="Unidad-I/Trian-prop.png" alt="El teorema de los ángulos proporcionales es la base para las fórmulas geométricas de las funciones trigonométricas." width="323" />
+<p class="caption">
+Figura 3.10: El teorema de los ángulos proporcionales es la base para las fórmulas geométricas de las funciones trigonométricas.
+</p>
+</div>
+<p>De modo que sin importar las longitudes de los lados, los cocientes de las longitudes siempre serán iguales, lo cual se puede extender a todos los triángulos rectángulos, la base geométrica para la trigonometría. Aquí veremos entonces las funciones trognométricas básicas seno, coseno y tangente.</p>
+<div id="nomenclatura-de-triángulos-para-trigonometría-básica" class="section level4" number="3.3.1.1">
+<h4><span class="header-section-number">3.3.1.1</span> Nomenclatura de triángulos para trigonometría básica</h4>
+<p>Hay una serie de términos tradicionales que se emplean en trigonometría, los cuales utilizaremos a lo largo del curso. Se trata de los nombres que se dan a los lados y ángulos internos de un triángulo rectángulo. Por lo general, el triángulo rectángulo lo interpretaremos como una representación del plano cartesiano, de modo que los <strong>catetos</strong> corresponden a los ejes de las <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, y son los lados que forman un ángulo recto al cruzarse. El lado que los une en secante, es la <strong>hipotenusa</strong>. El ángulo que forma la hipotenusa con el eje de las <span class="math inline">\(x\)</span> tradicionalmente recibe el nombre con la letra griega <span class="math inline">\(\theta\)</span> (teta).</p>
+<div class="figure" style="text-align: center"><span id="fig:nomen-trig"></span>
+<img src="Unidad-I/nomenclatura.png" alt="Representación gráfica de las partes del triángulo y los nombres que reciben tradicionalmente en trigonometría plana." width="283" />
+<p class="caption">
+Figura 3.11: Representación gráfica de las partes del triángulo y los nombres que reciben tradicionalmente en trigonometría plana.
+</p>
+</div>
+</div>
+<div id="las-funciones-trigonométricas-básicas" class="section level4" number="3.3.1.2">
+<h4><span class="header-section-number">3.3.1.2</span> Las funciones trigonométricas básicas</h4>
+<p>Todas las funciones trigonométricas representan una descripción del ángulo <span class="math inline">\(\theta\)</span> como el cociente de la longitud de dos lados del triángulo rectángulo de modo que:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(\sin(\theta) = \frac{\mathrm{Opuesto}}{\mathrm{Hipotenusa}}\)</span></li>
+<li><span class="math inline">\(\cos(\theta) = \frac{\mathrm{Adyacente}}{\mathrm{Hipotenusa}}\)</span></li>
+<li><span class="math inline">\(\tan(\theta) = \frac{\mathrm{Opuesto}}{\mathrm{Adyacente}}\)</span></li>
+</ol>
+<p>Para recordar las fórmulas de cada función podemos utilizar la mnemotecnia:</p>
+<ul>
+<li><strong>Seno</strong>: SOH (Seno, Opuesto, Hipotenusa)</li>
+<li><strong>Coseno</strong>: CAH (Coseno, Adyacente, Hipotenusa)</li>
+<li><strong>Tangente</strong>: TOA (Tangente, Opuesto, Adyacente)</li>
+</ul>
+</div>
+</div>
 </div>
 <div id="la-línea-recta-como-modelo-universal" class="section level2" number="3.4">
 <h2><span class="header-section-number">3.4</span> La línea recta como modelo “universal”</h2>

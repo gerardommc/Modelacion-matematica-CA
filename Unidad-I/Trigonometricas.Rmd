@@ -1,0 +1,39 @@
+
+### Funciones trigonométricas
+
+En esta sección revisaremos algunas de las funciones trigonométricas y cómo se representan en el plano cartesiano. 
+
+La trigonometría es una rama de las matemáticas que se comenzó a desarrollar a partir de la necesidad de medir distancias de manera indirecta. Por ejemplo, la distancia entre la luna y la tierra y la tierra y el sol, la distancia entre dos barcos, la distancia entre un barco y el puero más cercano. Las herramientas trigonométricas entonces se comenzaron a desarrollar utilizando la geometría de triángulos rectángulos. Aquí es preciso describir el teorema de los triángulos proporcionales, dados dos triángulos con ángulos internos idénticos y longitudes de lados diferentes, los cocientes de las longitudes de sus lados serán iguales (Figura \@ref(fig:trian-prop)).
+
+
+```{r trian-prop, echo = F, fig.align='center', fig.cap="El teorema de los ángulos proporcionales es la base para las fórmulas geométricas de las funciones trigonométricas."}
+knitr::include_graphics("Unidad-I/Trian-prop.png")
+```
+
+De modo que sin importar las longitudes de los lados, los cocientes de las longitudes siempre serán iguales, lo cual se puede extender a todos los triángulos rectángulos, la base geométrica para la trigonometría. Aquí veremos entonces las funciones trognométricas básicas seno, coseno y tangente.
+
+#### Nomenclatura de triángulos para trigonometría básica
+
+Hay una serie de términos tradicionales que se emplean en trigonometría, los cuales utilizaremos a lo largo del curso. Se trata de los nombres que se dan a los lados y ángulos internos de un triángulo rectángulo. Por lo general, el triángulo rectángulo lo interpretaremos como una representación del plano cartesiano, de modo que los **catetos** corresponden a los ejes de las $x$ y $y$, y son los lados que forman un ángulo recto al cruzarse. El lado que los une en secante, es la **hipotenusa**. El ángulo que forma la hipotenusa con el eje de las $x$ tradicionalmente recibe el nombre con la letra griega $\theta$ (teta). 
+
+```{r nomen-trig, echo = F, fig.align='center', fig.cap="Representación gráfica de las partes del triángulo y los nombres que reciben tradicionalmente en trigonometría plana."}
+knitr::include_graphics("Unidad-I/nomenclatura.png")
+```
+
+#### Las funciones trigonométricas básicas
+
+Todas las funciones trigonométricas representan una descripción del ángulo $\theta$ como el cociente de la longitud de dos lados del triángulo rectángulo de modo que:
+
+1. **Seno**: $\sin(\theta) = \frac{\mathrm{Opuesto}}{\mathrm{Hipotenusa}}$
+2. **Coseno**: $\cos(\theta) = \frac{\mathrm{Adyacente}}{\mathrm{Hipotenusa}}$
+3. **Tangente**: $\tan(\theta) = \frac{\mathrm{Opuesto}}{\mathrm{Adyacente}}$
+
+Para recordar las fórmulas de cada función podemos utilizar la mnemotecnia:
+
+- **Seno**: SOH (Seno, Opuesto, Hipotenusa)
+- **Coseno**: CAH (Coseno, Adyacente, Hipotenusa)
+- **Tangente**: TOA (Tangente, Opuesto, Adyacente)
+
+#### Representación gráfica de las funciones trigonométricas
+
+
