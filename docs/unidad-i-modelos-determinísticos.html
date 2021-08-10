@@ -24,7 +24,7 @@
 <meta name="author" content="Gerardo Martín" />
 
 
-<meta name="date" content="2021-08-09" />
+<meta name="date" content="2021-08-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -301,9 +301,9 @@ Figura 3.11: Representación gráfica de las partes del triángulo y los nombres
 <h4><span class="header-section-number">3.3.1.2</span> Las funciones trigonométricas básicas</h4>
 <p>Todas las funciones trigonométricas representan una descripción del ángulo <span class="math inline">\(\theta\)</span> como el cociente de la longitud de dos lados del triángulo rectángulo de modo que:</p>
 <ol style="list-style-type: decimal">
-<li><span class="math inline">\(\sin(\theta) = \frac{\mathrm{Opuesto}}{\mathrm{Hipotenusa}}\)</span></li>
-<li><span class="math inline">\(\cos(\theta) = \frac{\mathrm{Adyacente}}{\mathrm{Hipotenusa}}\)</span></li>
-<li><span class="math inline">\(\tan(\theta) = \frac{\mathrm{Opuesto}}{\mathrm{Adyacente}}\)</span></li>
+<li><strong>Seno</strong>: <span class="math inline">\(\sin(\theta) = \frac{\mathrm{Opuesto}}{\mathrm{Hipotenusa}}\)</span></li>
+<li><strong>Coseno</strong>: <span class="math inline">\(\cos(\theta) = \frac{\mathrm{Adyacente}}{\mathrm{Hipotenusa}}\)</span></li>
+<li><strong>Tangente</strong>: <span class="math inline">\(\tan(\theta) = \frac{\mathrm{Opuesto}}{\mathrm{Adyacente}}\)</span></li>
 </ol>
 <p>Para recordar las fórmulas de cada función podemos utilizar la mnemotecnia:</p>
 <ul>
@@ -311,6 +311,62 @@ Figura 3.11: Representación gráfica de las partes del triángulo y los nombres
 <li><strong>Coseno</strong>: CAH (Coseno, Adyacente, Hipotenusa)</li>
 <li><strong>Tangente</strong>: TOA (Tangente, Opuesto, Adyacente)</li>
 </ul>
+</div>
+<div id="representación-gráfica-de-las-funciones-trigonométricas" class="section level4" number="3.3.1.3">
+<h4><span class="header-section-number">3.3.1.3</span> Representación gráfica de las funciones trigonométricas</h4>
+<p>Para entender por qué las funciones trigonométricas se comportan como lo hacen es útil tener en cuenta que representan el cociente de dos números que cambian uno en relación del otro. Esto queda de manifiesto en la Figura <a href="unidad-i-modelos-determinísticos.html#fig:catetos">3.12</a>. Como se puede apreciar, la hipotenusa (<span class="math inline">\(H\)</span> en la misma figura) se mantiene constante, pues representa el radio de la circunferencia, mientras que los catetos se alargan o encojen conforme la hipotenusa se acerca a los ejes <span class="math inline">\(x\)</span> o <span class="math inline">\(y\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:catetos"></span>
+<img src="Unidad-I/Func-trigo.png" alt="Representación gráfica del efecto del ángulo sobre la longitud de los catetos." width="343" />
+<p class="caption">
+Figura 3.12: Representación gráfica del efecto del ángulo sobre la longitud de los catetos.
+</p>
+</div>
+<p>Como es de esperarse, los valores del seno y coseno están limitados por 1 y -1 cuando la longitud del cateto es igual a la hipotenusa. La tangente, por otro lado, puede tomar valores que van de <span class="math inline">\(-\infty, +\infty\)</span> cuando el cateto adyacente tiene longitud cero <span class="math inline">\(0\)</span>. Aquí, mediremos los ángulos en radianes, o unidades de <span class="math inline">\(\pi\)</span>, donde <span class="math inline">\(\pi = 180°\)</span></p>
+<div class="figure" style="text-align: center"><span id="fig:graf-trig"></span>
+<img src="Model-mate_files/figure-html/graf-trig-1.png" alt="Gráfica de las funciones trigonométricas básicas." width="768" />
+<p class="caption">
+Figura 3.13: Gráfica de las funciones trigonométricas básicas.
+</p>
+</div>
+<p>Las funciones seno, coseno y tangente son las básicas en trigonometría. Otras funciones comunes, pasadas en la inversión de las mecionadas son la secante, cosecante y cotangente respectivamente. Al igual que otras operaciones aritméticas, para las funciones trigonométricas, existen inversiones. La inversión de una multiplicación es una divisón, de la suma es la resta, del exponente es la raíz. Las inversiones de las funciones trigonométricas reciben el nombre de Arco-<span class="math inline">\(f(\theta)\)</span>, de modo que al aplicarlas al resultado de la función obtenemos el valor del ángulo:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(\theta = \arcsin \left(\frac{0}{H}\right)\)</span></li>
+<li><span class="math inline">\(\theta = \arccos \left(\frac{A}{H}\right)\)</span></li>
+<li><span class="math inline">\(\theta = \arctan \left(\frac{O}{A} \right)\)</span></li>
+</ol>
+</div>
+<div id="aplicaciones-de-las-funciones-trigonométricas" class="section level4" number="3.3.1.4">
+<h4><span class="header-section-number">3.3.1.4</span> Aplicaciones de las funciones trigonométricas</h4>
+<p>En mi experiencia, las dos funciones con más aplicaciones en modelación de sistemas ambientales son la tangente y el coseno. Para comenzar, la tangente de un ángulo tiene una relación directa con la pendiente de una recta. Si recordamos la recta está descrita por la ecuación:</p>
+<p><span class="math display" id="eq:lin-2">\[\begin{equation}
+    y = a + bx \tag{3.2}
+\end{equation}\]</span></p>
+<p>donde <span class="math inline">\(b\)</span> es la pendiente de la recta que se forma al graficar <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> en el plano cartesiano. En realidad <span class="math inline">\(b\)</span> es la tangente del ánguo que se forma entre la recta y el eje de las <span class="math inline">\(x\)</span>. Por lo tanto, cuando nos encontramos ante un modelo formulado por medio de ecuaciones diferenciales, por ejemplo, lo valores que obtenemos al hacer los cálculos de ese sistema es una pendiente o tangente.</p>
+<p>El coseno, por otro lado, nos es muy útil para forzar la oscilación de algún parámetro. Ello es necesario cuando estamos interesados en representar fenómenos cíclicos como la temperatura diaria o anual. En la práctica, podemos reemplazar la pendiente <span class="math inline">\(b\)</span> de la ecuación <a href="unidad-i-modelos-determinísticos.html#eq:lin-2">(3.2)</a> por una función coseno.</p>
+<div class="figure" style="text-align: center"><span id="fig:coseno-forz"></span>
+<img src="Model-mate_files/figure-html/coseno-forz-1.png" alt="Gráfica de la función $y = 2 cos(x)^2 + 0.1  x$." width="576" />
+<p class="caption">
+Figura 3.14: Gráfica de la función <span class="math inline">\(y = 2 cos(x)^2 + 0.1 x\)</span>.
+</p>
+</div>
+</div>
+<div id="representación-en-3d" class="section level4" number="3.3.1.5">
+<h4><span class="header-section-number">3.3.1.5</span> Representación en 3D</h4>
+<p>Hasta ahora sólo hemos visto representaciones de las funciones en dos dimensiones. Las representaciones de las funciones en 3d, sin embargo pueden ser confusas. Veamos por ejemplo la representación 3d de un plano:</p>
+<div class="figure" style="text-align: center"><span id="fig:3d-1"></span>
+<img src="Model-mate_files/figure-html/3d-1-1.png" alt="Representación gráfica de la función $z(x, y) = x + y$." width="480" />
+<p class="caption">
+Figura 3.15: Representación gráfica de la función <span class="math inline">\(z(x, y) = x + y\)</span>.
+</p>
+</div>
+<p>Para poder hacer esta gráfica, es necesario hacer los cáculos para todas las combinaciones posibles de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, de modo que conocemos todos los valores posibles de <span class="math inline">\(z\)</span> para cada par de valores del dominio. Si en la representación en dos dimensiones, necesitamos <span class="math inline">\(n\)</span> valores, en la representación 3d necesitamos <span class="math inline">\(2 \times n^2\)</span>, lo cual produce <span class="math inline">\(n^2\)</span> diferentes valores de <span class="math inline">\(z\)</span>.</p>
+<p>Las funciones trigonométricas pueden representarse</p>
+<div class="figure" style="text-align: center"><span id="fig:trig-3d"></span>
+<img src="Model-mate_files/figure-html/trig-3d-1.png" alt="Representación en 3d de la función trigonométrica z = cos(x) sen(y)." width="480" />
+<p class="caption">
+Figura 3.16: Representación en 3d de la función trigonométrica z = cos(x) sen(y).
+</p>
+</div>
 </div>
 </div>
 </div>

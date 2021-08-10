@@ -77,7 +77,7 @@
 
 \title{Modelación matemática}
 \author{Gerardo Martín}
-\date{2021-08-09}
+\date{2021-08-10}
 
 \begin{document}
 \maketitle
@@ -421,11 +421,11 @@ Todas las funciones trigonométricas representan una descripción del ángulo \(
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \(\sin(\theta) = \frac{\mathrm{Opuesto}}{\mathrm{Hipotenusa}}\)
+  \textbf{Seno}: \(\sin(\theta) = \frac{\mathrm{Opuesto}}{\mathrm{Hipotenusa}}\)
 \item
-  \(\cos(\theta) = \frac{\mathrm{Adyacente}}{\mathrm{Hipotenusa}}\)
+  \textbf{Coseno}: \(\cos(\theta) = \frac{\mathrm{Adyacente}}{\mathrm{Hipotenusa}}\)
 \item
-  \(\tan(\theta) = \frac{\mathrm{Opuesto}}{\mathrm{Adyacente}}\)
+  \textbf{Tangente}: \(\tan(\theta) = \frac{\mathrm{Opuesto}}{\mathrm{Adyacente}}\)
 \end{enumerate}
 
 Para recordar las fórmulas de cada función podemos utilizar la mnemotecnia:
@@ -439,6 +439,93 @@ Para recordar las fórmulas de cada función podemos utilizar la mnemotecnia:
 \item
   \textbf{Tangente}: TOA (Tangente, Opuesto, Adyacente)
 \end{itemize}
+
+\hypertarget{representaciuxf3n-gruxe1fica-de-las-funciones-trigonomuxe9tricas}{%
+\subsubsection{Representación gráfica de las funciones trigonométricas}\label{representaciuxf3n-gruxe1fica-de-las-funciones-trigonomuxe9tricas}}
+
+Para entender por qué las funciones trigonométricas se comportan como lo hacen es útil tener en cuenta que representan el cociente de dos números que cambian uno en relación del otro. Esto queda de manifiesto en la Figura \ref{fig:catetos}. Como se puede apreciar, la hipotenusa (\(H\) en la misma figura) se mantiene constante, pues representa el radio de la circunferencia, mientras que los catetos se alargan o encojen conforme la hipotenusa se acerca a los ejes \(x\) o \(y\).
+
+\begin{figure}
+
+{\centering \includegraphics[width=9.53in]{Unidad-I/Func-trigo} 
+
+}
+
+\caption{Representación gráfica del efecto del ángulo sobre la longitud de los catetos.}\label{fig:catetos}
+\end{figure}
+
+Como es de esperarse, los valores del seno y coseno están limitados por 1 y -1 cuando la longitud del cateto es igual a la hipotenusa. La tangente, por otro lado, puede tomar valores que van de \(-\infty, +\infty\) cuando el cateto adyacente tiene longitud cero \(0\). Aquí, mediremos los ángulos en radianes, o unidades de \(\pi\), donde \(\pi = 180°\)
+
+\begin{figure}
+
+{\centering \includegraphics{Model-mate_files/figure-latex/graf-trig-1} 
+
+}
+
+\caption{Gráfica de las funciones trigonométricas básicas.}\label{fig:graf-trig}
+\end{figure}
+
+Las funciones seno, coseno y tangente son las básicas en trigonometría. Otras funciones comunes, pasadas en la inversión de las mecionadas son la secante, cosecante y cotangente respectivamente. Al igual que otras operaciones aritméticas, para las funciones trigonométricas, existen inversiones. La inversión de una multiplicación es una divisón, de la suma es la resta, del exponente es la raíz. Las inversiones de las funciones trigonométricas reciben el nombre de Arco-\(f(\theta)\), de modo que al aplicarlas al resultado de la función obtenemos el valor del ángulo:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(\theta = \arcsin \left(\frac{0}{H}\right)\)
+\item
+  \(\theta = \arccos \left(\frac{A}{H}\right)\)
+\item
+  \(\theta = \arctan \left(\frac{O}{A} \right)\)
+\end{enumerate}
+
+\hypertarget{aplicaciones-de-las-funciones-trigonomuxe9tricas}{%
+\subsubsection{Aplicaciones de las funciones trigonométricas}\label{aplicaciones-de-las-funciones-trigonomuxe9tricas}}
+
+En mi experiencia, las dos funciones con más aplicaciones en modelación de sistemas ambientales son la tangente y el coseno. Para comenzar, la tangente de un ángulo tiene una relación directa con la pendiente de una recta. Si recordamos la recta está descrita por la ecuación:
+
+\begin{equation}
+    y = a + bx \label{eq:lin-2}
+\end{equation}
+
+donde \(b\) es la pendiente de la recta que se forma al graficar \(x\) y \(y\) en el plano cartesiano. En realidad \(b\) es la tangente del ánguo que se forma entre la recta y el eje de las \(x\). Por lo tanto, cuando nos encontramos ante un modelo formulado por medio de ecuaciones diferenciales, por ejemplo, lo valores que obtenemos al hacer los cálculos de ese sistema es una pendiente o tangente.
+
+El coseno, por otro lado, nos es muy útil para forzar la oscilación de algún parámetro. Ello es necesario cuando estamos interesados en representar fenómenos cíclicos como la temperatura diaria o anual. En la práctica, podemos reemplazar la pendiente \(b\) de la ecuación \eqref{eq:lin-2} por una función coseno.
+
+\begin{figure}
+
+{\centering \includegraphics{Model-mate_files/figure-latex/coseno-forz-1} 
+
+}
+
+\caption{Gráfica de la función $y = 2 cos(x)^2 + 0.1  x$.}\label{fig:coseno-forz}
+\end{figure}
+
+\hypertarget{representaciuxf3n-en-3d}{%
+\subsubsection{Representación en 3D}\label{representaciuxf3n-en-3d}}
+
+Hasta ahora sólo hemos visto representaciones de las funciones en dos dimensiones. Las representaciones de las funciones en 3d, sin embargo pueden ser confusas. Veamos por ejemplo la representación 3d de un plano:
+
+\begin{figure}
+
+{\centering \includegraphics{Model-mate_files/figure-latex/3d-1-1} 
+
+}
+
+\caption{Representación gráfica de la función $z(x, y) = x + y$.}\label{fig:3d-1}
+\end{figure}
+
+Para poder hacer esta gráfica, es necesario hacer los cáculos para todas las combinaciones posibles de \(x\) y \(y\), de modo que conocemos todos los valores posibles de \(z\) para cada par de valores del dominio. Si en la representación en dos dimensiones, necesitamos \(n\) valores, en la representación 3d necesitamos \(2 \times n^2\), lo cual produce \(n^2\) diferentes valores de \(z\).
+
+Las funciones trigonométricas pueden representarse
+
+\begin{figure}
+
+{\centering \includegraphics{Model-mate_files/figure-latex/trig-3d-1} 
+
+}
+
+\caption{Representación en 3d de la función trigonométrica z = cos(x) sen(y).}\label{fig:trig-3d}
+\end{figure}
 
 \hypertarget{la-luxednea-recta-como-modelo-universal}{%
 \section{La línea recta como modelo ``universal''}\label{la-luxednea-recta-como-modelo-universal}}

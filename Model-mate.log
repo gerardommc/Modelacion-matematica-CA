@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2021.6.30)  9 AUG 2021 17:14
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2021.6.30)  10 AUG 2021 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,27 +914,62 @@ Overfull \hbox (223.09508pt too wide) in paragraph at lines 408--409
  [][] 
  []
 
-[23] [24] [25] [26
+File: Unidad-I/Func-trigo.png Graphic file (type bmp)
+<Unidad-I/Func-trigo.png>
 
-]
+Overfull \hbox (343.58131pt too wide) in paragraph at lines 450--451
+ [][] 
+ []
+
+File: Model-mate_files/figure-latex/graf-trig-1.pdf Graphic file (type pdf)
+<use Model-mate_files/figure-latex/graf-trig-1.pdf>
+
+Overfull \hbox (128.86012pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.3.  FUNCIONES COMPLEMENTARIAS Y SU REPRESENTACIÓN EN DOS Y TR
+ES DIMENSIONES \TU/lmr/m/n/10 23
+ []
+
+[23] [24]
+Overfull \hbox (128.86012pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.3.  FUNCIONES COMPLEMENTARIAS Y SU REPRESENTACIÓN EN DOS Y TR
+ES DIMENSIONES \TU/lmr/m/n/10 25
+ []
+
+[25] [26]
+File: Model-mate_files/figure-latex/coseno-forz-1.pdf Graphic file (type pdf)
+<use Model-mate_files/figure-latex/coseno-forz-1.pdf>
+
+Overfull \hbox (128.86012pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.3.  FUNCIONES COMPLEMENTARIAS Y SU REPRESENTACIÓN EN DOS Y TR
+ES DIMENSIONES \TU/lmr/m/n/10 27
+ []
+
+[27]
+File: Model-mate_files/figure-latex/3d-1-1.pdf Graphic file (type pdf)
+<use Model-mate_files/figure-latex/3d-1-1.pdf>
+File: Model-mate_files/figure-latex/trig-3d-1.pdf Graphic file (type pdf)
+<use Model-mate_files/figure-latex/trig-3d-1.pdf>
+[28] [29] [30]
 Chapter 4.
-[27] [28
+[31
+
+] [32
 
 ]
 Chapter 5.
 No file Model-mate.bbl.
-[29] (./Model-mate.aux)
+[33] (./Model-mate.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 18498 strings out of 477220
- 325743 string characters out of 5832722
- 810210 words of memory out of 5000000
- 37915 multiletter control sequences out of 15000+600000
+ 18546 strings out of 477220
+ 327413 string characters out of 5832722
+ 812969 words of memory out of 5000000
+ 37958 multiletter control sequences out of 15000+600000
  409897 words of font info for 82 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  98i,6n,122p,710b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Model-mate.pdf (29 pages).
+Output written on Model-mate.pdf (33 pages).
