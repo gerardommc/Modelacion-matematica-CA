@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2021.6.30)  10 AUG 2021 16:54
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2021.6.30)  12 AUG 2021 17:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -833,12 +833,12 @@ LaTeX Warning: Float too large for page by 24.05469pt on input line 162.
 [11
 
 ] [12]
-File: Model-mate_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (type p
-df)
-<use Model-mate_files/figure-latex/unnamed-chunk-10-1.pdf>
 File: Model-mate_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type p
 df)
 <use Model-mate_files/figure-latex/unnamed-chunk-11-1.pdf>
+File: Model-mate_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file (type p
+df)
+<use Model-mate_files/figure-latex/unnamed-chunk-12-1.pdf>
 
 Overfull \hbox (54.38123pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 3.2.  FUNCIONES BÁSICAS Y SU REPRESENTACIÓN EN EL PLANO CARTESI
@@ -949,27 +949,27 @@ File: Model-mate_files/figure-latex/3d-1-1.pdf Graphic file (type pdf)
 <use Model-mate_files/figure-latex/3d-1-1.pdf>
 File: Model-mate_files/figure-latex/trig-3d-1.pdf Graphic file (type pdf)
 <use Model-mate_files/figure-latex/trig-3d-1.pdf>
-[28] [29] [30]
-Chapter 4.
-[31
+[28] [29] [30] [31] [32
 
-] [32
+]
+Chapter 4.
+[33] [34
 
 ]
 Chapter 5.
 No file Model-mate.bbl.
-[33] (./Model-mate.aux)
+[35] (./Model-mate.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
  18546 strings out of 477220
- 327413 string characters out of 5832722
+ 327414 string characters out of 5832722
  812969 words of memory out of 5000000
  37958 multiletter control sequences out of 15000+600000
  409897 words of font info for 82 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,6n,122p,710b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 98i,6n,122p,848b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Model-mate.pdf (33 pages).
+Output written on Model-mate.pdf (35 pages).

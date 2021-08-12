@@ -1,0 +1,17 @@
+De los modelos vistos anteriormente, la línea recta es el más flexible y común de todos. Por su simplicidad, puede ser utilizado para representar muchos fenómenos de la naturaleza, incluso aquellos cuyo comportamiento es... !no lineal¡
+
+Cuando decimos no lineal, nos referimos generalmente a los casos en que cuando una relación de correspondencia es representada en el plano cartesiano los puntos que la forman no dibujan una línea recta. Como vimos anteriormente, matemáticamente es posible concebir como lineales reglas de corresondencia que no son lineales en el plano cartesiano, de ahí que la función de la línea recta pueda ser tan flexible. Para que una ecuación sea considerada como lineal, debe cumplir con las siguientes características:
+
+1. Las variables sólo pueden ser añadidas unas con otras
+2. La multiplicación sólo puede ocurrir con constantes
+3. Las variables están elevadas a la potencia 1
+
+Con base en estas definiciones, las siguientes ecuaciones no son lineales
+
+1. $xy = 1$
+2. $y = a + b x^2$
+3. $y = e^x$
+4. $y = x_1 x_2$
+
+Aún cuando estas expresiones no son lineales, es posible transformar algunas de ellas para que adquieran propiedades lineales. Para comenzar, el caso 1, no puede ser linealizado. Para el caso 2, ya vimos un transformación posible, si asumimos que existe una $x'$ tal que $x' = x^2$. Para el caso 3 hay que usar un poco más de conocimiento de las funciones matemáticas, pues vemos que el lado derecho es $e^x$, donde $e$ es la constante de Euler cuyo valor es aproximadamente de $2.718$. Para linealizar esta ecuación necesitamos aplicar la función inversa de la exponencial, de modo que $\log_e y = \log_e e^x$, con lo que tenemos $\ln y = x$. Debido a que el logaritmo natural es contínuo entre $-\infty, +\infty$, la ecuación 3 transformada es lineal. ¿Cómo linealizarían la ecuación 4?. 
+

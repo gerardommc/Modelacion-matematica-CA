@@ -31,7 +31,11 @@
 
 ```
 
-
 ## La línea recta como modelo “universal”
+
+```{r echo = F, child="Unidad-I/Recta-modelo-univ.Rmd"}
+
+```
+
 
 ## Modelación de sistemas sociales y ambientales

@@ -77,7 +77,7 @@
 
 \title{Modelación matemática}
 \author{Gerardo Martín}
-\date{2021-08-10}
+\date{2021-08-12}
 
 \begin{document}
 \maketitle
@@ -158,7 +158,7 @@ Imaginemos a seis personas invidentes, con la tarea de encontrar qué es el obje
 
 }
 
-\caption{La parábola de los seis hombres ciegos inspeccionando un elefante.}\label{fig:unnamed-chunk-9}
+\caption{La parábola de los seis hombres ciegos inspeccionando un elefante.}\label{fig:unnamed-chunk-10}
 \end{figure}
 
 Quien toque los colmillos podrá pensar que se trata de una lanza, la trompa podría tratarse de una serpiente, la cola de una cuerda, las patas troncos de árbol y el cuerpo una pared. Es evidente que todas las hipótesis presentadas después de la inspección fueron erróneas, y que cuando estudiamos al mundo lo haremos igual, con la descripción de tan sólo una fracción de éste. Un séptimo hombre que pregunte a los otros seis qué fue lo que vieron podría formarse una imágen más completa del \emph{sistema} para proponer otra hipótesis: se trata de un objeto grande reposando sobre cuatro columnas con apéndices adelante y atrás.
@@ -200,22 +200,22 @@ Comencemos por dar un repaso del plano cartesiano. Este consiste de la represent
 
 \begin{figure}
 
-{\centering \includegraphics{Model-mate_files/figure-latex/unnamed-chunk-10-1} 
+{\centering \includegraphics{Model-mate_files/figure-latex/unnamed-chunk-11-1} 
 
 }
 
-\caption{Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$.}\label{fig:unnamed-chunk-10}
+\caption{Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$.}\label{fig:unnamed-chunk-11}
 \end{figure}
 
 Ahora veamos, con un ejemplo gráfico por qué la constante \(a\) recibe el nombre de \emph{pendiente}.
 
 \begin{figure}
 
-{\centering \includegraphics{Model-mate_files/figure-latex/unnamed-chunk-11-1} 
+{\centering \includegraphics{Model-mate_files/figure-latex/unnamed-chunk-12-1} 
 
 }
 
-\caption{Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$.}\label{fig:unnamed-chunk-11}
+\caption{Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$.}\label{fig:unnamed-chunk-12}
 \end{figure}
 
 Como podemos ver, de manera más general, la línea recta es generada por una regla de correspondencia muy sencilla, un conjunto de valores \(X\) son multiplicados por un escalar \(a\), a los que se les puede añadir un \emph{intercepto} \(b\). El intercepto siempre es el valor de \(y(x)\) cuando \(x = 0\).
@@ -529,6 +529,38 @@ Las funciones trigonométricas pueden representarse
 
 \hypertarget{la-luxednea-recta-como-modelo-universal}{%
 \section{La línea recta como modelo ``universal''}\label{la-luxednea-recta-como-modelo-universal}}
+
+De los modelos vistos anteriormente, la línea recta es el más flexible y común de todos. Por su simplicidad, puede ser utilizado para representar muchos fenómenos de la naturaleza, incluso aquellos cuyo comportamiento es\ldots{} !no lineal¡
+
+Cuando decimos no lineal, nos referimos generalmente a los casos en que cuando una relación de correspondencia es representada en el plano cartesiano los puntos que la forman no dibujan una línea recta. Como vimos anteriormente, matemáticamente es posible concebir como lineales reglas de corresondencia que no son lineales en el plano cartesiano, de ahí que la función de la línea recta pueda ser tan flexible. Para que una ecuación sea considerada como lineal, debe cumplir con las siguientes características:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Las variables sólo pueden ser añadidas unas con otras
+\item
+  La multiplicación sólo puede ocurrir con constantes
+\item
+  Las variables están elevadas a la potencia 1
+\end{enumerate}
+
+Con base en estas definiciones, las siguientes ecuaciones no son lineales
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(xy = 1\)
+\item
+  \(y = a + b x^2\)
+\item
+  \(y = e^x\)
+\item
+  \(y = x_1 x_2\)
+\end{enumerate}
+
+Aún cuando estas expresiones no son lineales, es posible transformar algunas de ellas para que adquieran propiedades lineales. Para comenzar, el caso 1, no puede ser linealizado. Para el caso 2, ya vimos un transformación posible, si asumimos que existe una \(x'\) tal que \(x' = x^2\). Para el caso 3 hay que usar un poco más de conocimiento de las funciones matemáticas, pues vemos que el lado derecho es \(e^x\), donde \(e\) es la constante de Euler cuyo valor es aproximadamente de \(2.718\). Para linealizar esta ecuación necesitamos aplicar la función inversa de la exponencial, de modo que \(\log_e y = \log_e e^x\), con lo que tenemos \(\ln y = x\). Debido a que el logaritmo natural es contínuo entre \(-\infty, +\infty\), la ecuación 3 transformada es lineal. ¿Cómo linealizarían la ecuación 4?.
 
 \hypertarget{modelaciuxf3n-de-sistemas-sociales-y-ambientales}{%
 \section{Modelación de sistemas sociales y ambientales}\label{modelaciuxf3n-de-sistemas-sociales-y-ambientales}}

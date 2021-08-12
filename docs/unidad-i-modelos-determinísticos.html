@@ -24,7 +24,7 @@
 <meta name="author" content="Gerardo Martín" />
 
 
-<meta name="date" content="2021-08-10" />
+<meta name="date" content="2021-08-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -129,7 +129,7 @@
 <div id="introducción-a-la-modelación" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Introducción a la modelación</h2>
 <p>Imaginemos a seis personas invidentes, con la tarea de encontrar qué es el objeto que está frente a ellas usando únicamente el tacto. En la parábola de los seis hombres ciegos, el objeto es un elefante, de modo que la imágen que cada uno de ellos se forma del objeto depende enteramente de la parte del elefante que están tocando.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-9"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-10"></span>
 <img src="Unidad-I/elefante.png" alt="La parábola de los seis hombres ciegos inspeccionando un elefante." width="582" />
 <p class="caption">
 Figura 3.1: La parábola de los seis hombres ciegos inspeccionando un elefante.
@@ -159,15 +159,15 @@ Figura 3.1: La parábola de los seis hombres ciegos inspeccionando un elefante.
 <div id="representaciones-gráficas-de-la-recta" class="section level4" number="3.2.1.1">
 <h4><span class="header-section-number">3.2.1.1</span> Representaciones gráficas de la recta</h4>
 <p>Comencemos por dar un repaso del plano cartesiano. Este consiste de la representación de dos conjuntos de números reales en los que representamos una función, como una regla de correspondencia entre los valores de cada conjunto, de modo que a cada valor de <span class="math inline">\(x\)</span> corresponde uno y sólo uno de los valores de <span class="math inline">\(y\)</span>. Cada conjunto se puede representar como una recta, y cuando éstas se disponen perperdiculares dan origen al plano.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-10"></span>
-<img src="Model-mate_files/figure-html/unnamed-chunk-10-1.png" alt="Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$." width="384" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-11"></span>
+<img src="Model-mate_files/figure-html/unnamed-chunk-11-1.png" alt="Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$." width="384" />
 <p class="caption">
 Figura 3.2: Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para <span class="math inline">\(y(x) = x\)</span>, donde los puntos corresponden a los pares de valores <span class="math inline">\((x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)\)</span>.
 </p>
 </div>
 <p>Ahora veamos, con un ejemplo gráfico por qué la constante <span class="math inline">\(a\)</span> recibe el nombre de <em>pendiente</em>.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-11"></span>
-<img src="Model-mate_files/figure-html/unnamed-chunk-11-1.png" alt="Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$." width="384" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-12"></span>
+<img src="Model-mate_files/figure-html/unnamed-chunk-12-1.png" alt="Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$." width="384" />
 <p class="caption">
 Figura 3.3: Gráficas de las funciones <span class="math inline">\(y(x) = 0.5 x\)</span> (en rojo) y <span class="math inline">\(y(x) = 0.5 + 0.5 x\)</span> (azul). Las líneas punteadas en colores indican el efecto de las constantes <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, mientas que Δ<span class="math inline">\(x\)</span> denota el cambio de una unidad de <span class="math inline">\(x\)</span>.
 </p>
@@ -372,6 +372,21 @@ Figura 3.16: Representación en 3d de la función trigonométrica z = cos(x) sen
 </div>
 <div id="la-línea-recta-como-modelo-universal" class="section level2" number="3.4">
 <h2><span class="header-section-number">3.4</span> La línea recta como modelo “universal”</h2>
+<p>De los modelos vistos anteriormente, la línea recta es el más flexible y común de todos. Por su simplicidad, puede ser utilizado para representar muchos fenómenos de la naturaleza, incluso aquellos cuyo comportamiento es… !no lineal¡</p>
+<p>Cuando decimos no lineal, nos referimos generalmente a los casos en que cuando una relación de correspondencia es representada en el plano cartesiano los puntos que la forman no dibujan una línea recta. Como vimos anteriormente, matemáticamente es posible concebir como lineales reglas de corresondencia que no son lineales en el plano cartesiano, de ahí que la función de la línea recta pueda ser tan flexible. Para que una ecuación sea considerada como lineal, debe cumplir con las siguientes características:</p>
+<ol style="list-style-type: decimal">
+<li>Las variables sólo pueden ser añadidas unas con otras</li>
+<li>La multiplicación sólo puede ocurrir con constantes</li>
+<li>Las variables están elevadas a la potencia 1</li>
+</ol>
+<p>Con base en estas definiciones, las siguientes ecuaciones no son lineales</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(xy = 1\)</span></li>
+<li><span class="math inline">\(y = a + b x^2\)</span></li>
+<li><span class="math inline">\(y = e^x\)</span></li>
+<li><span class="math inline">\(y = x_1 x_2\)</span></li>
+</ol>
+<p>Aún cuando estas expresiones no son lineales, es posible transformar algunas de ellas para que adquieran propiedades lineales. Para comenzar, el caso 1, no puede ser linealizado. Para el caso 2, ya vimos un transformación posible, si asumimos que existe una <span class="math inline">\(x&#39;\)</span> tal que <span class="math inline">\(x&#39; = x^2\)</span>. Para el caso 3 hay que usar un poco más de conocimiento de las funciones matemáticas, pues vemos que el lado derecho es <span class="math inline">\(e^x\)</span>, donde <span class="math inline">\(e\)</span> es la constante de Euler cuyo valor es aproximadamente de <span class="math inline">\(2.718\)</span>. Para linealizar esta ecuación necesitamos aplicar la función inversa de la exponencial, de modo que <span class="math inline">\(\log_e y = \log_e e^x\)</span>, con lo que tenemos <span class="math inline">\(\ln y = x\)</span>. Debido a que el logaritmo natural es contínuo entre <span class="math inline">\(-\infty, +\infty\)</span>, la ecuación 3 transformada es lineal. ¿Cómo linealizarían la ecuación 4?.</p>
 </div>
 <div id="modelación-de-sistemas-sociales-y-ambientales" class="section level2" number="3.5">
 <h2><span class="header-section-number">3.5</span> Modelación de sistemas sociales y ambientales</h2>

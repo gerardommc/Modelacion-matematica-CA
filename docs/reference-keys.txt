@@ -1,6 +1,6 @@
-fig:unnamed-chunk-9
 fig:unnamed-chunk-10
 fig:unnamed-chunk-11
+fig:unnamed-chunk-12
 fig:parabola
 fig:parabola-2
 fig:parabola-3
