@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2021.6.30)  12 AUG 2021 17:16
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2021.6.30)  13 AUG 2021 15:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -823,12 +823,12 @@ Chapter 3.
 File: Unidad-I/elefante.png Graphic file (type bmp)
 <Unidad-I/elefante.png>
 
-Overfull \hbox (515.47562pt too wide) in paragraph at lines 157--158
+Overfull \hbox (515.47562pt too wide) in paragraph at lines 159--160
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 24.05469pt on input line 162.
+LaTeX Warning: Float too large for page by 24.05469pt on input line 164.
 
 [11
 
@@ -870,7 +870,7 @@ File: Model-mate_files/figure-latex/parabola-3-1.pdf Graphic file (type pdf)
 File: Unidad-I/conicas.png Graphic file (type bmp)
 <Unidad-I/conicas.png>
 
-Overfull \hbox (155.85472pt too wide) in paragraph at lines 340--341
+Overfull \hbox (155.85472pt too wide) in paragraph at lines 342--343
  [][] 
  []
 
@@ -892,32 +892,32 @@ ANO \TU/lmr/m/n/10 21
 File: Model-mate_files/figure-latex/vari-1.pdf Graphic file (type pdf)
 <use Model-mate_files/figure-latex/vari-1.pdf>
 
-Underfull \hbox (badness 3039) in paragraph at lines 381--381
+Underfull \hbox (badness 3039) in paragraph at lines 383--383
 []\TU/lmr/bx/n/14.4 Funciones complementarias y su repre-
  []
 
 File: Unidad-I/Trian-prop.png Graphic file (type bmp)
 <Unidad-I/Trian-prop.png>
 
-Overfull \hbox (292.90344pt too wide) in paragraph at lines 392--393
+Overfull \hbox (292.90344pt too wide) in paragraph at lines 394--395
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 36.0789pt on input line 397.
+LaTeX Warning: Float too large for page by 36.0789pt on input line 399.
 
 [22]
 File: Unidad-I/nomenclatura.png Graphic file (type bmp)
 <Unidad-I/nomenclatura.png>
 
-Overfull \hbox (223.09508pt too wide) in paragraph at lines 408--409
+Overfull \hbox (223.09508pt too wide) in paragraph at lines 410--411
  [][] 
  []
 
 File: Unidad-I/Func-trigo.png Graphic file (type bmp)
 <Unidad-I/Func-trigo.png>
 
-Overfull \hbox (343.58131pt too wide) in paragraph at lines 450--451
+Overfull \hbox (343.58131pt too wide) in paragraph at lines 452--453
  [][] 
  []
 
