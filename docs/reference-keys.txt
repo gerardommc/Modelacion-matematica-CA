@@ -18,6 +18,10 @@ fig:3d-1
 fig:trig-3d
 eq:expon
 eq:log-lin
+fig:expon
+fig:popn-wd
+eq:poblac
+fig:log
 preámbulo
 criterios-de-evaluación
 cómo-se-darán-las-clases
@@ -43,6 +47,9 @@ la-línea-recta-como-modelo-universal
 el-logaritmo
 la-función-exponencial
 linealizado-la-función-exponencial
+representación-gráfica-de-la-función-exponencial
+representación-gráfica-del-logaritmo
+relevancia-de-la-recta
 modelación-de-sistemas-sociales-y-ambientales
 methods
 applications
