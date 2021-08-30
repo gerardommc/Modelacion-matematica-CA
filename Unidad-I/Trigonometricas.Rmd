@@ -1,6 +1,3 @@
-
-### Funciones trigonométricas
-
 En esta sección revisaremos algunas de las funciones trigonométricas y cómo se representan en el plano cartesiano. 
 
 La trigonometría es una rama de las matemáticas que se comenzó a desarrollar a partir de la necesidad de medir distancias de manera indirecta. Por ejemplo, la distancia entre la luna y la tierra y la tierra y el sol, la distancia entre dos barcos, la distancia entre un barco y el puero más cercano. Las herramientas trigonométricas entonces se comenzaron a desarrollar utilizando la geometría de triángulos rectángulos. Aquí es preciso describir el teorema de los triángulos proporcionales, dados dos triángulos con ángulos internos idénticos y longitudes de lados diferentes, los cocientes de las longitudes de sus lados serán iguales (Figura \@ref(fig:trian-prop)).
@@ -82,33 +79,4 @@ x <- seq(-10, 10, len = 100)
 y = 2*cos(x)^2 + 0.1 * x
 plot(x, y, xlab = "x", ylab = "y", type = "l")
 ```
-#### Representación en 3D
-
-Hasta ahora sólo hemos visto representaciones de las funciones en dos dimensiones. Las representaciones de las funciones en 3d, sin embargo pueden ser confusas. Veamos por ejemplo la representación 3d de un plano:
-
-```{r 3d-1, echo=F, fig.align='center', fig.height=4, fig.width=5, fig.cap="Representación gráfica de la función $z(x, y) = x + y$."}
-library(lattice)
-
-df.1 <- expand.grid(x = -5:5, y = -5:5)
-df.1$z <- with(df.1, x + y)
-wireframe(z ~ x + y, df.1, drape = T)
-```
-
-Para poder hacer esta gráfica, es necesario hacer los cáculos para todas las combinaciones posibles de $x$ y $y$, de modo que conocemos todos los valores posibles de $z$ para cada par de valores del dominio. Si en la representación en dos dimensiones, necesitamos $n$ valores, en la representación 3d necesitamos $2 \times n^2$, lo cual produce $n^2$ diferentes valores de $z$.
-
-Las funciones trigonométricas pueden representarse 
-
-```{r trig-3d, echo=F, fig.align='center', fig.cap="Representación en 3d de la función trigonométrica z = cos(x) sen(y).", fig.height=4, fig.width=5}
-library(plot3D)
-df.1 <- expand.grid(x = seq(-pi, pi, len = 20),
-                    y = seq(-pi, pi, len = 20))
-df.1$z <- with(df.1, cos(y) * sin(x))
-
-mat <- matrix(df.1$z, nrow = 20, ncol = 20)
-
-wireframe(z ~ x + y, df.1, drape = T)
-```
-
-
-
 
