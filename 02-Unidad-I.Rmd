@@ -37,13 +37,6 @@
 
 ```
 
-## Representación en 3D
-
-```{r echo = F, child="Unidad-I/3D.Rmd"}
-
-```
-
-
 ## Modelación de sistemas sociales y ambientales
 
 ```{r echo = F, child="Unidad-I/Modelacion-sistemas.Rmd"}

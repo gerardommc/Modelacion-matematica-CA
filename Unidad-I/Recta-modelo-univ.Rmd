@@ -84,7 +84,7 @@ Esta relación entre el valor de la curva y la pendiente tiene implicaciones imp
 Veamos como ejemplo, que el crecimiento de la humanidad, desde que se pueden obtener estimaciones, es aproximadamente exponencial \@ref(fig:popn-wd).
 
 ```{r popn-wd, echo=F, fig.align='center', fig.cap="Población humana a lo largo del tiempo, según estimaciones de [Our world in data](https://ourworldindata.org/world-population-growth)."}
-knitr::include_graphics("Unidad-II/popn.png")
+knitr::include_graphics("Unidad-I/popn.png")
 ```
 
 A diferencia del ejemplo de la figura \@ref(fig:expon), donde $y = \exp(x)$, para representar el crecimiento de la población humana tenemos que medir la tasa reproductiva, de modo que podamos establecer la relación directa entre el tiempo y el tamaño de la población. En otras palabras, medir cuántos individuos son producidos en promedio por cada individuo presente en la población en cada unidad de tiempo:
