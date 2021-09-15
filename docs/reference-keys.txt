@@ -51,6 +51,7 @@ relevancia-de-la-recta
 modelación-de-sistemas-sociales-y-ambientales
 consumo-eléctrico-en-ciudades
 crecimiento-de-una-población
+modelos-deterministas
 methods
 applications
 example-one

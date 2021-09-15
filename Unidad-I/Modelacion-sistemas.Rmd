@@ -44,3 +44,16 @@ $$r(\mathrm{alimento}) = a + b \mathrm{\ alimento} + c \mathrm{\ alimento}^2$$
 
 Conforme avancemos en el semestre aprenderemos a usar matemáticas más sofisticadas que nos permitirán concebir los sistemas socio-ambientales de un modo dinámico.
 
+### Modelos deterministas
+
+Todos los modelos que vimos a la fecha:
+
+1. Línea recta
+2. Parábola
+3. Cónicas
+4. Curva normal
+5. Trigonométricas
+
+Se consideran modelos deterministas, lo que quiere decir que siempre que los resolvamos producirán el mismo resultado. La contraparte de los modelos deterministas son los modelos **estocásticos**, que con ayuda de una computadora producirán resultados ligeramente diferentes cada vez que los resolvamos.
+
+Este curso se enfoca exclusivamente en modelos deterministas, pues su interpretación y estudio es más sencillo que los modelos estocásticos, aunque en la realidad la inmensa mayoría de los sistemas ambientales son estocásticos.
