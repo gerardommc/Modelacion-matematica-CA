@@ -1,0 +1,46 @@
+Las diferentes herramientas matemáticas que hemos revisado representan los bloques para construir representaciones matemáticas de los fenómenos que se estudian en ciencias ambientales.
+
+De todas las herramientas que vimos la línea recta es el más útil de todos pues nos permite entender el concepto de pendiente, y representar funciones más complejas como una colección de rectas. Por otra parte, fenómenos como el crecimiento poblacional que es exponencial se puede representar como una línea recta en escala logarítmica.
+
+El modelo exponencial lo utilizaremos para modelar fenómenos cuyo etado en el futuro se verá afectado por su estado actual, tal como el número de individuos nuevos en el futuro en una población depende del número de individuos que actualmente contiene. Modelos como el lineal, se pueden en cambio utilizar para representar fenómenos cuyo estado futuro es independiente de su estado actual (en cierta medida). Veamos una serie de ejemplos.
+
+### Consumo eléctrico en ciudades
+
+Aunque existen muchos factores sociales, económicos y culturales que explican el consumo de electricidad en una ciudad, el número de habitantes puede considerarse uno de los factores más importantes. De modo que, si en México el ciudadano promedio consume 2157 kWh anualmente (datos de OCDE), el consumo de una ciudad puede asumirse como el producto de sus habitantes y el consumo promedio:
+
+$$\mathrm{kWh} = N \times \mathrm{Consumo\ promedio} $$
+
+```{r electr, fig.height=5, fig.width=6, fig.align='center', fig.cap=""}
+habitantes <- seq(1, 100, len = 100)
+kWh <- 2157 * habitantes * 1000
+
+plot(habitantes, kWh, col = "red", type = "l")
+```
+
+### Crecimiento de una población
+
+La cantidad de individuos nuevos en una población depende de la cantidad de individuos presentes. Por lo tanto, este fenómeno se puede representar con una función exponencial:
+
+\begin{equation}
+N(t) = N_0e^{rt} (\#eq:crec-pobl)
+\end{equation}
+
+donde $N$ es el número de individuos, $N_0$ es el tamaño inicial de la población, $r$ es la tasa de crecimiento (proporción de indiciduos nuevos en cada unidad de tiempo), y $t$ es el tiempo. Aquí he reemplazado $N$ por $y$ y $t$ por $x$.
+
+Como ya sabemos, el modelo exponencial, lo podemos transformar a una línea recta:
+
+$$ \ln N = \ln N_0 + rt$$
+
+por lo tanto si observamos el curso de una población a lo largo del tiempo, y no se forma una línea recta, podemos concluir que la tasa $r$ no ha sido constante, tal como ocurre con la población del mundo (\@ref(fig:tasa-crec)).
+
+```{r tasa-crec, fig.align='center', fig.cap="Cambios históricos y proyectados de la tasa de crecimiento de la población humana."}
+knitr::include_graphics("Unidad-I/Tasa-crec.png")
+```
+
+Bajo este escenario, un trabajo interesate para un científico hambiental sería estudiar las causas de las variaciones históricas de $r$, transformándolo de una cantidad fija, como se asume en la
+ecuación \@ref(eq:crec-pobl) a una función de otros factores como la disponibilidad de alimento:
+
+$$r(\mathrm{alimento}) = a + b \mathrm{\ alimento} + c \mathrm{\ alimento}^2$$
+
+Conforme avancemos en el semestre aprenderemos a usar matemáticas más sofisticadas que nos permitirán concebir los sistemas socio-ambientales de un modo dinámico.
+
