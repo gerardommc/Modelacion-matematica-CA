@@ -24,7 +24,7 @@
 <meta name="author" content="Gerardo Martín" />
 
 
-<meta name="date" content="2021-09-15" />
+<meta name="date" content="2021-09-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -99,9 +99,10 @@
 </ul></li>
 <li class="chapter" data-level="3.5" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#modelación-de-sistemas-sociales-y-ambientales"><i class="fa fa-check"></i><b>3.5</b> Modelación de sistemas sociales y ambientales</a>
 <ul>
-<li class="chapter" data-level="3.5.1" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#consumo-eléctrico-en-ciudades"><i class="fa fa-check"></i><b>3.5.1</b> Consumo eléctrico en ciudades</a></li>
-<li class="chapter" data-level="3.5.2" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#crecimiento-de-una-población"><i class="fa fa-check"></i><b>3.5.2</b> Crecimiento de una población</a></li>
-<li class="chapter" data-level="3.5.3" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#modelos-deterministas"><i class="fa fa-check"></i><b>3.5.3</b> Modelos deterministas</a></li>
+<li class="chapter" data-level="3.5.1" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#tipos-generales-de-modelos"><i class="fa fa-check"></i><b>3.5.1</b> Tipos generales de modelos</a></li>
+<li class="chapter" data-level="3.5.2" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#consumo-eléctrico-en-ciudades"><i class="fa fa-check"></i><b>3.5.2</b> Consumo eléctrico en ciudades</a></li>
+<li class="chapter" data-level="3.5.3" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#crecimiento-de-una-población"><i class="fa fa-check"></i><b>3.5.3</b> Crecimiento de una población</a></li>
+<li class="chapter" data-level="3.5.4" data-path="unidad-i-modelos-determinísticos.html"><a href="unidad-i-modelos-determinísticos.html#modelos-deterministas"><i class="fa fa-check"></i><b>3.5.4</b> Modelos deterministas</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
@@ -459,17 +460,27 @@ Figura 3.17: Representación gráfica del logaritmo con y = log x.
 </div>
 <div id="modelación-de-sistemas-sociales-y-ambientales" class="section level2" number="3.5">
 <h2><span class="header-section-number">3.5</span> Modelación de sistemas sociales y ambientales</h2>
+<div id="tipos-generales-de-modelos" class="section level3" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> Tipos generales de modelos</h3>
+<p>De manera muy general, un modelo es una representación miniatura del sistema que nos interesa estudiar. Así que podemos representar los sistemas socioambientales mediante modelos:</p>
+<ol style="list-style-type: decimal">
+<li>Diagramáticos: Dibujos, bosquejos, gráficos</li>
+<li>Conceptuales: Descripciones verbales o escritas</li>
+<li>Físicos: Maquetas que repliquen aspectos importantes del sistema de estudio</li>
+<li>Formales: Ecuaciones matematicas que nos permitan cuantificar el fenómeno a partir de observaciones, o análisis simbólico.</li>
+</ol>
 <p>Las diferentes herramientas matemáticas que hemos revisado representan los bloques para construir representaciones matemáticas de los fenómenos que se estudian en ciencias ambientales.</p>
 <p>De todas las herramientas que vimos la línea recta es el más útil de todos pues nos permite entender el concepto de pendiente, y representar funciones más complejas como una colección de rectas. Por otra parte, fenómenos como el crecimiento poblacional que es exponencial se puede representar como una línea recta en escala logarítmica.</p>
 <p>El modelo exponencial lo utilizaremos para modelar fenómenos cuyo etado en el futuro se verá afectado por su estado actual, tal como el número de individuos nuevos en el futuro en una población depende del número de individuos que actualmente contiene. Modelos como el lineal, se pueden en cambio utilizar para representar fenómenos cuyo estado futuro es independiente de su estado actual (en cierta medida). Veamos una serie de ejemplos.</p>
-<div id="consumo-eléctrico-en-ciudades" class="section level3" number="3.5.1">
-<h3><span class="header-section-number">3.5.1</span> Consumo eléctrico en ciudades</h3>
+</div>
+<div id="consumo-eléctrico-en-ciudades" class="section level3" number="3.5.2">
+<h3><span class="header-section-number">3.5.2</span> Consumo eléctrico en ciudades</h3>
 <p>Aunque existen muchos factores sociales, económicos y culturales que explican el consumo de electricidad en una ciudad, el número de habitantes puede considerarse uno de los factores más importantes. De modo que, si en México el ciudadano promedio consume 2157 kWh anualmente (datos de OCDE), el consumo de una ciudad puede asumirse como el producto de sus habitantes y el consumo promedio:</p>
 <p><span class="math display">\[\mathrm{kWh} = N \times \mathrm{Consumo\ promedio} \]</span></p>
 <p><img src="Model-mate_files/figure-html/electr-1.png" width="576" style="display: block; margin: auto;" /></p>
 </div>
-<div id="crecimiento-de-una-población" class="section level3" number="3.5.2">
-<h3><span class="header-section-number">3.5.2</span> Crecimiento de una población</h3>
+<div id="crecimiento-de-una-población" class="section level3" number="3.5.3">
+<h3><span class="header-section-number">3.5.3</span> Crecimiento de una población</h3>
 <p>La cantidad de individuos nuevos en una población depende de la cantidad de individuos presentes. Por lo tanto, este fenómeno se puede representar con una función exponencial:</p>
 <p><span class="math display" id="eq:crec-pobl">\[\begin{equation}
 N(t) = N_0e^{rt} \tag{3.6}
@@ -489,8 +500,8 @@ ecuación <a href="unidad-i-modelos-determinísticos.html#eq:crec-pobl">(3.6)</a
 <p><span class="math display">\[r(\mathrm{alimento}) = a + b \mathrm{\ alimento} + c \mathrm{\ alimento}^2\]</span></p>
 <p>Conforme avancemos en el semestre aprenderemos a usar matemáticas más sofisticadas que nos permitirán concebir los sistemas socio-ambientales de un modo dinámico.</p>
 </div>
-<div id="modelos-deterministas" class="section level3" number="3.5.3">
-<h3><span class="header-section-number">3.5.3</span> Modelos deterministas</h3>
+<div id="modelos-deterministas" class="section level3" number="3.5.4">
+<h3><span class="header-section-number">3.5.4</span> Modelos deterministas</h3>
 <p>Todos los modelos que vimos a la fecha:</p>
 <ol style="list-style-type: decimal">
 <li>Línea recta</li>

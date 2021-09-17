@@ -49,6 +49,7 @@ representación-gráfica-de-la-función-exponencial
 representación-gráfica-del-logaritmo
 relevancia-de-la-recta
 modelación-de-sistemas-sociales-y-ambientales
+tipos-generales-de-modelos
 consumo-eléctrico-en-ciudades
 crecimiento-de-una-población
 modelos-deterministas

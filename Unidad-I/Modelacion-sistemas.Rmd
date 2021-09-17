@@ -1,3 +1,12 @@
+### Tipos generales de modelos
+
+De manera muy general, un modelo es una representación miniatura del sistema que nos interesa estudiar. Así que podemos representar los sistemas socioambientales mediante modelos:
+
+1. Diagramáticos: Dibujos, bosquejos, gráficos
+2. Conceptuales: Descripciones verbales o escritas
+3. Físicos: Maquetas que repliquen aspectos importantes del sistema de estudio
+4. Formales: Ecuaciones matematicas que nos permitan cuantificar el fenómeno a partir de observaciones, o análisis simbólico.
+
 Las diferentes herramientas matemáticas que hemos revisado representan los bloques para construir representaciones matemáticas de los fenómenos que se estudian en ciencias ambientales.
 
 De todas las herramientas que vimos la línea recta es el más útil de todos pues nos permite entender el concepto de pendiente, y representar funciones más complejas como una colección de rectas. Por otra parte, fenómenos como el crecimiento poblacional que es exponencial se puede representar como una línea recta en escala logarítmica.
