@@ -1,6 +1,6 @@
-fig:unnamed-chunk-11
 fig:unnamed-chunk-12
 fig:unnamed-chunk-13
+fig:unnamed-chunk-14
 fig:parabola
 fig:parabola-2
 fig:parabola-3
@@ -22,6 +22,7 @@ eq:poblac
 fig:log
 eq:crec-pobl
 fig:tasa-crec
+fig:unnamed-chunk-15
 preámbulo
 criterios-de-evaluación
 cómo-se-darán-las-clases
@@ -53,7 +54,11 @@ tipos-generales-de-modelos
 consumo-eléctrico-en-ciudades
 crecimiento-de-una-población
 modelos-deterministas
-methods
+unidad-ii-introducción-al-álgebra-de-matrices
+sistemas-lineales
+solución-gráfica
+solución-algebráica
+conclusiones
 applications
 example-one
 example-two

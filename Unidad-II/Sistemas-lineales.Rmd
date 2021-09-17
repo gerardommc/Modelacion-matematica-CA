@@ -1,0 +1,57 @@
+Un sistema lineal es un conjunto de ecuaciones lineales donde hay, idealmente, tantas variables como ecuaciones y viceversa. Cuando esta condición se cumple, se dice que el sistema está **completo**. La contraparte de estos sistemas son **incompletos**, y pueden tener más variables que ecuaciones ó más ecuaciones que variables.
+
+Un sistema completo de ecuaciones lineales con dos variables sería:
+
+$$2x + 3y = 4$$
+
+$$4x - 2y =10$$
+Generalizando tenemos que un cualquier sistema lineal puede ser:
+
+\begin{align}
+a_{1,1}x_1+a_{2,1}x_2 + \dots + a_{n,1}x_n & = b_1\\
+a_{1,2}x_1+a_{2,2}x_2 + \dots + a_{n,2}x_n & = b_2\\
+\vdots & \\
+a_{1, n}x_1+a_{2,n}x_2 + \dots + a_{n,n}x_n & = b_n
+\end{align}
+
+Cuando nos enfrentamos a un sistema como estos, la meta es encontrar los valores de $x_1, x_2, \dots , x_3$ que satisfacen las igualdades. Para sistemas de dos ecuaciones, es fácil econtrar la solución utilizando una variedad de métodos, el primero de ellos, por graficación.
+
+### Solución gráfica
+
+La solución para el sistema de ecuaciones del primer ejemplo:
+
+\begin{align}
+2x + 3y & = 4\\
+4x - 2y & =10
+\end{align} 
+
+sería:
+
+```{r echo = F, fig.align='center', fig.cap="Solución gráfica del sistema de ecuaciones para dos variables"}
+knitr::include_graphics("Unidad-II/Soln-grafica-1.png")
+```
+
+### Solución algebráica
+
+El método más sencillo en esta ocasión sería resolver la ecuación 2 para $y$, pues la podemos simplificar dividiendo ambos lados entre 2:
+
+$$ (4x - 2y)/2 = (10)/2 \rightarrow 2x - y = 5$$
+de donde obtenemos que:
+
+$$y = 2x-5$$
+
+Este valor de $y$ en térmonos de $x$, lo podemos sustituir en, la ecuación 1:
+
+$$2x+3(2x-5) = 4$$
+
+y resolvemos para $x$ para obtener:
+
+$$8x = 19 \rightarrow x = 19/8=2.375$$
+
+Y entonces sustituimos a $x$ en:
+
+$y = 2(2.375) - 5 = -0.25$
+
+### Conclusiones
+
+Como podemos apreciar, resolver simples ecuaciones lineales puede ser un tanto laborioso, para lo cual se desarrolló el álgebra de matrices, y poder resolver de manera eficiente, sistemas de ecuaciones lineales con muchas variables. En esta unidad revisaremos brevemente los conceptos y técnicas más importantes del álgebra de matrices.
