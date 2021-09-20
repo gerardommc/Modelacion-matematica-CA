@@ -52,6 +52,4 @@ Y entonces sustituimos a $x$ en:
 
 $y = 2(2.375) - 5 = -0.25$
 
-### Conclusiones
-
-Como podemos apreciar, resolver simples ecuaciones lineales puede ser un tanto laborioso, para lo cual se desarrolló el álgebra de matrices, y poder resolver de manera eficiente, sistemas de ecuaciones lineales con muchas variables. En esta unidad revisaremos brevemente los conceptos y técnicas más importantes del álgebra de matrices.
+Como se puede apreciar, resolver simples ecuaciones lineales puede ser laborioso. Es por ello que se desarrolló el álgebra de matrices, para resolver de eficientemente, sistemas de ecuaciones lineales con muchas variables. En esta unidad revisaremos brevemente los conceptos y técnicas más importantes del álgebra de matrices.

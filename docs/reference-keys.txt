@@ -58,7 +58,6 @@ unidad-ii-introducción-al-álgebra-de-matrices
 sistemas-lineales
 solución-gráfica
 solución-algebráica
-conclusiones
 applications
 example-one
 example-two
