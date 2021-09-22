@@ -53,3 +53,43 @@ Y entonces sustituimos a $x$ en:
 $y = 2(2.375) - 5 = -0.25$
 
 Como se puede apreciar, resolver simples ecuaciones lineales puede ser laborioso. Es por ello que se desarrolló el álgebra de matrices, para resolver de eficientemente, sistemas de ecuaciones lineales con muchas variables. En esta unidad revisaremos brevemente los conceptos y técnicas más importantes del álgebra de matrices.
+
+### Sistemas lineales sin solución
+
+En ocasiones, aunque un sistema de ecuaciones sea aparentemente completo, puede no tener solución. Por ejemplo el sistema:
+
+\begin{align}
+x + y & = 1 \\
+2x + 2y & = 4
+\end{align}
+
+no tiene solución, lo cual se manifiesta gráficamente como dos líneas paralelas. Esto quiere decir que no existe un par de valores $x$ y $y$ que satisfagan las ecuaciones del sistema.
+
+```{r sin-soln, echo = F, fig.align='center', fig.cap="Representación gráfica de un sistema linea sin solución."}
+knitr::include_graphics("Unidad-II/Sistema-no-solucion.png")
+```
+
+Si intentamos sumar o restar ambas ecuaciones terminamos con una contradicción. Tomemos por ejemplo la primera ecuación, multiplicada por $-2$ para obtener:
+
+$$(x + y = 1) \times -2 \rightarrow -2x-2y = -2$$
+
+Y al sumarla a la segunda ecuación:
+
+$$2x - 2x + 2y - 2y = 4-2 \rightarrow 0 = 2$$
+
+### Resolviendo sistemas lineales más complejos
+
+Cualquier sistema de ecuaciones lineales son solución se puede revolver con los métodos que hemos aprendido hasta el momento. También como hemos visto, es fácil cometer errores, máxime con sistemas más complejos que aquellos con muchas variables. El método ideal sería aquel que;
+
+1. Evita manipulaciones riesgosas de las ecuaciones
+2. Permite encontrar todas las soluciones posibles
+3. Permite identificar sistemas sin solución
+
+En la tarea de aprender a utilizar dichos métodos cabe resaltar que las incógnitas ($x, y, z, \dots$) juegan un papel secundario, mientras que lo más importante son los coeficientes de cada una.
+
+\begin{align}
+x+y+z+t & = 1 \\
+x-y-z+t & = 3 \\
+-x-y+z-t & = 1\\
+-3x+y-3z-3t = 4
+\end{align}

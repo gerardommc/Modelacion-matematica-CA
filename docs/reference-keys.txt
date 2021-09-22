@@ -23,6 +23,7 @@ fig:log
 eq:crec-pobl
 fig:tasa-crec
 fig:unnamed-chunk-15
+fig:sin-soln
 preámbulo
 criterios-de-evaluación
 cómo-se-darán-las-clases
@@ -58,6 +59,9 @@ unidad-ii-introducción-al-álgebra-de-matrices
 sistemas-lineales
 solución-gráfica
 solución-algebráica
+sistemas-lineales-sin-solución
+resolviendo-sistemas-lineales-más-complejos
+operaciones-elementales-con-matrices
 applications
 example-one
 example-two

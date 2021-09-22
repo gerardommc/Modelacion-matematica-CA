@@ -24,7 +24,7 @@
 <meta name="author" content="Gerardo Martín" />
 
 
-<meta name="date" content="2021-09-20" />
+<meta name="date" content="2021-09-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -111,7 +111,10 @@
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#solución-gráfica"><i class="fa fa-check"></i><b>4.1.1</b> Solución gráfica</a></li>
 <li class="chapter" data-level="4.1.2" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#solución-algebráica"><i class="fa fa-check"></i><b>4.1.2</b> Solución algebráica</a></li>
+<li class="chapter" data-level="4.1.3" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#sistemas-lineales-sin-solución"><i class="fa fa-check"></i><b>4.1.3</b> Sistemas lineales sin solución</a></li>
+<li class="chapter" data-level="4.1.4" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#resolviendo-sistemas-lineales-más-complejos"><i class="fa fa-check"></i><b>4.1.4</b> Resolviendo sistemas lineales más complejos</a></li>
 </ul></li>
+<li class="chapter" data-level="4.2" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#operaciones-elementales-con-matrices"><i class="fa fa-check"></i><b>4.2</b> Operaciones elementales con matrices</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
 <ul>
@@ -183,8 +186,46 @@ de donde obtenemos que:</p>
 <p>Y entonces sustituimos a <span class="math inline">\(x\)</span> en:</p>
 <p><span class="math inline">\(y = 2(2.375) - 5 = -0.25\)</span></p>
 <p>Como se puede apreciar, resolver simples ecuaciones lineales puede ser laborioso. Es por ello que se desarrolló el álgebra de matrices, para resolver de eficientemente, sistemas de ecuaciones lineales con muchas variables. En esta unidad revisaremos brevemente los conceptos y técnicas más importantes del álgebra de matrices.</p>
-
 </div>
+<div id="sistemas-lineales-sin-solución" class="section level3" number="4.1.3">
+<h3><span class="header-section-number">4.1.3</span> Sistemas lineales sin solución</h3>
+<p>En ocasiones, aunque un sistema de ecuaciones sea aparentemente completo, puede no tener solución. Por ejemplo el sistema:</p>
+<p><span class="math display">\[\begin{align}
+x + y &amp; = 1 \\
+2x + 2y &amp; = 4
+\end{align}\]</span></p>
+<p>no tiene solución, lo cual se manifiesta gráficamente como dos líneas paralelas. Esto quiere decir que no existe un par de valores <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> que satisfagan las ecuaciones del sistema.</p>
+<div class="figure" style="text-align: center"><span id="fig:sin-soln"></span>
+<img src="Unidad-II/Sistema-no-solucion.png" alt="Representación gráfica de un sistema linea sin solución." width="1500" />
+<p class="caption">
+Figura 4.2: Representación gráfica de un sistema linea sin solución.
+</p>
+</div>
+<p>Si intentamos sumar o restar ambas ecuaciones terminamos con una contradicción. Tomemos por ejemplo la primera ecuación, multiplicada por <span class="math inline">\(-2\)</span> para obtener:</p>
+<p><span class="math display">\[(x + y = 1) \times -2 \rightarrow -2x-2y = -2\]</span></p>
+<p>Y al sumarla a la segunda ecuación:</p>
+<p><span class="math display">\[2x - 2x + 2y - 2y = 4-2 \rightarrow 0 = 2\]</span></p>
+</div>
+<div id="resolviendo-sistemas-lineales-más-complejos" class="section level3" number="4.1.4">
+<h3><span class="header-section-number">4.1.4</span> Resolviendo sistemas lineales más complejos</h3>
+<p>Cualquier sistema de ecuaciones lineales son solución se puede revolver con los métodos que hemos aprendido hasta el momento. También como hemos visto, es fácil cometer errores, máxime con sistemas más complejos que aquellos con muchas variables. El método ideal sería aquel que;</p>
+<ol style="list-style-type: decimal">
+<li>Evita manipulaciones riesgosas de las ecuaciones</li>
+<li>Permite encontrar todas las soluciones posibles</li>
+<li>Permite identificar sistemas sin solución</li>
+</ol>
+<p>En la tarea de aprender a utilizar dichos métodos cabe resaltar que las incógnitas (<span class="math inline">\(x, y, z, \dots\)</span>) juegan un papel secundario, mientras que lo más importante son los coeficientes de cada una.</p>
+<p><span class="math display">\[\begin{align}
+x+y+z+t &amp; = 1 \\
+x-y-z+t &amp; = 3 \\
+-x-y+z-t &amp; = 1\\
+-3x+y-3z-3t = 4
+\end{align}\]</span></p>
+</div>
+</div>
+<div id="operaciones-elementales-con-matrices" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Operaciones elementales con matrices</h2>
+
 </div>
 </div>
             </section>
