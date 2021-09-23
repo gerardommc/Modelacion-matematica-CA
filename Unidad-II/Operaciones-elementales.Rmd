@@ -75,7 +75,7 @@ Con lo que la matriz $A$ transpuesta $A^T = A'$ es:
 
 \begin{equation}
 A' = \left[
-\begin{array}
+\begin{array}{rr}
 1 & 4 \\
 2 & 5 \\
 3 & 6
