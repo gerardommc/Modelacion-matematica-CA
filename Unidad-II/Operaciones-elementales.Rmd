@@ -1,0 +1,86 @@
+Las operaciones elementales con matrices son similares a las aritméticas tradicionales. Para ejemplificarlas aquí denotamos a una matriz cualquiera con letras mayúsculas.
+
+### Suma de matrices
+
+Si las matrices $A$ y $B$ tienenlas mismas dimensiones $m \times n$ ($m$ = número de filas, $n$ = número de columnas):
+
+$$A + B = C$$
+La adición de $A$ con $B$ resulta en una tercera matriz $C$ con dimensiones $m \times n$, tanto si $m = n$ como $m \neq n$, es decir si las matrices $A$ y $B$ son cuadradas ($m = n$) como rectangulares.
+
+Para esto tenemos que considerar qué sucede con los elementos de $A$ y $B$ dentro de $C$:
+
+\begin{equation}
+A = \left[ 
+\begin{array}{ccc}
+a_{1, 2} & \dots & a_{1, n} \\
+\vdots   & \ddots & \vdots \\
+a_{n, 1} & \dots & a_{n, n}
+\end{array} \right]
+\end{equation}
+
+\begin{equation}
+B = \left[ 
+\begin{array}{ccc}
+b_{1, 2} & \dots & b_{1, n} \\
+\vdots   & \ddots& \vdots \\
+b_{n, 1} & \dots & b_{n, n}
+\end{array} \right]
+\end{equation}
+
+\begin{equation}
+C = \left[ 
+\begin{array}{ccc}
+a_{1, 2} + b_{1, 2} & \dots & a_{1, n} + b_{1, n} \\
+\vdots   & \ddots & \vdots \\
+a_{n, 1} + b_{n, 1} & \dots & a_{n, n} + b_{n, n}
+\end{array} \right]
+\end{equation}
+
+Es claro que también:
+
+$$B+A = C$$
+
+Lo cual resulta importante resaltar pues la conmutatividad no funciona para la multiplicación de matrices. Otras cualidades de la adición de matrices, dadas las condiciones de dimensiones son:
+
+1. $(A+B)+C=A+(B+C)$
+2. $A + 0 = A$
+
+### Multiplicación por un escalar
+
+Es frecuente multiplicar una matriz por una constante $c$, tal que $c \times A = cA$:
+
+\begin{equation}
+c \times A = \left[ 
+\begin{array}{ccc}
+c  \cdot  a_{1, 2} & \dots & c \cdot a_{1, n} \\
+\vdots   & \ddots & \vdots \\
+c \cdot  a_{n, 1} & \dots & c  \cdot  a_{n, n}
+\end{array} \right]
+\end{equation}
+
+### Transposición
+
+La transposición es el cambio de filas y columnas por columnas y filas, por ejemplo:
+
+\begin{equation}
+A = \left[ 
+\begin{array}{rrr}
+1 & 2 & 3 \\
+4 & 5 & 6
+\end{array}
+\right]
+\end{equation}
+
+Con lo que la matriz $A$ transpuesta $A^T = A'$ es:
+
+\begin{equation}
+A' = \left[
+\begin{array}
+1 & 4 \\
+2 & 5 \\
+3 & 6
+\end{array}
+\right]
+\end{equation}
+
+### Multiplicación de matrices

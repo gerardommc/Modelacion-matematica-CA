@@ -7,3 +7,8 @@
 ```
 
 ## Operaciones elementales con matrices
+
+```{r echo = F, child="Unidad-II/Operaciones-elementales.Rmd"}
+
+```
+
