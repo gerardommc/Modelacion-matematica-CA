@@ -24,7 +24,7 @@
 <meta name="author" content="Gerardo Martín" />
 
 
-<meta name="date" content="2021-09-23" />
+<meta name="date" content="2021-09-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -456,7 +456,120 @@ A&#39; = \left[
 </div>
 <div id="multiplicación-de-matrices" class="section level3" number="4.2.4">
 <h3><span class="header-section-number">4.2.4</span> Multiplicación de matrices</h3>
+<p>Para entender la multiplicación de matrices es necesario definirla, pues es más complicada que cualquiera de las operaciones que hemos visto anteriormente.</p>
+<p>Supongamos que <span class="math inline">\(C\)</span> es una matriz producto de la multiplicación de las matrices <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span>:</p>
+<p><span class="math display">\[C = AB\]</span></p>
+<p>Para que esto sea posible es necesario que <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> tengan dimensiones específicas pues:</p>
+<p><span class="math display" id="eq:mat-mult">\[\begin{equation}
+C = \left[
+\begin{array}{rrr}
+ &amp;        &amp; \\
+ &amp; c_{ij} &amp; \\
+ &amp;        &amp;
+\end{array}
+\right] =
+\left[ 
+\begin{array}{ccc}
+ &amp; &amp; &amp; \\
+a_{i, 1} &amp; \dots &amp; a_{i, l} \\
+ &amp; &amp; &amp;
+\end{array}
+\right] \times
+\left[ 
+\begin{array}{ccc}
+ &amp; b_{1, j} &amp; \\
+ &amp; \vdots &amp; \\
+ &amp; b_{l, j} &amp; 
+\end{array}
+\right] \tag{4.3}
+\end{equation}\]</span></p>
+<p>Como resulta evidente, el número de <strong>columnas</strong> de la matriz <span class="math inline">\(A\)</span> debe ser igual al número de <strong>filas</strong> de la matriz <span class="math inline">\(B\)</span>. De modo que podemos resumir que las dimensiones deben ser:</p>
+<ul>
+<li><span class="math inline">\(A \rightarrow m \times l\)</span></li>
+<li><span class="math inline">\(B \rightarrow l \times n\)</span></li>
+</ul>
+<div id="ejemplos" class="section level4" number="4.2.4.1">
+<h4><span class="header-section-number">4.2.4.1</span> Ejemplos</h4>
+<p><span class="math display">\[\begin{equation}
+A = \left[ 
+\begin{array}
+\ 1 &amp; 2 &amp; 3 \\
+-1&amp; 0 &amp; 4
+\end{array}
+\right]
+\end{equation}\]</span></p>
+<p>y</p>
+<p><span class="math display">\[\begin{equation}
+B = \left[ 
+\begin{array}
+\ 1 &amp; 2 &amp; 3 &amp; -3\\
+0 &amp;-1 &amp; 4 &amp; 0 \\
+-1&amp; 0 &amp;-2 &amp; 1
+\end{array}
+\right]
+\end{equation}\]</span></p>
+<p>Solución:</p>
+<p><span class="math display">\[\begin{equation}
+C = AB = \left[ 
+\begin{array}
+\ 1 &amp; 2 &amp; 3 \\
+-1&amp; 0 &amp; 4
+\end{array}
+\right]
 
+\left[ 
+\begin{array}
+\ 1 &amp; 2 &amp; 3 &amp; -3\\
+0 &amp;-1 &amp; 4 &amp; 0 \\
+-1&amp; 0 &amp;-2 &amp; 1
+\end{array}
+\right]
+\end{equation}\]</span></p>
+<p>Como vimos en la definición de multiplicación, tenemos que muiltiplicar las filas de <span class="math inline">\(A\)</span> por las columnas de <span class="math inline">\(B\)</span>, para así obtener los elementos de <span class="math inline">\(C\)</span>. Hagamos entonces las operaciones elemento por elemento:</p>
+<p><span class="math display">\[\begin{equation}
+c_{1, 1} = \left[ 
+\begin{array}{rrr}
+\ 1 &amp; 2 &amp; 3
+\end{array}
+\right]
+\left[\begin{array}
+\ 1 \\ 0 \\ -1 \end{array}
+\right] = (1)(1) + (2)(0) + (3)(-1)= -2
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+c_{1, 2} = \left[
+\begin{array}
+1 &amp; 2 &amp; 3
+\end{array}
+\right]
+\left[ 
+\begin{array}
+\ 2 \\ -1 \\0
+\end{array}
+\right] = (1)(2) + (2)(-1) + (3)(0) = 0
+\end{equation}\]</span></p>
+<p>Y así sucesivamente para obtener:</p>
+<p><span class="math display">\[\begin{equation}
+C = \left[ 
+\begin{array}
+\ c_{1, 1} &amp; c_{1, 2} &amp; c_{1, 3} &amp; c_{1, 4} \\
+c_{2, 1} &amp; c_{2, 2} &amp; c_{2, 3} &amp; c_{2, 4} 
+\end{array}
+\right] =
+\left[ 
+\begin{array}
+\ -2 &amp; 0 &amp; 5 &amp; 0 \\
+-5 &amp; -2 &amp; -11 &amp; 7
+\end{array}
+\right]
+\end{equation}\]</span></p>
+<p>El resultado es una matriz con tantas filas como <span class="math inline">\(A\)</span> y tantas columnas como <span class="math inline">\(B\)</span>. Es decir que si las dimensiones de <span class="math inline">\(A\)</span> son <span class="math inline">\(m \times l\)</span>, y las de <span class="math inline">\(B\)</span> son <span class="math inline">\(l \times n\)</span>, <span class="math inline">\(C\)</span> tendrá dimensiones <span class="math inline">\(m \times n\)</span>.</p>
+<div id="ejercicio-1" class="section level5" number="4.2.4.1.1">
+<h5><span class="header-section-number">4.2.4.1.1</span> Ejercicio</h5>
+<p>Haz a mano los cálculos de <span class="math inline">\(c_{i, j}\)</span> que nos faltaron para obtener los valores de <span class="math inline">\(C\)</span>.</p>
+
+</div>
+</div>
 </div>
 </div>
 </div>

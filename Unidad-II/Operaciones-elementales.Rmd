@@ -84,3 +84,131 @@ A' = \left[
 \end{equation}
 
 ### Multiplicación de matrices
+
+Para entender la multiplicación de matrices es necesario definirla, pues es más complicada que cualquiera de las operaciones que hemos visto anteriormente.
+
+Supongamos que $C$ es una matriz producto de la multiplicación de las matrices $A$ y $B$:
+
+$$C = AB$$
+
+Para que esto sea posible es necesario que $A$ y $B$ tengan dimensiones específicas pues:
+
+\begin{equation}
+C = \left[
+\begin{array}{rrr}
+ &        & \\
+ & c_{ij} & \\
+ &        &
+\end{array}
+\right] =
+\left[ 
+\begin{array}{ccc}
+ & & & \\
+a_{i, 1} & \dots & a_{i, l} \\
+ & & &
+\end{array}
+\right] \times
+\left[ 
+\begin{array}{ccc}
+ & b_{1, j} & \\
+ & \vdots & \\
+ & b_{l, j} & 
+\end{array}
+\right] (\#eq:mat-mult)
+\end{equation}
+
+Como resulta evidente, el número de **columnas** de la matriz $A$ debe ser igual al número de **filas** de la matriz $B$. De modo que podemos resumir que las dimensiones deben ser:
+
+- $A \rightarrow m \times l$
+- $B \rightarrow l \times n$
+
+#### Ejemplos
+
+\begin{equation}
+A = \left[ 
+\begin{array}
+\ 1 & 2 & 3 \\
+-1& 0 & 4
+\end{array}
+\right]
+\end{equation}
+ 
+y
+ 
+\begin{equation}
+B = \left[ 
+\begin{array}
+\ 1 & 2 & 3 & -3\\
+0 &-1 & 4 & 0 \\
+-1& 0 &-2 & 1
+\end{array}
+\right]
+\end{equation}
+
+Solución:
+
+\begin{equation}
+C = AB = \left[ 
+\begin{array}
+\ 1 & 2 & 3 \\
+-1& 0 & 4
+\end{array}
+\right]
+
+\left[ 
+\begin{array}
+\ 1 & 2 & 3 & -3\\
+0 &-1 & 4 & 0 \\
+-1& 0 &-2 & 1
+\end{array}
+\right]
+\end{equation}
+
+Como vimos en la definición de multiplicación, tenemos que muiltiplicar las filas de $A$ por las columnas de $B$, para así obtener los elementos de $C$. Hagamos entonces las operaciones elemento por elemento:
+
+\begin{equation}
+c_{1, 1} = \left[ 
+\begin{array}{rrr}
+\ 1 & 2 & 3
+\end{array}
+\right]
+\left[\begin{array}
+\ 1 \\ 0 \\ -1 \end{array}
+\right] = (1)(1) + (2)(0) + (3)(-1)= -2
+\end{equation}
+
+\begin{equation}
+c_{1, 2} = \left[
+\begin{array}
+1 & 2 & 3
+\end{array}
+\right]
+\left[ 
+\begin{array}
+\ 2 \\ -1 \\0
+\end{array}
+\right] = (1)(2) + (2)(-1) + (3)(0) = 0
+\end{equation}
+
+Y así sucesivamente para obtener:
+
+\begin{equation}
+C = \left[ 
+\begin{array}
+\ c_{1, 1} & c_{1, 2} & c_{1, 3} & c_{1, 4} \\
+c_{2, 1} & c_{2, 2} & c_{2, 3} & c_{2, 4} 
+\end{array}
+\right] =
+\left[ 
+\begin{array}
+\ -2 & 0 & 5 & 0 \\
+-5 & -2 & -11 & 7
+\end{array}
+\right]
+\end{equation}
+
+El resultado es una matriz con tantas filas como $A$ y tantas columnas como $B$. Es decir que si las dimensiones de $A$ son $m \times l$, y las de $B$ son $l \times n$, $C$ tendrá dimensiones $m \times n$.
+
+##### Ejercicio
+
+Haz a mano los cálculos de $c_{i, j}$ que nos faltaron para obtener los valores de $C$.
