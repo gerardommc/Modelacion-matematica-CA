@@ -1,6 +1,6 @@
-fig:unnamed-chunk-13
 fig:unnamed-chunk-14
 fig:unnamed-chunk-15
+fig:unnamed-chunk-16
 fig:parabola
 fig:parabola-2
 fig:parabola-3
@@ -22,7 +22,7 @@ eq:poblac
 fig:log
 eq:crec-pobl
 fig:tasa-crec
-fig:unnamed-chunk-16
+fig:unnamed-chunk-17
 fig:sin-soln
 eq:sist-matriz
 eq:Aumentada
@@ -73,7 +73,9 @@ transposición
 multiplicación-de-matrices
 ejemplos
 ejercicio-1
-matriz-e-identidad
+determinantes-y-matrices-inversas
+matriz-identidad
+matriz-inversa
 applications
 example-one
 example-two

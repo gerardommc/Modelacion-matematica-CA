@@ -122,7 +122,11 @@
 <li class="chapter" data-level="4.2.2" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#multiplicación-por-un-escalar"><i class="fa fa-check"></i><b>4.2.2</b> Multiplicación por un escalar</a></li>
 <li class="chapter" data-level="4.2.3" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#transposición"><i class="fa fa-check"></i><b>4.2.3</b> Transposición</a></li>
 <li class="chapter" data-level="4.2.4" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#multiplicación-de-matrices"><i class="fa fa-check"></i><b>4.2.4</b> Multiplicación de matrices</a></li>
-<li class="chapter" data-level="4.2.5" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#matriz-e-identidad"><i class="fa fa-check"></i><b>4.2.5</b> Matriz e identidad</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#determinantes-y-matrices-inversas"><i class="fa fa-check"></i><b>4.3</b> Determinantes y matrices inversas</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#matriz-identidad"><i class="fa fa-check"></i><b>4.3.1</b> Matriz identidad</a></li>
+<li class="chapter" data-level="4.3.2" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#matriz-inversa"><i class="fa fa-check"></i><b>4.3.2</b> Matriz inversa</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
@@ -175,7 +179,7 @@ a_{1, n}x_1+a_{2,n}x_2 + \dots + a_{n,n}x_n &amp; = b_n
 4x - 2y &amp; =10
 \end{align}\]</span></p>
 <p>sería:</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-16"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-17"></span>
 <img src="Unidad-II/Soln-grafica-1.png" alt="Solución gráfica del sistema de ecuaciones para dos variables" width="1500" />
 <p class="caption">
 Figura 4.1: Solución gráfica del sistema de ecuaciones para dos variables
@@ -571,8 +575,11 @@ c_{2, 1} &amp; c_{2, 2} &amp; c_{2, 3} &amp; c_{2, 4}
 </div>
 </div>
 </div>
-<div id="matriz-e-identidad" class="section level3" number="4.2.5">
-<h3><span class="header-section-number">4.2.5</span> Matriz e identidad</h3>
+</div>
+<div id="determinantes-y-matrices-inversas" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Determinantes y matrices inversas</h2>
+<div id="matriz-identidad" class="section level3" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Matriz identidad</h3>
 <p>Antes de continuar, consideremos la posible existencia de una matriz <span class="math inline">\(I\)</span> tal que <span class="math inline">\(A I = A\)</span>, es decir, una matriz que multiplicada por otra matriz de como resultado la matriz original. Esta matriz se conoce como la matriz identidad, y consiste de una matriz cuadrada con ceros en todas las posiciones excepto en la diagonal, por ejemplo:</p>
 <p><span class="math display">\[\begin{equation}
 I = \left[ 
@@ -585,6 +592,9 @@ I = \left[
 \right]
 \end{equation}\]</span></p>
 <p>Por el contrario, una matriz inversa es quella matriz <span class="math inline">\(A^{-1}\)</span>, tal que <span class="math inline">\(AA^{-1} = I\)</span>, al multiplicarla por una matriz cualquiera <span class="math inline">\(A\)</span> da como resultado la matriz identitaria.</p>
+</div>
+<div id="matriz-inversa" class="section level3" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Matriz inversa</h3>
 <p>La utilidad de este concepto se pued ejemplificar con un sistema de una sola ecuación:</p>
 <p><span class="math display">\[2x = 10\]</span></p>
 <p>Esta ecuación podemos concebirla como el producto de dos vectores con dimensiones <span class="math inline">\(1 \times 1\)</span>. Para resolverla es necesario multplicar ambos lados de la ecuación por el <strong>inverso</strong> del coeficiente de <span class="math inline">\(x\)</span>, de modo que:</p>
@@ -593,7 +603,6 @@ I = \left[
 <p>Por lo tanto, si tenemos que para un sistema lineal la matriz <span class="math inline">\(A\)</span> de coficientes puede ser invertida como <span class="math inline">\(A^{-1}\)</span>, esta última contiene la solución al sistema mismo:</p>
 <p><span class="math display">\[XA = B\]</span></p>
 <p><span class="math display">\[A^{-1}XA = A^{-1}B \rightarrow X = A^{-1}B\]</span></p>
-<p>Para encontrar la matriz <span class="math inline">\(A^{-1}\)</span> tenemos que</p>
 
 </div>
 </div>

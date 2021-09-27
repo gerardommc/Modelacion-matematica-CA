@@ -1,0 +1,35 @@
+### Matriz identidad
+
+Antes de continuar, consideremos la posible existencia de una matriz $I$ tal que $A I = A$, es decir, una matriz que multiplicada por otra matriz de como resultado la matriz original. Esta matriz se conoce como la matriz identidad, y consiste de una matriz cuadrada con ceros en todas las posiciones excepto en la diagonal, por ejemplo:
+
+\begin{equation}
+I = \left[ 
+\begin{array}{ccc}
+\ 1 & 0 & 0 & 0 \\
+  0 & 1 & 0 & 0 \\
+  0 & 0 & 1 & 0 \\
+  0 & 0 & 0 & 1 \\
+\end{array}
+\right]
+\end{equation}
+
+Por el contrario, una matriz inversa es quella matriz $A^{-1}$, tal que $AA^{-1} = I$, al multiplicarla por una matriz cualquiera $A$ da como resultado la matriz identitaria.
+
+### Matriz inversa
+
+La utilidad de este concepto se pued ejemplificar con un sistema de una sola ecuación:
+
+$$2x = 10$$
+
+Esta ecuación podemos concebirla como el producto de dos vectores con dimensiones $1 \times 1$. Para resolverla es necesario multplicar ambos lados de la ecuación por el **inverso** del coeficiente de $x$, de modo que:
+
+$$2^{-1} \cdot 2x = 2^{-1} \cdot 10$$
+
+$$x = \frac{1}{5}$$
+
+Por lo tanto, si tenemos que para un sistema lineal la matriz $A$ de coficientes puede ser invertida como $A^{-1}$, esta última contiene la solución al sistema mismo:
+
+$$XA = B$$
+
+$$A^{-1}XA = A^{-1}B \rightarrow X = A^{-1}B$$ 
+

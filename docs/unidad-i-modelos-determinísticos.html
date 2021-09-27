@@ -122,7 +122,11 @@
 <li class="chapter" data-level="4.2.2" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#multiplicación-por-un-escalar"><i class="fa fa-check"></i><b>4.2.2</b> Multiplicación por un escalar</a></li>
 <li class="chapter" data-level="4.2.3" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#transposición"><i class="fa fa-check"></i><b>4.2.3</b> Transposición</a></li>
 <li class="chapter" data-level="4.2.4" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#multiplicación-de-matrices"><i class="fa fa-check"></i><b>4.2.4</b> Multiplicación de matrices</a></li>
-<li class="chapter" data-level="4.2.5" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#matriz-e-identidad"><i class="fa fa-check"></i><b>4.2.5</b> Matriz e identidad</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#determinantes-y-matrices-inversas"><i class="fa fa-check"></i><b>4.3</b> Determinantes y matrices inversas</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#matriz-identidad"><i class="fa fa-check"></i><b>4.3.1</b> Matriz identidad</a></li>
+<li class="chapter" data-level="4.3.2" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#matriz-inversa"><i class="fa fa-check"></i><b>4.3.2</b> Matriz inversa</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
@@ -156,7 +160,7 @@
 <div id="introducción-a-la-modelación" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Introducción a la modelación</h2>
 <p>Imaginemos a seis personas invidentes, con la tarea de encontrar qué es el objeto que está frente a ellas usando únicamente el tacto. En la parábola de los seis hombres ciegos, el objeto es un elefante, de modo que la imágen que cada uno de ellos se forma del objeto depende enteramente de la parte del elefante que están tocando.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-13"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-14"></span>
 <img src="Unidad-I/elefante.png" alt="La parábola de los seis hombres ciegos inspeccionando un elefante." width="582" />
 <p class="caption">
 Figura 3.1: La parábola de los seis hombres ciegos inspeccionando un elefante.
@@ -186,15 +190,15 @@ Figura 3.1: La parábola de los seis hombres ciegos inspeccionando un elefante.
 <div id="representaciones-gráficas-de-la-recta" class="section level4" number="3.2.1.1">
 <h4><span class="header-section-number">3.2.1.1</span> Representaciones gráficas de la recta</h4>
 <p>Comencemos por dar un repaso del plano cartesiano. Este consiste de la representación de dos conjuntos de números reales en los que representamos una función, como una regla de correspondencia entre los valores de cada conjunto, de modo que a cada valor de <span class="math inline">\(x\)</span> corresponde uno y sólo uno de los valores de <span class="math inline">\(y\)</span>. Cada conjunto se puede representar como una recta, y cuando éstas se disponen perperdiculares dan origen al plano.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-14"></span>
-<img src="Model-mate_files/figure-html/unnamed-chunk-14-1.png" alt="Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$." width="384" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-15"></span>
+<img src="Model-mate_files/figure-html/unnamed-chunk-15-1.png" alt="Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para $y(x) = x$, donde los puntos corresponden a los pares de valores $(x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)$." width="384" />
 <p class="caption">
 Figura 3.2: Ejemplo del plano cartesiado mostrando en rojo la correspondencia de valores para <span class="math inline">\(y(x) = x\)</span>, donde los puntos corresponden a los pares de valores <span class="math inline">\((x = -1, y = -1), (-0.5, -0.5), (0, 0), (0.5, 0.5), (1, 1)\)</span>.
 </p>
 </div>
 <p>Ahora veamos, con un ejemplo gráfico por qué la constante <span class="math inline">\(a\)</span> recibe el nombre de <em>pendiente</em>.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-15"></span>
-<img src="Model-mate_files/figure-html/unnamed-chunk-15-1.png" alt="Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$." width="384" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-16"></span>
+<img src="Model-mate_files/figure-html/unnamed-chunk-16-1.png" alt="Gráficas de las funciones $y(x) = 0.5 x$ (en rojo) y $y(x) = 0.5 + 0.5 x$ (azul). Las líneas punteadas en colores indican el efecto de las constantes $a$ y $b$, mientas que Δ$x$ denota el cambio de una unidad de $x$." width="384" />
 <p class="caption">
 Figura 3.3: Gráficas de las funciones <span class="math inline">\(y(x) = 0.5 x\)</span> (en rojo) y <span class="math inline">\(y(x) = 0.5 + 0.5 x\)</span> (azul). Las líneas punteadas en colores indican el efecto de las constantes <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, mientas que Δ<span class="math inline">\(x\)</span> denota el cambio de una unidad de <span class="math inline">\(x\)</span>.
 </p>

@@ -12,3 +12,9 @@
 
 ```
 
+## Determinantes y matrices inversas
+
+```{r echo = F, child = "Unidad-II/Determinantes-inversas.Rmd"}
+
+```
+
