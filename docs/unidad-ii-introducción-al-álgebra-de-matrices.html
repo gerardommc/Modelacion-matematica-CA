@@ -24,7 +24,7 @@
 <meta name="author" content="Gerardo Martín" />
 
 
-<meta name="date" content="2021-09-24" />
+<meta name="date" content="2021-09-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -122,6 +122,7 @@
 <li class="chapter" data-level="4.2.2" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#multiplicación-por-un-escalar"><i class="fa fa-check"></i><b>4.2.2</b> Multiplicación por un escalar</a></li>
 <li class="chapter" data-level="4.2.3" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#transposición"><i class="fa fa-check"></i><b>4.2.3</b> Transposición</a></li>
 <li class="chapter" data-level="4.2.4" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#multiplicación-de-matrices"><i class="fa fa-check"></i><b>4.2.4</b> Multiplicación de matrices</a></li>
+<li class="chapter" data-level="4.2.5" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#matriz-e-identidad"><i class="fa fa-check"></i><b>4.2.5</b> Matriz e identidad</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
@@ -567,9 +568,33 @@ c_{2, 1} &amp; c_{2, 2} &amp; c_{2, 3} &amp; c_{2, 4}
 <div id="ejercicio-1" class="section level5" number="4.2.4.1.1">
 <h5><span class="header-section-number">4.2.4.1.1</span> Ejercicio</h5>
 <p>Haz a mano los cálculos de <span class="math inline">\(c_{i, j}\)</span> que nos faltaron para obtener los valores de <span class="math inline">\(C\)</span>.</p>
+</div>
+</div>
+</div>
+<div id="matriz-e-identidad" class="section level3" number="4.2.5">
+<h3><span class="header-section-number">4.2.5</span> Matriz e identidad</h3>
+<p>Antes de continuar, consideremos la posible existencia de una matriz <span class="math inline">\(I\)</span> tal que <span class="math inline">\(A I = A\)</span>, es decir, una matriz que multiplicada por otra matriz de como resultado la matriz original. Esta matriz se conoce como la matriz identidad, y consiste de una matriz cuadrada con ceros en todas las posiciones excepto en la diagonal, por ejemplo:</p>
+<p><span class="math display">\[\begin{equation}
+I = \left[ 
+\begin{array}{ccc}
+\ 1 &amp; 0 &amp; 0 &amp; 0 \\
+  0 &amp; 1 &amp; 0 &amp; 0 \\
+  0 &amp; 0 &amp; 1 &amp; 0 \\
+  0 &amp; 0 &amp; 0 &amp; 1 \\
+\end{array}
+\right]
+\end{equation}\]</span></p>
+<p>Por el contrario, una matriz inversa es quella matriz <span class="math inline">\(A^{-1}\)</span>, tal que <span class="math inline">\(AA^{-1} = I\)</span>, al multiplicarla por una matriz cualquiera <span class="math inline">\(A\)</span> da como resultado la matriz identitaria.</p>
+<p>La utilidad de este concepto se pued ejemplificar con un sistema de una sola ecuación:</p>
+<p><span class="math display">\[2x = 10\]</span></p>
+<p>Esta ecuación podemos concebirla como el producto de dos vectores con dimensiones <span class="math inline">\(1 \times 1\)</span>. Para resolverla es necesario multplicar ambos lados de la ecuación por el <strong>inverso</strong> del coeficiente de <span class="math inline">\(x\)</span>, de modo que:</p>
+<p><span class="math display">\[2^{-1} \cdot 2x = 2^{-1} \cdot 10\]</span></p>
+<p><span class="math display">\[x = \frac{1}{5}\]</span></p>
+<p>Por lo tanto, si tenemos que para un sistema lineal la matriz <span class="math inline">\(A\)</span> de coficientes puede ser invertida como <span class="math inline">\(A^{-1}\)</span>, esta última contiene la solución al sistema mismo:</p>
+<p><span class="math display">\[XA = B\]</span></p>
+<p><span class="math display">\[A^{-1}XA = A^{-1}B \rightarrow X = A^{-1}B\]</span></p>
+<p>Para encontrar la matriz <span class="math inline">\(A^{-1}\)</span> tenemos que</p>
 
-</div>
-</div>
 </div>
 </div>
 </div>

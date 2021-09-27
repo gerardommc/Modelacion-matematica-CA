@@ -73,6 +73,7 @@ transposición
 multiplicación-de-matrices
 ejemplos
 ejercicio-1
+matriz-e-identidad
 applications
 example-one
 example-two
