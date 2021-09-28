@@ -76,6 +76,7 @@ ejercicio-1
 determinantes-y-matrices-inversas
 matriz-identidad
 matriz-inversa
+definción-de-matriz-inversa
 applications
 example-one
 example-two

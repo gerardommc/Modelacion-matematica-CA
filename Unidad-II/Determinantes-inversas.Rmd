@@ -17,7 +17,7 @@ Por el contrario, una matriz inversa es quella matriz $A^{-1}$, tal que $AA^{-1}
 
 ### Matriz inversa
 
-La utilidad de este concepto se pued ejemplificar con un sistema de una sola ecuación:
+La utilidad de este concepto se puede ejemplificar con un sistema de una sola ecuación:
 
 $$2x = 10$$
 
@@ -27,9 +27,17 @@ $$2^{-1} \cdot 2x = 2^{-1} \cdot 10$$
 
 $$x = \frac{1}{5}$$
 
-Por lo tanto, si tenemos que para un sistema lineal la matriz $A$ de coficientes puede ser invertida como $A^{-1}$, esta última contiene la solución al sistema mismo:
+Por lo tanto, si tenemos que para un sistema lineal la matriz **cuadrada** $A$ de coeficientes puede ser invertida como $A^{-1}$, esta última contiene la solución al sistema mismo:
 
 $$XA = B$$
 
 $$A^{-1}XA = A^{-1}B \rightarrow X = A^{-1}B$$ 
+
+#### Definción de matriz inversa
+
+Una matriz inversa de $A$ es aquella matriz $B$ que:
+
+$$AB = BA = I_n$$
+
+al ser multiplicada por $A$ tiene como resultado la matriz identidad $I_n$, con dimensiones $n \times n$. La matriz inversa de $A$ también recibe, como ya se mencionó el nombre $A^{-1}$. Cuando se puede obtener la matriz $A^{-1}$ de $A$, se dice que esta última es **invertible** o **no-singular**, de lo contrario se le llama **singular**. Cabe resaltar que la matriz inversa $A^{-1}$ es única para $A$. Si llegaran a existir dos matrices inversas $B$ y $C$ de $A$, entonces $B=C$.
 

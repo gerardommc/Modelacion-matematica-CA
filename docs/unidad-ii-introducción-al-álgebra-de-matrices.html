@@ -24,7 +24,7 @@
 <meta name="author" content="Gerardo Martín" />
 
 
-<meta name="date" content="2021-09-27" />
+<meta name="date" content="2021-09-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -595,15 +595,21 @@ I = \left[
 </div>
 <div id="matriz-inversa" class="section level3" number="4.3.2">
 <h3><span class="header-section-number">4.3.2</span> Matriz inversa</h3>
-<p>La utilidad de este concepto se pued ejemplificar con un sistema de una sola ecuación:</p>
+<p>La utilidad de este concepto se puede ejemplificar con un sistema de una sola ecuación:</p>
 <p><span class="math display">\[2x = 10\]</span></p>
 <p>Esta ecuación podemos concebirla como el producto de dos vectores con dimensiones <span class="math inline">\(1 \times 1\)</span>. Para resolverla es necesario multplicar ambos lados de la ecuación por el <strong>inverso</strong> del coeficiente de <span class="math inline">\(x\)</span>, de modo que:</p>
 <p><span class="math display">\[2^{-1} \cdot 2x = 2^{-1} \cdot 10\]</span></p>
 <p><span class="math display">\[x = \frac{1}{5}\]</span></p>
-<p>Por lo tanto, si tenemos que para un sistema lineal la matriz <span class="math inline">\(A\)</span> de coficientes puede ser invertida como <span class="math inline">\(A^{-1}\)</span>, esta última contiene la solución al sistema mismo:</p>
+<p>Por lo tanto, si tenemos que para un sistema lineal la matriz <strong>cuadrada</strong> <span class="math inline">\(A\)</span> de coeficientes puede ser invertida como <span class="math inline">\(A^{-1}\)</span>, esta última contiene la solución al sistema mismo:</p>
 <p><span class="math display">\[XA = B\]</span></p>
 <p><span class="math display">\[A^{-1}XA = A^{-1}B \rightarrow X = A^{-1}B\]</span></p>
+<div id="definción-de-matriz-inversa" class="section level4" number="4.3.2.1">
+<h4><span class="header-section-number">4.3.2.1</span> Definción de matriz inversa</h4>
+<p>Una matriz inversa de <span class="math inline">\(A\)</span> es aquella matriz <span class="math inline">\(B\)</span> que:</p>
+<p><span class="math display">\[AB = BA = I_n\]</span></p>
+<p>al ser multiplicada por <span class="math inline">\(A\)</span> tiene como resultado la matriz identidad <span class="math inline">\(I_n\)</span>, con dimensiones <span class="math inline">\(n \times n\)</span>. La matriz inversa de <span class="math inline">\(A\)</span> también recibe, como ya se mencionó el nombre <span class="math inline">\(A^{-1}\)</span>. Cuando se puede obtener la matriz <span class="math inline">\(A^{-1}\)</span> de <span class="math inline">\(A\)</span>, se dice que esta última es <strong>invertible</strong> o <strong>no-singular</strong>, de lo contrario se le llama <strong>singular</strong>. Cabe resaltar que la matriz inversa <span class="math inline">\(A^{-1}\)</span> es única para <span class="math inline">\(A\)</span>. Si llegaran a existir dos matrices inversas <span class="math inline">\(B\)</span> y <span class="math inline">\(C\)</span> de <span class="math inline">\(A\)</span>, entonces <span class="math inline">\(B=C\)</span>.</p>
 
+</div>
 </div>
 </div>
 </div>
