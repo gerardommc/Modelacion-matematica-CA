@@ -24,7 +24,7 @@
 <meta name="author" content="Gerardo Martín" />
 
 
-<meta name="date" content="2021-09-28" />
+<meta name="date" content="2021-10-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -127,6 +127,7 @@
 <ul>
 <li class="chapter" data-level="4.3.1" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#matriz-identidad"><i class="fa fa-check"></i><b>4.3.1</b> Matriz identidad</a></li>
 <li class="chapter" data-level="4.3.2" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#matriz-inversa"><i class="fa fa-check"></i><b>4.3.2</b> Matriz inversa</a></li>
+<li class="chapter" data-level="4.3.3" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#determinante-de-una-matriz"><i class="fa fa-check"></i><b>4.3.3</b> Determinante de una matriz</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
@@ -608,8 +609,155 @@ I = \left[
 <p>Una matriz inversa de <span class="math inline">\(A\)</span> es aquella matriz <span class="math inline">\(B\)</span> que:</p>
 <p><span class="math display">\[AB = BA = I_n\]</span></p>
 <p>al ser multiplicada por <span class="math inline">\(A\)</span> tiene como resultado la matriz identidad <span class="math inline">\(I_n\)</span>, con dimensiones <span class="math inline">\(n \times n\)</span>. La matriz inversa de <span class="math inline">\(A\)</span> también recibe, como ya se mencionó el nombre <span class="math inline">\(A^{-1}\)</span>. Cuando se puede obtener la matriz <span class="math inline">\(A^{-1}\)</span> de <span class="math inline">\(A\)</span>, se dice que esta última es <strong>invertible</strong> o <strong>no-singular</strong>, de lo contrario se le llama <strong>singular</strong>. Cabe resaltar que la matriz inversa <span class="math inline">\(A^{-1}\)</span> es única para <span class="math inline">\(A\)</span>. Si llegaran a existir dos matrices inversas <span class="math inline">\(B\)</span> y <span class="math inline">\(C\)</span> de <span class="math inline">\(A\)</span>, entonces <span class="math inline">\(B=C\)</span>.</p>
-
 </div>
+<div id="obteniendo-una-matriz-inversa" class="section level4" number="4.3.2.2">
+<h4><span class="header-section-number">4.3.2.2</span> Obteniendo una matriz inversa</h4>
+<p>Para obtener una matriz inversa, también tenemos que resolver un sistema de ecuaciones lineales. Supongamos que <span class="math inline">\(A\)</span> es una matriz de <span class="math inline">\(2 \times 2\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+A = \left[\begin{array}{ccc}
+a_{1, 1} &amp; a_{1, 2} \\
+a_{2, 1} &amp; a_{2, 2}
+\end{array}
+\right]
+\end{equation}\]</span></p>
+<p>Recordemos que <span class="math inline">\(A\)</span> es la matriz de coeficientes para las variables <span class="math inline">\(x_1, x_2, \dots, x_n\)</span>. Entonces la matriz inversa de <span class="math inline">\(A\)</span> es:</p>
+<p><span class="math display">\[\begin{equation}
+B = \left[\begin{array}{ccc}
+b_{1, 1} &amp; b_{1, 2} \\
+b_{2, 1} &amp; b_{2, 2}
+\end{array}
+\right]
+\end{equation}\]</span></p>
+<p>Por lo tanto la ecuación a resolver es:</p>
+<p><span class="math display">\[\begin{equation}
+\left[\begin{array}{ccc}
+a_{1, 1} &amp; a_{1, 2} \\
+a_{2, 1} &amp; a_{2, 2}
+\end{array}
+\right]
+\left[\begin{array}{ccc}
+b_{1, 1} &amp; b_{1, 2} \\
+b_{2, 1} &amp; b_{2, 2}
+\end{array}
+\right] =
+\left[\begin{array}{ccc}
+1 &amp; 0 \\
+0 &amp; 1
+\end{array}
+\right]
+\end{equation}\]</span></p>
+<p>donde las incógnitas son los elementos <span class="math inline">\(b_{1,1}, \dots b_{n,n}\)</span> de <span class="math inline">\(B\)</span>, la matriz inversa.</p>
+<div id="ejemplo-1" class="section level5" number="4.3.2.2.1">
+<h5><span class="header-section-number">4.3.2.2.1</span> Ejemplo</h5>
+<p>Tenemos que encontrar la matriz inversa de la matriz de coeficientes:</p>
+<p><span class="math display">\[\begin{equation}
+A =
+\left[\begin{array}{ccc}
+2 &amp; 5 \\
+1 &amp; 3
+\end{array}
+\right]
+\end{equation}\]</span></p>
+<p>Por lo tanto el sistema de ecuaciones a resolver es:</p>
+<p><span class="math display">\[\begin{equation}
+\left[\begin{array}{ccc}
+2 &amp; 5 \\
+1 &amp; 3
+\end{array}
+\right]
+\left[\begin{array}{ccc}
+b_{1, 1} &amp; b_{1, 2} \\
+b_{2, 1} &amp; b_{2, 2}
+\end{array}
+\right] =
+\left[\begin{array}{ccc}
+1 &amp; 0 \\
+0 &amp; 1
+\end{array}
+\right]
+\end{equation}\]</span></p>
+<p>Para ver las ecuaciones a resolver para <span class="math inline">\(B\)</span>, tenemos que multiplicar <span class="math inline">\(AB\)</span>, con lo que obtenemos:</p>
+<p><span class="math display">\[\begin{align}
+2 b_{1,1} + 5b_{2,1} = 1\ (F_1) &amp; &amp; 2b_{1, 2} + 5b_{2,2} = 0\ (F_1) \\ \notag
+b_{1, 1} + 3b_{2,1} = 0\ (F_2) &amp; &amp; b_{1, 2} + 3b_{2, 2} = 1 (F_2 ) \notag
+\end{align}\]</span></p>
+<p>Utilizando los métodos que ya conocemos, podemos obtener las soluciones:</p>
+<p><span class="math display">\[\begin{equation}
+B = \left[ 
+\begin{array}
+\ b_{1, 1} &amp; b_{1, 2} \\
+b_{2, 1} &amp; b_{2, 2}
+\end{array}
+\right] =
+\left[ 
+\begin{array}
+\ 3 &amp; -5 \\
+1 &amp; 2
+\end{array}
+\right]
+\end{equation}\]</span></p>
+</div>
+<div id="ejercicio-2" class="section level5" number="4.3.2.2.2">
+<h5><span class="header-section-number">4.3.2.2.2</span> Ejercicio</h5>
+<p>Verifica que las soluciones para <span class="math inline">\(b_{1,1}, b_{1,2}, b_{2,1}, b_{2,2}\)</span> sean las reportadas y que <span class="math inline">\(AB = I_2\)</span></p>
+</div>
+</div>
+</div>
+<div id="determinante-de-una-matriz" class="section level3" number="4.3.3">
+<h3><span class="header-section-number">4.3.3</span> Determinante de una matriz</h3>
+<p>Encontrar la matriz inversa de otra matriz <span class="math inline">\(A\)</span> con dimensiones <span class="math inline">\(2 \times 2\)</span>, es más fácil de lo que parece, resolviendo el sistema <span class="math inline">\(AB = I_2\)</span>. Para cualquier matriz:</p>
+<p><span class="math display">\[\begin{equation}
+A = \left[
+\begin{array}
+\ a_{1,1} &amp; a_{1,2} \\
+a_{2,1} &amp; a_{2,2}
+\end{array}
+\right]
+\end{equation}\]</span></p>
+<p><span class="math inline">\(A\)</span> es invertible si <span class="math inline">\(a_{1,1}a_{2,2} - a_{1,2}a_{2,1} \neq 0\)</span> y si:</p>
+<p><span class="math display" id="eq:dos-dos">\[\begin{equation}
+A^{-1} = 
+  \frac{1}{a_{1,1}a_{2,2} - a_{1,2}a_{2,1}}
+    \left[
+      \begin{array}
+        \ a_{2,2} &amp; a_{1,2} \\
+        a_{2,1} &amp; a_{1,1}
+      \end{array}
+    \right] \tag{4.4}
+\end{equation}\]</span></p>
+<p>La expresión <span class="math inline">\(a_{1,1}a_{2,2} - a_{1,2}a_{2,1}\)</span> para una matriz <span class="math inline">\(A\)</span> de <span class="math inline">\(2 \times 2\)</span> se conoce como el determinante y se denota como <span class="math inline">\(\mathrm{det} A\)</span> ó <span class="math inline">\(|A|\)</span>.</p>
+<p>Es posible calcular determinantes para cualquier matriz <span class="math inline">\(A\)</span> con dimensiones <span class="math inline">\(n \times n\)</span>, y en todos los casos, es posible obtener <span class="math inline">\(A^{-1}\)</span> si <span class="math inline">\(\mathrm{det}A \neq 0\)</span>. Las fórmulas para calcular el determinante de cualquier matriz se van complicando considerablemente conforme aumenta su tamaño, por lo que es necesario utilizar una calculadora de determinantes.</p>
+<p>Aquí nos limitaremos a las fórmulas para determinantes de <span class="math inline">\(2\times 2\)</span> (ecuación <a href="unidad-ii-introducción-al-álgebra-de-matrices.html#eq:dos-dos">(4.4)</a> y de <span class="math inline">\(3 \times 3\)</span> con</p>
+<p><span class="math display">\[\begin{equation}
+A = \left[ 
+\begin{array}
+\ a_{11} &amp; a_{12} &amp; a_{13} \\
+a_{21} &amp; a_{22} &amp; a_{23} \\
+a_{31} &amp; a_{32} &amp; a_{33}
+\end{array}
+\right]
+\end{equation}\]</span></p>
+<p>Entonces:</p>
+<p><span class="math display">\[\begin{align}
+\mathrm{det}A &amp;=&amp; a_{11} \cdot a_{22} \cdot a_{33} + \\
+ &amp; &amp; a_{12} \cdot a_{23} \cdot a_{31} + \\
+ &amp; &amp; a_{21} \cdot a_{32} \cdot a_{13} - \\
+ &amp; &amp; a_{31} \cdot a_{22} \cdot a_{13} -  \\
+ &amp; &amp; a_{32} \cdot a_{23} \cdot a_{11} - \\
+ &amp; &amp; a_{21} \cdot a_{21} \cdot a_{33}
+ \end{align}\]</span></p>
+<p>con lo que:</p>
+<p><span class="math display">\[\begin{equation}
+A^{-1} = \frac{1}{|A|} \times 
+\left[
+\begin{array}
+\ a_{33} &amp; a_{32} &amp; a_{31} \\
+a_{23} &amp; a_{22} &amp; a_{21} \\
+a_{13} &amp; a_{12} &amp; a_{11}
+\end{array}
+\right]
+\end{equation}\]</span></p>
+
 </div>
 </div>
 </div>
