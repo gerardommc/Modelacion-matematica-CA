@@ -18,3 +18,9 @@
 
 ```
 
+## Valores y vectores propios
+
+```{r echo = FALSE, child= "Unidad-II/Vectores-valores-propios.Rmd"}
+
+```
+

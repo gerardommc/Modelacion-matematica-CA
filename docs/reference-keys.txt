@@ -1,6 +1,6 @@
-fig:unnamed-chunk-14
 fig:unnamed-chunk-15
 fig:unnamed-chunk-16
+fig:unnamed-chunk-17
 fig:parabola
 fig:parabola-2
 fig:parabola-3
@@ -22,12 +22,17 @@ eq:poblac
 fig:log
 eq:crec-pobl
 fig:tasa-crec
-fig:unnamed-chunk-17
+fig:unnamed-chunk-18
 fig:sin-soln
 eq:sist-matriz
 eq:Aumentada
 eq:mat-mult
 eq:dos-dos
+fig:det-3
+fig:vectores
+fig:vector-escalar
+eq:mapa
+eq:valor-propio
 preámbulo
 criterios-de-evaluación
 cómo-se-darán-las-clases
@@ -82,6 +87,7 @@ obteniendo-una-matriz-inversa
 ejemplo-1
 ejercicio-2
 determinante-de-una-matriz
+valores-y-vectores-propios
 applications
 example-one
 example-two

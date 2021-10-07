@@ -137,7 +137,7 @@ b_{2, 1} & b_{2, 2}
 \left[ 
 \begin{array}
 \ 3 & -5 \\
-1 & 2
+-01 & 2
 \end{array}
 \right]
 \end{equation}
@@ -176,38 +176,10 @@ La expresión $a_{1,1}a_{2,2} - a_{1,2}a_{2,1}$ para una matriz $A$ de $2 \times
 
 Es posible calcular determinantes para cualquier matriz $A$ con dimensiones $n \times n$, y en todos los casos, es posible obtener $A^{-1}$ si $\mathrm{det}A \neq 0$. Las fórmulas para calcular el determinante de cualquier matriz se van complicando considerablemente conforme aumenta su tamaño, por lo que es necesario utilizar una calculadora de determinantes.
 
-Aquí nos limitaremos a las fórmulas para determinantes de $2\times 2$ (ecuación \@ref(eq:dos-dos) y de $3 \times 3$ con
+Aquí nos limitaremos a las fórmulas para determinantes de $2\times 2$ (ecuación \@ref(eq:dos-dos). La figura \@ref(fig:det-3) muestra el procedimiento para una matrix de $3 \times 3$. 
 
-\begin{equation}
-A = \left[ 
-\begin{array}
-\ a_{11} & a_{12} & a_{13} \\
-a_{21} & a_{22} & a_{23} \\
-a_{31} & a_{32} & a_{33}
-\end{array}
-\right]
-\end{equation}
+```{r det-3, echo = F, fig.align='center', fig.cap="Esquema del procedimiento para calcular el determinante de una matriz de 3 x 3."}
+knitr::include_graphics("Unidad-II/determ.png")
+```
 
-Entonces:
 
-\begin{align}
-\mathrm{det}A &=& a_{11} \cdot a_{22} \cdot a_{33} + \\
- & & a_{12} \cdot a_{23} \cdot a_{31} + \\
- & & a_{21} \cdot a_{32} \cdot a_{13} - \\
- & & a_{31} \cdot a_{22} \cdot a_{13} -  \\
- & & a_{32} \cdot a_{23} \cdot a_{11} - \\
- & & a_{21} \cdot a_{21} \cdot a_{33}
- \end{align}
-
-con lo que:
-
-\begin{equation}
-A^{-1} = \frac{1}{|A|} \times 
-\left[
-\begin{array}
-\ a_{33} & a_{32} & a_{31} \\
-a_{23} & a_{22} & a_{21} \\
-a_{13} & a_{12} & a_{11}
-\end{array}
-\right]
-\end{equation}

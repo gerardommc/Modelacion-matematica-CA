@@ -24,7 +24,7 @@
 <meta name="author" content="Gerardo Martín" />
 
 
-<meta name="date" content="2021-10-01" />
+<meta name="date" content="2021-10-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -129,6 +129,7 @@
 <li class="chapter" data-level="4.3.2" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#matriz-inversa"><i class="fa fa-check"></i><b>4.3.2</b> Matriz inversa</a></li>
 <li class="chapter" data-level="4.3.3" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#determinante-de-una-matriz"><i class="fa fa-check"></i><b>4.3.3</b> Determinante de una matriz</a></li>
 </ul></li>
+<li class="chapter" data-level="4.4" data-path="unidad-ii-introducción-al-álgebra-de-matrices.html"><a href="unidad-ii-introducción-al-álgebra-de-matrices.html#valores-y-vectores-propios"><i class="fa fa-check"></i><b>4.4</b> Valores y vectores propios</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
 <ul>
@@ -180,7 +181,7 @@ a_{1, n}x_1+a_{2,n}x_2 + \dots + a_{n,n}x_n &amp; = b_n
 4x - 2y &amp; =10
 \end{align}\]</span></p>
 <p>sería:</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-17"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-18"></span>
 <img src="Unidad-II/Soln-grafica-1.png" alt="Solución gráfica del sistema de ecuaciones para dos variables" width="1500" />
 <p class="caption">
 Figura 4.1: Solución gráfica del sistema de ecuaciones para dos variables
@@ -692,7 +693,7 @@ b_{2, 1} &amp; b_{2, 2}
 \left[ 
 \begin{array}
 \ 3 &amp; -5 \\
-1 &amp; 2
+-01 &amp; 2
 \end{array}
 \right]
 \end{equation}\]</span></p>
@@ -727,38 +728,118 @@ A^{-1} =
 \end{equation}\]</span></p>
 <p>La expresión <span class="math inline">\(a_{1,1}a_{2,2} - a_{1,2}a_{2,1}\)</span> para una matriz <span class="math inline">\(A\)</span> de <span class="math inline">\(2 \times 2\)</span> se conoce como el determinante y se denota como <span class="math inline">\(\mathrm{det} A\)</span> ó <span class="math inline">\(|A|\)</span>.</p>
 <p>Es posible calcular determinantes para cualquier matriz <span class="math inline">\(A\)</span> con dimensiones <span class="math inline">\(n \times n\)</span>, y en todos los casos, es posible obtener <span class="math inline">\(A^{-1}\)</span> si <span class="math inline">\(\mathrm{det}A \neq 0\)</span>. Las fórmulas para calcular el determinante de cualquier matriz se van complicando considerablemente conforme aumenta su tamaño, por lo que es necesario utilizar una calculadora de determinantes.</p>
-<p>Aquí nos limitaremos a las fórmulas para determinantes de <span class="math inline">\(2\times 2\)</span> (ecuación <a href="unidad-ii-introducción-al-álgebra-de-matrices.html#eq:dos-dos">(4.4)</a> y de <span class="math inline">\(3 \times 3\)</span> con</p>
-<p><span class="math display">\[\begin{equation}
-A = \left[ 
-\begin{array}
-\ a_{11} &amp; a_{12} &amp; a_{13} \\
-a_{21} &amp; a_{22} &amp; a_{23} \\
-a_{31} &amp; a_{32} &amp; a_{33}
-\end{array}
-\right]
-\end{equation}\]</span></p>
-<p>Entonces:</p>
-<p><span class="math display">\[\begin{align}
-\mathrm{det}A &amp;=&amp; a_{11} \cdot a_{22} \cdot a_{33} + \\
- &amp; &amp; a_{12} \cdot a_{23} \cdot a_{31} + \\
- &amp; &amp; a_{21} \cdot a_{32} \cdot a_{13} - \\
- &amp; &amp; a_{31} \cdot a_{22} \cdot a_{13} -  \\
- &amp; &amp; a_{32} \cdot a_{23} \cdot a_{11} - \\
- &amp; &amp; a_{21} \cdot a_{21} \cdot a_{33}
- \end{align}\]</span></p>
-<p>con lo que:</p>
-<p><span class="math display">\[\begin{equation}
-A^{-1} = \frac{1}{|A|} \times 
-\left[
-\begin{array}
-\ a_{33} &amp; a_{32} &amp; a_{31} \\
-a_{23} &amp; a_{22} &amp; a_{21} \\
-a_{13} &amp; a_{12} &amp; a_{11}
-\end{array}
-\right]
-\end{equation}\]</span></p>
-
+<p>Aquí nos limitaremos a las fórmulas para determinantes de <span class="math inline">\(2\times 2\)</span> (ecuación <a href="unidad-ii-introducción-al-álgebra-de-matrices.html#eq:dos-dos">(4.4)</a>. La figura <a href="unidad-ii-introducción-al-álgebra-de-matrices.html#fig:det-3">4.3</a> muestra el procedimiento para una matrix de <span class="math inline">\(3 \times 3\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:det-3"></span>
+<img src="Unidad-II/determ.png" alt="Esquema del procedimiento para calcular el determinante de una matriz de 3 x 3." width="312" />
+<p class="caption">
+Figura 4.3: Esquema del procedimiento para calcular el determinante de una matriz de 3 x 3.
+</p>
 </div>
+</div>
+</div>
+<div id="valores-y-vectores-propios" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Valores y vectores propios</h2>
+<p>Para hablar de vectores y valores propios necesitamos definir a un vector como una matriz con una sola columna y <span class="math inline">\(n\)</span> filas. Todos los ejemplos que veremos aquí son de vectores de <span class="math inline">\(2 \times 1\)</span>.</p>
+<p>Los vectores en el sentido en que los trataremos aquí, representan <em>indicaciones</em> de movimiento en el plano cartesiano. Por ejemplo el vector:</p>
+<p><span class="math display">\[\left[ 
+\begin{array}{cc}
+2 \\ 3
+\end{array}
+\right]\]</span></p>
+<p>indica un movimiento de dos posiciones a la derecha en el eje <span class="math inline">\(x\)</span> y tres posiciones arriba en el eje <span class="math inline">\(y\)</span> (vector <span class="math inline">\(\mathbf{u}\)</span> en la figura )</p>
+<div class="figure" style="text-align: center"><span id="fig:vectores"></span>
+<img src="Unidad-II/Vectores.png" alt="Ejemplos de vectores **u** = (2, 3), **u**=(6, 0) y **w** = **u** + **v**." width="1154" />
+<p class="caption">
+Figura 4.4: Ejemplos de vectores <strong>u</strong> = (2, 3), <strong>u</strong>=(6, 0) y <strong>w</strong> = <strong>u</strong> + <strong>v</strong>.
+</p>
+</div>
+<p>Las operaciones con vectrores son iguales que las operaciones con matrices, de modo que el vector <span class="math inline">\(\mathbf{w}\)</span> de la figura <a href="unidad-ii-introducción-al-álgebra-de-matrices.html#fig:vectores">4.4</a> es:</p>
+<p><span class="math display">\[\mathbf{w} =\left[
+\begin{array}{c}
+2 \\ 3
+\end{array}
+\right]  + 
+\left[
+\begin{array}{c}
+6 \\ 0
+\end{array}
+\right] = 
+\left[
+\begin{array}{c}
+2 + 6 \\ 3 +0
+\end{array}
+\right] =
+\left[
+\begin{array}{c}
+8 \\ 3
+\end{array}
+\right]\]</span></p>
+<p>Cuando multiplicamos un vector cualquiera por un escalar, éste alargará el vector en relación a su magnitud, tal que :</p>
+<p><span class="math display">\[
+\mathbf{a} = 2 \times \mathbf{u} = \left[ \begin{array}{c} 4 \\ 6 \end{array} \right]
+\]</span></p>
+<div class="figure" style="text-align: center"><span id="fig:vector-escalar"></span>
+<img src="Unidad-II/Mult-vector.png" alt="Multiplicación de vector por un escalar." width="566" />
+<p class="caption">
+Figura 4.5: Multiplicación de vector por un escalar.
+</p>
+</div>
+<p>La operación que nos más concierne, sin embargo, en el caso de los valores y vectores propios es la multiplcación de un vector <span class="math inline">\(\mathbf{x}\)</span> por una matriz <span class="math inline">\(A\)</span>.</p>
+<p>Con base en las reglas de multiplicación sabemos que para el vector <span class="math inline">\(\mathbf{x}\)</span> con dimensiones <span class="math inline">\(2 \times 1\)</span> y la matriz <span class="math inline">\(A\)</span> con dimensiones <span class="math inline">\(2 \times 2\)</span>, el producto <span class="math inline">\(A \mathbf{x}\)</span> tendrá dimensiones de <span class="math inline">\(2 \times 1\)</span>. Dicha multiplicación se conoce como el mapa de <span class="math inline">\(\mathbf{x}\)</span> y se escribe:</p>
+<p><span class="math display" id="eq:mapa">\[\begin{equation}
+\mathbf{x} \mapsto A\mathbf{x} \tag{4.5}
+\end{equation}\]</span></p>
+<p>Por ejemplo:</p>
+<p><span class="math display">\[\begin{equation}
+    \left[ 
+    \begin{array}{c}
+    1 \\ 2
+    \end{array}
+    \right]
+    \cdot
+    \left[
+    \begin{array}{cc}
+    3 &amp; 2 \\
+    1 &amp; 4
+    \end{array}
+    \right] = 
+    \left[
+    \begin{array}{c}
+    7 \\ 9
+    \end{array}
+    \right]
+\end{equation}\]</span></p>
+<p>donde <span class="math inline">\(\mathbf{x}\)</span> es el vector <span class="math inline">\((1, 2)\)</span>, y el mapa <span class="math inline">\(A \mathbf{x}\)</span> es el vector <span class="math inline">\((7, 9)\)</span>.</p>
+<p>El concepto de <strong>vector y valor propio</strong> está basado en <span class="math inline">\(\mathbf{x} \mapsto A \mathbf{x}\)</span>. Específicamente <span class="math inline">\(A \mathbf{x}\)</span> es el vector propio y el valor propio es una constante que satisface:</p>
+<p><span class="math display" id="eq:valor-propio">\[\begin{equation}
+A \mathbf{x} = \lambda \mathbf{x} \tag{4.6}
+\end{equation}\]</span></p>
+<p>Este tipo de operaciones tiene muchas aplicaciones, entre ellas está el resolver sistemas de ecuaciones. Aunque sólo veremos ejemplos con vectores de <span class="math inline">\(2 \times 1\)</span>, todos los ejemplos son generalizables a vectores con cualquier número de filas.</p>
+<p>Para calcular <span class="math inline">\(\lambda\)</span> al igual que hicimos para <span class="math inline">\(A^{-1}\)</span>, comenzamos por resolver la ecuación <a href="unidad-ii-introducción-al-álgebra-de-matrices.html#eq:valor-propio">(4.6)</a>:</p>
+<p><span class="math display">\[A \mathbf{x} = \lambda I \mathbf{x} \rightarrow (A - \lambda I) \mathbf{x} = 0\]</span>
+La parte <span class="math inline">\(\lambda I \mathbf{x}\)</span> se debe a que <span class="math inline">\(I \mathbf{x} = \mathbf{x}\)</span>, pero necesitamos una matriz cuadrada para resolver a continuación.</p>
+<p>Dado que <span class="math inline">\(\mathbf{x} \neq 0\)</span>, necesitamos que <span class="math inline">\(A - \lambda I\)</span> sea singular (<span class="math inline">\(|A| = 0\)</span>), de modo que necesitamos encontrar un valor de <span class="math inline">\(\lambda\)</span> que satisfaga <span class="math inline">\(\det (A - \lambda I) = 0\)</span>. Entonces si nuestra matriz:</p>
+<p><span class="math display">\[A = \left[
+\begin{array}{cc}
+1 &amp; 2 \\
+3 &amp; 2
+\end{array}
+\right]\]</span></p>
+<p>entonces:</p>
+<p><span class="math display">\[A - \lambda I = \left[
+\begin{array}{cc}
+1 - \lambda &amp; 2 \\
+3 &amp; 2 - \lambda
+\end{array}
+\right]\]</span></p>
+<p>cuyo determinante será:</p>
+<p><span class="math display">\[\begin{align}
+(1 - \lambda)(2-\lambda) - (2)(3) &amp;= 2 - 3 \lambda +\lambda^2 -6\\
+&amp; = \lambda^2 - 3 \lambda -4 \\
+&amp; = (\lambda + 1)(\lambda - 4)
+\end{align}\]</span></p>
+<p>por lo tanto tenemos las soluciones <span class="math inline">\(\lambda_1 = -1\)</span> y <span class="math inline">\(\lambda_2 = 4\)</span>. Como es evidente, los vectores propios <span class="math inline">\(A \mathbf{x}\)</span> que satisfacen los valores propios no son únicos, pero cada valor propio <span class="math inline">\(\lambda\)</span> está asociado a un vector propio. Para los sistemas lineales con más de dos variables habrá tantos valores propios como dimensiones.</p>
+
 </div>
 </div>
             </section>
