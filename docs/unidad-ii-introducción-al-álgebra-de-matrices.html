@@ -24,7 +24,7 @@
 <meta name="author" content="Gerardo Martín" />
 
 
-<meta name="date" content="2021-10-07" />
+<meta name="date" content="2021-10-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -814,8 +814,21 @@ Figura 4.5: Multiplicación de vector por un escalar.
 <p><span class="math display" id="eq:valor-propio">\[\begin{equation}
 A \mathbf{x} = \lambda \mathbf{x} \tag{4.6}
 \end{equation}\]</span></p>
-<p>Este tipo de operaciones tiene muchas aplicaciones, entre ellas está el resolver sistemas de ecuaciones. Aunque sólo veremos ejemplos con vectores de <span class="math inline">\(2 \times 1\)</span>, todos los ejemplos son generalizables a vectores con cualquier número de filas.</p>
-<p>Para calcular <span class="math inline">\(\lambda\)</span> al igual que hicimos para <span class="math inline">\(A^{-1}\)</span>, comenzamos por resolver la ecuación <a href="unidad-ii-introducción-al-álgebra-de-matrices.html#eq:valor-propio">(4.6)</a>:</p>
+<p>Este tipo de operaciones tiene muchas aplicaciones, entre ellas está el resolver sistemas de ecuaciones. Aunque sólo veremos ejemplos con vectores de <span class="math inline">\(2 \times 1\)</span>, todos los ejemplos son generalizables a vectores con cualquier número de filas. El efecto de multiplicación de un vector propio <span class="math inline">\(\mathbf{x}\)</span> por una matriz <span class="math inline">\(A\)</span> es mostrado en la figura <a href="unidad-ii-introducción-al-álgebra-de-matrices.html#fig:vector-mat">4.6</a>. Todos los vectores fueron multiplicados por la misma matriz</p>
+<p><span class="math display">\[A= \left[
+\begin{array}{cc}
+2 &amp; 3 \\
+0 &amp; 1
+\end{array}
+\right]\]</span></p>
+<div class="figure" style="text-align: center"><span id="fig:vector-mat"></span>
+<img src="Unidad-II/Eig-ejemplos.png" alt="Ejemplos de multiplicación de un vector (azul) por una matriz y el resultante vector (rosa)." width="1286" />
+<p class="caption">
+Figura 4.6: Ejemplos de multiplicación de un vector (azul) por una matriz y el resultante vector (rosa).
+</p>
+</div>
+<p>Como podemos ver, la multiplicación de <span class="math inline">\(\mathbf{x}\)</span> por <span class="math inline">\(A\)</span> tiene el efecto de rotar y cambiar la longitud del vector.</p>
+<p>Existe una serie de técnicas para calcular <span class="math inline">\(\lambda\)</span>, y comenzaremos al igual que como hicimos para <span class="math inline">\(A^{-1}\)</span>, resolviendo la ecuación <a href="unidad-ii-introducción-al-álgebra-de-matrices.html#eq:valor-propio">(4.6)</a>:</p>
 <p><span class="math display">\[A \mathbf{x} = \lambda I \mathbf{x} \rightarrow (A - \lambda I) \mathbf{x} = 0\]</span>
 La parte <span class="math inline">\(\lambda I \mathbf{x}\)</span> se debe a que <span class="math inline">\(I \mathbf{x} = \mathbf{x}\)</span>, pero necesitamos una matriz cuadrada para resolver a continuación.</p>
 <p>Dado que <span class="math inline">\(\mathbf{x} \neq 0\)</span>, necesitamos que <span class="math inline">\(A - \lambda I\)</span> sea singular (<span class="math inline">\(|A| = 0\)</span>), de modo que necesitamos encontrar un valor de <span class="math inline">\(\lambda\)</span> que satisfaga <span class="math inline">\(\det (A - \lambda I) = 0\)</span>. Entonces si nuestra matriz:</p>

@@ -85,9 +85,22 @@ El concepto de **vector y valor propio** está basado en $\mathbf{x} \mapsto A \
 A \mathbf{x} = \lambda \mathbf{x} (\#eq:valor-propio)
 \end{equation}
 
-Este tipo de operaciones tiene muchas aplicaciones, entre ellas está el resolver sistemas de ecuaciones. Aunque sólo veremos ejemplos con vectores de $2 \times 1$, todos los ejemplos son generalizables a vectores con cualquier número de filas.
+Este tipo de operaciones tiene muchas aplicaciones, entre ellas está el resolver sistemas de ecuaciones. Aunque sólo veremos ejemplos con vectores de $2 \times 1$, todos los ejemplos son generalizables a vectores con cualquier número de filas. El efecto de multiplicación de un vector propio $\mathbf{x}$ por una matriz $A$ es mostrado en la figura \@ref(fig:vector-mat). Todos los vectores fueron multiplicados por la misma matriz
 
-Para calcular $\lambda$ al igual que hicimos para $A^{-1}$, comenzamos por resolver la ecuación \@ref(eq:valor-propio):
+$$A= \left[
+\begin{array}{cc}
+2 & 3 \\
+0 & 1
+\end{array}
+\right]$$
+
+```{r vector-mat, echo = F, fig.align='center', fig.cap="Ejemplos de multiplicación de un vector (azul) por una matriz y el resultante vector (rosa)."}
+knitr::include_graphics("Unidad-II/Eig-ejemplos.png")
+```
+
+Como podemos ver, la multiplicación de $\mathbf{x}$ por $A$ tiene el efecto de rotar y cambiar la longitud del vector.
+
+Existe una serie de técnicas para calcular $\lambda$, y comenzaremos al igual que como hicimos para $A^{-1}$, resolviendo la ecuación \@ref(eq:valor-propio):
 
 $$A \mathbf{x} = \lambda I \mathbf{x} \rightarrow (A - \lambda I) \mathbf{x} = 0$$
 La parte $\lambda I \mathbf{x}$ se debe a que $I \mathbf{x} = \mathbf{x}$, pero necesitamos una matriz cuadrada para resolver a continuación.

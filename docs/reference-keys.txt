@@ -33,6 +33,7 @@ fig:vectores
 fig:vector-escalar
 eq:mapa
 eq:valor-propio
+fig:vector-mat
 preámbulo
 criterios-de-evaluación
 cómo-se-darán-las-clases
