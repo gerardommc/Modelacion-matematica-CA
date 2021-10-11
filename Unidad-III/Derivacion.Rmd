@@ -1,0 +1,171 @@
+Hasta el momento hemos mencionado en repetidas ocasiones una serie de conceptos relacionados muy íntimamente con la derivación. En esencia, en cálculo, el proceso de derivación se utiliza para estimar la pendiente de una recta tangente a un punto cualquiera que forma parte de una función (Figura \@ref(fig:deriv)).
+
+```{r deriv, echo=F, fig.align='center', fig.cap="Representación gráfica de la tangente a un punto en la curva exponencial.", fig.height=5, fig.width=5}
+x <- seq(-2, 2, len = 100)
+y = exp(x)
+plot(x, y, type = "l", main = "Tangente a la función exponencial")
+points(1.5, exp(1.5), col = "red", pch = 20)
+abline(a = -2.227, b = exp(1.5), lty = 2, col = "red")
+```
+
+El proceso de estimar la pendiente de una tangente a la función en un punto $(x, f(x))$ consiste en estimar el límite:
+
+\begin{equation}
+\lim \limits_{h \rightarrow 0} \frac{f(x + h) - f(x)}{x - (x + h)} (\#eq:derivada)
+\end{equation}
+
+Resolverlo no requiere de un conocimiento profundo para encontrar que por sustitución directa de $h = 0$, se obtiene una undeterminación ($0/0$). Sin embargo para entender mejor de qué se trata el límite de la ecuación \@ref(eq:derivada) podemos explorarlo con la [aplicación para derivadas](https://www.geogebra.org/classic/rjttr8kq).
+
+### Ejemplos
+
+#### Ecuación cuadrática:
+
+$$ y = x^2$$
+Con lo que la derivada sería:
+
+\begin{equation}
+\lim \limits_{h \rightarrow 0} \frac{(x + h)^2 - x^2}{(x+h) - x}
+\end{equation}
+
+Utilizando las técnicas para resolver límites podemos que con este último se puede utilizar factorización para obtener:
+
+\begin{equation}
+\lim \limits_{h \rightarrow 0} \frac{(x + h)^2 - x^2}{(x+h) - x} = \lim \limits_{h \rightarrow 0} \frac{((x + h) - x)((x + h) - x)}{(x + h) + x} = \lim \limits_{h \rightarrow 0} (x + h) + x = \lim \limits_{h \rightarrow 0} 2x + h
+\end{equation}
+
+Con este resultado podemos ahora sí sustituir $h$ directamente para ver que la derivada $y' = 2x$.
+
+#### Hiperbola
+
+$$ y = \frac{1}{x}$$
+Derivada:
+
+\begin{equation}
+\lim \limits_{h \rightarrow 0} \frac{\frac{1}{x + h} - \frac{1}{x}}{(x+h) - x}
+\end{equation}
+
+Podemos comenzar por simplificar las fracciones:
+
+\begin{equation}
+\lim \limits_{h \rightarrow 0} \frac{\frac{x - (x + h)}{x(x + h)}}{h} = \lim \limits - \frac{h}{x^2 + xh} \frac{1}{h} = \lim \limits_{h \rightarrow 0} -\frac{1}{x^2}
+\end{equation}
+
+Por lo tanto $y' = \frac{1}{x^2}$
+
+### Notación
+
+La técnica de derivación se le atribuye a dos científicos, Isaac Newton y Gottfried Leibniz. La notación que se tradicionalmente enseña para comenzar con cáculo es la de Newton:
+
+\begin{equation}
+f'(x) = \lim \limits_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h} (\#eq:Newton)
+\end{equation}
+
+la cual adolece de claridad, pues a menos que uno conozca bien la fórmula de la derivada no especifica el significado de $f'(x)$. La notación de Leibniz en cambio, sí lo especifica:
+
+\begin{equation}
+\frac{df}{dx} = f'(x) (\#eq:Leibniz)
+\end{equation}
+
+donde el numerador $df = \Delta f = f(x + h) - f(x)$ y el denominador $dx = \Delta x = (x+h) - x = h$. La letra $d$ se utiliza en lugar de $\Delta$ para indicar que se trata de un cambio contínuo, en lugar de discreto, el uso tradicional de $\Delta$.
+
+### Reglas de derivación
+
+#### Potencias
+
+Como ya se habrán dado cuenta, la primera regla de la derivación está relacionada con los exponentes. Por ejemplo, la derivadas de $f(x) = x^2$ y $f(x) = \frac{1}{x}$, son $\frac{df}{dx} = 2x$ y $\frac{df}{dx} = - \frac{1}{x^2}$ respectivamente. Nota, que en ambos casos, los exponentes de cada $x$, se convirtieron en coeficientes en $\frac{df}{dx}$, y que restamos $1$ a cada exponente de $x$:
+
+1. $x^2 \rightarrow 2x^{2-1} = 2x^1 = 2x$
+2. $1/x = x^{-1} \rightarrow -1x^{-1-1} = -x^{-2} = - 1/x^2$
+
+Entonces la primera regla de la derivación, se puede aplicar a muchas funciones. Si $f(x) = x^n $, $\frac{df}{dx} = nx^{n-1} $.
+
+En casos donde $x$ aparece más de una vez, se considera que:
+
+$$f(x) = f_1(x) + f_2{x} + \dots + f_n(x)$$
+
+Y dado que la derivada es un límite, sabemos que $f'(x) = f'_1(x)  + f'_2(x) + \dots + f'_n(x)$.
+
+Por ejemplo, si tenemos la función 
+
+$$y = a + bx + cx^2 + dx^3 = ax^0 + bx^1 + cx^2 + dx^3$$
+
+su derivada será
+
+$$ \frac{dy}{dx} = 0ax^{0-1} + bx^{1-1} + 2cx^{2-1} + 3dx^{3-1}= b + 2cx + 3dx^2$$
+
+#### Productos
+
+Si $h(x) = f(x)g(x)$ entonces:
+$$h'(x) = f'(x)g(x) + f(x)g'(x)$$
+
+#### Cocientes
+
+Si $h(x) = \frac{f(x)}{g(x)}$, entonces:
+
+$$h'(x) = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}$$
+
+#### Funciones en cadena
+
+Una función en cadena es aquella en que $h(x) = (f \circ g)(x) = f(g(x))$, entonces:
+
+$$h'(x) = f'(g(x))g'(x) = (f \circ g)'(x) g'(x)$$
+
+Aquí es preciso dar un ejemplo:
+
+$$h(x) = (3x-1)^2$$
+
+donde está claro que $g(x) = 3x^2-1$ y que $f(u) = u^2$. Por lo tanto si evaluamos $f'(u)$ cuando $u = 3x^2-1$, entonces $f'(u) = 2(3x^2-1)$. Por el otro lado, tenemos que, aplicando la regla de las potnecias, $g'(x) = 6x$. Entonces:
+
+$$h'(x) = 2(3x^2-1)6x$$
+
+### Representación geométrica de la derivada
+
+Como resultado del proceso de derivación de una función $f(x)$ se obtiene una segunda función $f'(x)$ ó $\frac{d}{dx}f$ cufo valor corresponde a la pendiente de una tangente para cada par de valores $(x, f(x))$.
+
+La aplicación [Interpretación de la derivada](https://www.geogebra.org/classic/w3spjhc7), muestra ambas funciones y la recta tangente a $(x,f(x))$. Observa la pendiente de esta tangente y las coordenadas $(x, f'(x))$.
+
+### Aplicaciones
+
+Uno de los modelos más generalizables que se utilizan en ecología es el de crecimiento exponencial:
+
+$$N(t) = e^{rt}$$
+
+Como vimos anteriormente, este modelo se puede linealizar utilizando el logaritmo:
+
+\begin{equation}
+\ln N(t) = rt (\#eq:log-N)
+\end{equation}
+
+y si resolvemos para $r$, obtenemos que:
+
+$$r = \frac{\ln N}{t}$$
+
+la pendiente, o tasa de crecimiento de una poblaciones equivalente a $\ln N/t$, para cualquier período de tiempo. Volvamos sin embargo a la ecuación \@ref(eq:log-N), diferenciándola. Para esto utilizaremos la diferenciación implícita, pues necesitamos conocer:
+
+1. $\frac{d}{dt}rt = r$
+2. $\frac{d}{dt}N(t) \ln N = \frac{d}{dt} \frac{1}{N}$
+
+por lo tanto:
+
+$$\frac{dN}{dt} \frac{1}{N} = t$$
+
+Con lo que obtenemos la siguiente ecuación diferencial:
+
+\begin{equation}
+\frac{dN}{dt} = rN
+\end{equation}
+
+De este modo podemos ver que, el crecimiento instantáneo de una población durante el intervalo $dt$ es equivalente a la tasa de crecimiento exponencial $r$. Más adelante veremos por qué $f(x) = \ln x$, $f'(x) = 1/x$, por el momento esta equivalencia nos sirve para ver que si $N(t) = e^{rt}$:
+
+$$\frac{dN}{dt} = e^{rt} = rN$$
+Y si separamos ambos lados $N$ y $t$, tenemos:
+
+$$\frac{dN}{N} = r \cdot dt$$
+
+Por lo tanto, la derivada nos sirve para estudiar de cerca la tasa de crecimiento en relación al cambio de población $dN$ y de tiempo $dt$, con un modelo lineal.
+
+
+
+
+
+

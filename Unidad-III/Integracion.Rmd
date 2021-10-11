@@ -1,0 +1,133 @@
+La integración es el proceso de estimación del área bajo la curva de una función, y para nosotros como ecólogxs es muyimportante, pues la mayoría de los modelos dinámicos se formulan como ecuaciones diferenciales, los cuales debemos integrar para obtener las soluciones.
+
+Al igual que con límites y derivadas, hay toda una notación particular de la integración:
+
+\begin{equation}
+    \int_a^b \!f(x) dx
+\end{equation}
+
+Y se lee, la integral de $f(x)$ entre $a$ y $b$. $[a, b]$ corresponde a dos valores, mínimo ($a$) y máximo ($b$), de $x$ entre los cuales  se evaluará el área. El símbolo $\int$, es una "S", e indica la suma de valores contínuos. Al igual que en la derivada, el signo $d$ es la versión contínua de $\Delta$, en las integrales $\int$ es la versión contínua de $\sum$.
+
+Otra similitud entre la dericada y la integral es que est última es un límite:
+
+\begin{equation}
+    \int_a^b \!f(x) dx = \lim \limits_{n \rightarrow \infty} \sum_{i = 1}^n f(x_i) \Delta x; \Delta x = \frac{b-a}{n} (\#eq:integ-limite)
+\end{equation}
+
+Para comprederla, enfoquémonos en el lado derecho, que comenzando con el operador de sumatoria $\sum$ indica que para cada valor $x_i$, se evalúa la función $f$, y se multiplica por la distancia que hay entre $x_i$ y $x_{i-1}$ ($\Delta x$). Si pensamos esto en el plano cartesiano, $f(x_i)$ es la distancia entre $0$ y el valor de $y$ en $f(x_i)$, por lo que al multiplicarlo por $\Delta x$ estamos obteniendo el área de un rectángulo con lados de longitud $\Delta x$ y $f(x_i)$. Nota que conforme $n \rightarrow \infty$, la longiud de $\Delta x$ disminuye tanto, que el número de rectángulos con área $\Delta x \times f(x_i)$ tiende a infinito.
+
+```{r La-integral, echo = F, fig.align='center', fig.cap="Representación esquemática de la integral. Nota quq utilizando los rectángulos, es posible aproximar el valor de una integral con rectángulos que pasen por arriba o abajo de la curva."}
+knitr::include_graphics("Unidad-III/Esquema-integral.png")
+```
+
+Puedes explorar estos conceptos con la [aplicación para el área bajo una recta de Geogebra](https://www.geogebra.org/classic/wmpqmr4a).
+
+### Área bajo una recta
+
+Un ejemplo clásico de integración es el área bajo una recta con pendiente $m \neq 0$ e intercepto $0$, la cual corresponde al área de un triángulo (figura \@ref(fig:Area-recta)).
+
+```{r Area-recta, echo = F, fig.align='center', fig.cap="Área bajo la recta f(x) = x, entre el punto 0 y a = 1."}
+knitr::include_graphics("Unidad-III/Area-bajo-recta.png")
+```
+
+Utilizando el método de los rectángulos tenemos que el área sombreada en la figura \@ref(fig:Area-recta) entre los puntos $0$ y $a$ se puede aproximar sumando rectángulos con altura $f(x)$ y ancho $\Delta x$.
+
+```{r Recta-area-rect, echo = F, fig.align='center', fig.cap="Método de los rectángulos para calcular área bajo curva"}
+knitr::include_graphics("Unidad-III/Rectangulos.png")
+```
+
+Para automatizar este proceso y encontrar todos los valores de $x$ en el intervalo $0, a$, podemos comenzar por tomar en cuenta el número de rectángulos, como en la figura \@ref(fig:Recta-area-rect), cuantos más rectángulos tenemos el error de cálculo será menor.
+
+La siguiente consideración será si tomaremos en cuenta el punto inferior o superior del intervalo (figura \@ref(fig:La-integral)). Si tomamos en cuenta el punto inferior del intervalo, la altura del primer rectángulo será $f(0)$, y el ancho será $\Delta x = a/n$. Por otra parte, tenemos que los valores de $x$ en que evaluaremos $f(x)$ corresponden a los valores de $x: 0, a/n, 2a/n, 3a/n, \dots, (n-1)a/n, a$, Si comenzamos con $n = 10$, y $a = 1$ tenemos que evaluar $f(x)$ en los valores:
+
+$$x = \left \{ 0, \frac{1}{10}, \frac{1}{10}, \dots, \frac{9}{10}, 1 \right \}$$
+
+Estas integrales se comoces como de Riemann. Por muchos años los matemáticos se dieron a la tarea de encontrar las funciones que resultaban de  incremetar el número de rectángulos bajo la curva de diversas funciones. No fue sino hasta que Newton y Leibniz acuñaron el teorema fundamental del cálculo que se obtuvieron las herramientas necesarias para estimar *fácilmente* el ára bajo la curva de cualquier función.
+
+**De aquí en adelante está en construcción, no usar!**
+
+### El teorema funamental del cálculo
+
+Este teorema establece, en términos muy generales que 
+
+\begin{equation}
+\int \frac{d}{dx}f = f(x)
+\end{equation}
+
+la integral de una derivada es la función misma con la que se obtuvo la derivada. Así, llegamos a la antiderivada.
+
+#### Antiderivadas de funciones
+
+Bajo la regla de las potencias, que si $f(x) = ax^n$, $\int f(x) = \frac{ax^{n+1}}{n+1}$. Si derivamos $\int f(x)$, veremos que $f(x) = ax^n$.
+
+Esta sencillísima técnica es efectiva para funciones sin constantes, puesto que la derivada de una constante es 0. Sin embargo debido a que al integrar una función no tenemos ningún conocimiento sobre la existencia o ausencia de una constante (p. ej. $y = a + bx$), es necesario asumir su existencia, de modo que:
+
+\begin{equation}
+\int f(x) = \frac{ax^{n+1}}{n+1} + c
+\end{equation}
+
+donde $c$ es la constante de integración.
+
+### Aplicaciones de la integración
+
+#### Cambio acumulativo
+
+El modelo de crecimiento exponencial, basado en la ecuación:
+
+\begin{equation}
+    N(t) = e^{rt} (\#eq:ExponN)
+\end{equation}
+
+es la base de un gran número de modelos en ecología. Cuando transformamos este modelo en una ecuación diferencial, toma una apariencia un tanto diferente. Comencemos por recordar que si $f(x) = e^x$, entonces $f'(x) = e^x$. Si agregamos un parámetro $r$ como coeficiente de $x$, tenemos que $f(x)= e^{rx}$, resultando exactamente en el modelo \@ref(eq:ExponN).
+
+Para derivar este modelo necesitamos recordar que:
+
+$$\frac{d}{dx}(f \circ g)(x) = (f \circ g)'(x)g'(x)$$
+y por analogía $(f \circ g)(x) = e^{rt}$ y $g(x) = rt$, por lo tanto:
+
+\begin{equation}
+\frac{dN}{dt} = r e^{rt}
+\end{equation}
+
+donde podemos sustituir $e^{rt}$ por $N$, para obtener:
+
+\begin{equation}
+\frac{dN}{dt} = r N
+\end{equation}
+
+que el cambio inmediato en el número de individuos de la población $N$, es proporcional a $rN$. La integral $\int_{0}^{t} \frac{dN}{dt}$ es entonces equivalente al número de individuos en ese momento $t$, mientras que $\int_{0}^{t} N(t)$ corresponde al número total de individuos que hay y ha habido en esa población!
+
+#### Integración analítica vs numérica
+
+En matemáticas, el término *analítico* se utiliza para describir el proceso de encontrar con herramientas formales de las matemáticas una solución exacta a un problema. Por ejemplo la antiderivación, aplicando a la inversa las relgas de la derivación es la integración analítica. Hay modelos sin embargo que no se pueden resolver con herramientas analíticas, típicamente, aquellos en que no podemos separar las variables dependientes e independientes. En esos casos hacemos integración *numérica*, que consiste en aproximaciones al valor de la función pero nunca representan las soluciones exactas que se obtienen con integración analítica.
+
+Veamos la ecuación diferencial:
+
+\begin{equation}
+\frac{dN}{dt} = rN (\#eq:dif-1)
+\end{equation}
+
+corresponde a una función que conocemos como $N = e^{rt}$, sin embargo podríamos aproximarnos recursivamente a los valores que prediciría $e^{rt}$ utilizando la definición de la derivada. Sabemos que la derivada es la pendiente de una recta, por lo tanto podríamos comenzar por dibujar una recta con pendiente $rN$ partiendo desde $t = 0$, hasta un punto $0+dx$. El cambio absoluto de $N$ ($dN$) sería entonces $rN \times dt$, cuyo valorr utilizaremos como punto de partida. Mencioné anteriormente que este método es una aproximación, y esto es porque resulta en un error que se va acumulando entre la función verdadera $N = e^{rt}$ y la que aproximamos revirtiendo secuencialmente la derivada (figura ).
+
+```{r integ-numer, echo = F, fig.align='center', fig.cap="Diferencias entre integración analítica vs integración numérica, para r = 0.1, dt = 1, y población inicial de N = 1.", fig.width=6, fig.height=5}
+t <- 0:20
+r <- 0.1
+N <- 1 * exp(r * t)
+
+N.1 <- numeric(21)
+N.1[1] <- 1
+dt <- 1
+for(i in 2:length(N.1)){N.1[i] <- N.1[i-1] + (r*N.1[i-1])*dt}
+
+df.1 <- data.frame(t = t, N = N, modelo = "Analítico")
+df.2 <- data.frame(t = t, N = N.1, modelo = "Numérico")
+
+df.3 <- rbind(df.1, df.2)
+
+library(ggplot2)
+
+ggplot(df.3) + geom_point(aes(x = t, y = N, colour = modelo)) + 
+    geom_line(aes(x = t, y = N, colour = modelo)) + 
+    theme_classic()
+```
+

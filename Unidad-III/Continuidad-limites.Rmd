@@ -1,0 +1,195 @@
+La continuidad y los límites son la puerta de entrada a la derivación y por lo tanto a las ecuaciones diferenciales. Cuando decimos que una función es contínua en un intervalo definido del dominio $(x_1, x_2)$, quiere decir que $f(x)$ está definida para todos y cada uno de los posibles valores de $x$ en ese intervalo. Existen muchas funciones que no son contínuas, por ejemplo:
+
+\begin{equation}
+    f(x) = \frac{x - 1}{x - 1} (\#eq:disc-1)
+\end{equation}
+
+Como es evidente, dicha ecuación está definida para todos los valores posibles de $x$, excepto $x = 1$, porque $f(1) = \frac{1 - 1}{1-1} = \frac{0}{0}$, lo cual es una indeterminación, no existe.
+
+```{r discont, echo = F, fig.align='center', fig.cap="Ejemplo de función con discontinuidad."}
+knitr::include_graphics("Unidad-III/Func-discont.png")
+```
+
+Hay funciones con discontinuidades, gráficamente más evidentes que \@ref(eq:disc-1), como la hipérbola, $f(x) = 1/x$ (figura \@ref(fig:hiperb)) o $g(x) = |x|/x$, o aquellas con condicionales.
+
+```{r hiperb, echo = F, fig.align='center', fig.cap="La hipérbola."}
+knitr::include_graphics("Unidad-III/Hiperbola.png")
+```
+
+```{r absol, echo = F, fig.align='center', fig.cap="Cociente de valor absoluto."}
+knitr::include_graphics("Unidad-III/Deriv-absol.png")
+```
+
+Como resulta geométricamente evidente, todas estas funciones son discontínuas para algún valor de $x$, sin embargo existe una diferencia muy importante entre ellas y es que el valor que pueden tomar en torno al punto en que son discontínuas depende de qué lado nos acerquemos a este punto. Para la equación $f(x) = \frac{x-1}{x-1}$, resulta claro que si nos acercamos a $f(1)$ desde un valor $x>1$, llegamos a un valor similar de $f$ que si nos acercamos a $f(1)$ por medio de un valor de $x < 1$. Esto no sucede con las función $g(x) = |x|/x$ puesto que si nos acercamos a $g(0)$ por el lado positivo de $x$ nos acercamos a $g = 1$, mientras que, por el lado negativo, nos acercamos a $g = -1$. 
+
+En este momento entonces es necesario comenzar a hablar del concepto de **límite**. 
+
+### El límite
+
+En el sentido estricto de la palabra, límite es el valor al que se acerca una función para un valor específico del dominio. En matemáticas, existe una notación específica para decir esto:
+
+\begin{equation}
+\lim \limits_{x \rightarrow a} x + 1
+\end{equation}
+
+donde $\lim$ indica que necesitamos estimar el límite de la función, cuando su dominio $x$ toma valores cada vez más cercanos a algún valor específico $a$ ($x \rightarrow a$). Aquí es necesario especificar que cuando hablamos de límites **siempre** nos acercamos al valor de interés $a$ tanto por medio de valores de $x>a$ como $x<a$, es decir alrededor de un intervalo de valores de $x$ que comunmente se denomina como $a \pm \delta$. Entonces, el límite de $f(x)$ existe si todos los valores de $f(a \pm \delta)$ convergen alrededor de un mismo punto. 
+
+Revisa la aplicación de Geogebra [Límites](https://www.geogebra.org/classic/b76f7gpx) para visualizar este fenómeno. Juega con los valores de $\delta$ y $a$ para ver cómo están definidos los valores de la función alrededor de $a$ para la función de la línea recta. Posteriormente, cambia la ecuación por:
+
+1. $f(x) = \frac{|x|}{x}$
+2. $f(x)= \frac{1}{x}$
+
+para examinar qué pasa con $f(x)$ cuando $x \rightarrow 0$
+
+En los casos en que los valores de $f(x)$ tienden a un valor único para $f(a + \delta)$ y $f(a - \delta)$, el límite de la función sí existe (figura \@ref(fig:discont)). En cambio, como ocurre para funciones como $1/x$ y $|x|/x$, existe más de un valor al que ambas funciones se aproximan (figuras \@ref(fig:hiperb) y \@ref(fig:absol)) dependiendo se si se evalúa $f(a + \delta)$ ó $f(a - \delta)$, el límite no existe.
+
+```{r limite-def, echo = F, fig.align='center', fig.cap="Ejemplo gráfico de una función con límite definido para cualquier valor de $x$. El valor $a$ al que $x$ se aproxima está marcado en el eje $x$ con una cruz roja, y el tamaño de ð alrededor de $a$ está delimitado con las marcas rosas. Nota cómo todos los valores posibles de $f(x)$ alrededor de $f(a)$ convergen en el mismo punto correspondiente a $f(a)$."}
+knitr::include_graphics("Unidad-III/Limite-x.png")
+```
+
+
+```{r limite-indef, echo = F, fig.align='center', fig.cap = "Ejemplo gráfico de una función sin límite definido cuando x→0 (equis tiende a cero). Nota cómo hay dos valores posibles a los que la función se acerca cuando x→0, ya sea cuando uno se acerca a 0 por el lado positivo de $x$ o el lado negativo de $x$."}
+knitr::include_graphics("Unidad-III/Limite-abs-x.png")
+```
+
+Aún cuando estas funciones no satisfacen la definición estricta de límite, es posible encontrar los límites de la función para $f(a)$, dependiendo del lado por el que $x \rightarrow a$. Veamos el ejemplo de $f(x) = |x|/x$ dado en la figura \@ref(fig:limite-indef). El límite que nos interesa es
+
+$$ \lim \limits_{x \rightarrow 0} \frac{|x|}{x}$$
+Por lo que sabemos hay dos maneras que acercarnos a $0$, una por el lado positivo, $x \rightarrow 0^{+}$, y otra por el lado negativo $x \rightarrow 0^-$. Así entonces podemos establecer dos límites:
+
+1. $\lim \limits_{x \rightarrow 0^+} \frac{|x|}{x} = 1$
+2. $\lim \limits_{x \rightarrow 0^-} \frac{|x|}{x} = -1$
+
+#### ¿Cómo se encuentran los límites?
+
+Enncontrar límites puede ser problemático, por lo que existe una variedad de estrategias cuyo uso depende del tipo de expresión que estemos evaluando. Por lo general, si tenemos $\lim\limits_{x \rightarrow a} f(x)$ se puede comenzar por evaluar $f(a)$, con lo que tenemos tres posibilidades:
+
+1. $f(a) = \frac{b}{0}, b \neq 0$ (una asíntota vertical como en $1/x$)
+2. $f(a) = b$ (límite encontrado)
+3. $f(a) = \frac{0}{0}$ (indeterminación)
+
+En el caso **1**, es probable que el límite no exista, lo cual depende de que $\lim\limits_{x \rightarrow a^-} f(x) = \lim\limits_{x \rightarrow a^+} f(x)$. Para el caso **2**, el límite está claramente definido y no hay mayor problema. En el caso **3**, es necesario encontrar una manera equivalente de representar a $f(a)$.
+
+#### Representación equivalente de las funciones
+
+Las tres estrategias más comunes para resolver límites donde $f(a) = \frac{0}{0}$ son:
+
+1. Factorizar $f(a)$
+2. Conjugar $f(a)$
+3. Usar identidades trigonométricas
+
+Cabe aclarar que muchas de las transformaciones aquí descritas surten efecto bajo el supuesto de que $x \neq a$, aunque una vez transformadas las funciones en efecto las evaluamos asumiendo que $x = a$. Con esto en mente veamos un ejemplo para cada estrategia.
+
+##### Factorización
+
+Factorizar consiste en representar un polinomio como una serie de productos de binomios (generalmente). Así, por ejemplo:
+
+\begin{equation}
+    \lim \limits_{x \rightarrow -3} \frac{x^2 + x -6}{x + 3}
+\end{equation}
+
+por sustitución directa tenemos que
+
+\begin{equation}
+\frac{(-3)^2 - 3 - 6}{-3 + 3} = \frac{0}{0}
+\end{equation}
+ 
+ Y una vez factorizado, asumiendo que $x \neq 3$ tenemos
+ 
+ \begin{equation}
+ \frac{x^2 + x - 6}{x + 3} = \frac{(x + 3)(x - 2)}{x + 3} = x-2
+ \end{equation}
+
+por lo tanto, utilizando sustitución directa en la forma factorizada tenemos que:
+
+\begin{equation}
+ \lim\limits_{x \rightarrow 3} x - 2 = - 3 - 2 = -5
+\end{equation}
+
+##### Conjugación racional
+
+Una expresión conjugada de un binomio está basada en la identidad:
+
+$$ a^2 - b^2 =(a + b)(a - b)$$
+
+Esta identidad se puede extender a los radicales:
+
+$$ a - b = (\sqrt{a} + \sqrt{b})(\sqrt{a} - \sqrt{b})$$
+
+De modod que el conjugado de $a + b$ es $a-b$, y el de $\sqrt{a} + \sqrt{b}$ es $\sqrt{a} - \sqrt{b}$.
+
+La aplicación de conjugados entonces es particularmente útil cuando queremos evaluar un el límite de una funcion racional con radicales. Por ejemplo en:
+
+\begin{equation}
+\lim \limits_{x \rightarrow 0} \frac{\sqrt{1 + x}-1}{x}
+\end{equation}
+
+por sustitución directa obtenemos \frac{0}{0}, pero no es posible factorizar el numerador, por lo tanto podemos utilizar el conjugado de $\sqrt{1 + x} - 1$. La manera de hacerlo es, primero identificar el cojugado como:
+
+\begin{equation}
+    \sqrt{1 + x} + 1
+\end{equation}
+
+Y multiplicar tanto el nuemerados como denominador por el conjugado:
+
+\begin{equation}
+  \frac{\sqrt{1 + x}-1}{x} \cdot  \frac{\sqrt{1 + x} + 1}{\sqrt{1 + x} + 1} = \frac{1 + x-1}{x(\sqrt{1 + x} + 1)} = \frac{1}{\sqrt{1 + x} + 1}
+\end{equation}
+
+Con lo que ya podemos evaluar:
+
+\begin{equation}
+\lim\limits_{x \rightarrow 0} \frac{1}{\sqrt{1 + x} + 1} = \frac{1}{1 + 1} = \frac{1}{2}
+\end{equation}
+
+##### Identidades trigonométricas
+
+Cuano es necesario evaluar el límite de una función trigonométrica, es útil echar mano de las identidades, además de las ya bien conocidas, las pitagóricas:
+
+1. $\mathrm{sen}^2 \theta + \cos^2 \theta = 1$ 
+2. $\sec^2 \theta - \tan^2 \theta = 1$
+3. $\csc^2 \theta  - \cot^2 \theta = 1$
+
+Comencemos por ver un ejemplo basado en las identidades basadas en los cocientes.
+
+\begin{equation}
+\lim \limits_{x \rightarrow 0} \frac{3x \tan x}{\mathrm{sen}x}
+\end{equation}
+
+por sustitución directa tenemos que:
+
+\begin{equation}
+\frac{3(0)\tan 0}{\mathrm{sen} 0} = \frac{0}{0}
+\end{equation}
+
+lo que indica que necesitamos representar a la función de una manera alternativa, echando mano de las identidades. Sabemos que:
+
+\begin{equation}
+\tan \theta = \frac{\mathrm{sen} \theta}{\cos \theta}
+\end{equation}
+
+por lo tanto podemos representar la función como:
+
+\begin{equation}
+\frac{3x \tan x}{\mathrm{sen}x} = \frac{3x \mathrm{sen} x}{\cos^2 x} = \frac{3x}{\cos x}
+\end{equation}
+
+Entonces, tenemos el límite que puede ser evaluado por sustitución directa:
+
+\begin{equation}
+\lim \limits_{x \rightarrow 0} \frac{3x}{\cos x} = \frac{3(0)}{\cos 0} = \frac{0}{1} = 0
+\end{equation}
+
+#### Equivalencias de límites
+
+Los límites, como hemos visto, son números reales, por lo que todos los axiomas que ya conocemos aplican a los números reales:
+
+1. $\lim \limits_{x \rightarrow a} f(x) + g(x) = \lim \limits_{x \rightarrow a} f(x) + \lim \limits_{x \rightarrow a} g(x)$
+
+2. $\lim \limits_{x \rightarrow a} f(x) \cdot g(x) = \lim \limits_{x \rightarrow a} f(x) \cdot \lim \limits_{x \rightarrow a} g(x)$
+
+3. $\lim \limits_{x \rightarrow a} \frac{f(x)}{g(x)} = \frac{\lim \limits_{x \rightarrow a} f(x) }{ \lim \limits_{x \rightarrow a} g(x)}$
+
+4. $\lim \limits_{x \rightarrow a} c f(x) = c \lim \limits_{x \rightarrow a} f(x)$
+
+5. $\lim \limits_{x \rightarrow a} f(x)^2 = \left( \lim \limits_{x \rightarrow a} f(x) \right)^2$
