@@ -116,12 +116,14 @@ $$A = \left[
 
 entonces:
 
-$$A - \lambda I = \left[
+\begin{equation}
+A - \lambda I = \left[
 \begin{array}{cc}
 1 - \lambda & 2 \\
 3 & 2 - \lambda
 \end{array}
-\right]$$
+\right] (\#eq:A-problema)
+\end{equation}
 
 cuyo determinante será:
 
@@ -132,3 +134,56 @@ $$\begin{align}
 \end{align}$$
 
 por lo tanto tenemos las soluciones $\lambda_1 = -1$ y $\lambda_2 = 4$. Como es evidente, los vectores propios $A \mathbf{x}$ que satisfacen los valores propios no son únicos, pero cada valor propio $\lambda$ está asociado a un vector propio. Para los sistemas lineales con más de dos variables habrá tantos valores propios como dimensiones.
+
+### Vectores propios
+
+Como se mostró arriba, el proceso del cálculo de los valores propios $\lambda$ no requiere de conocer $\vec{x}$, aunque mostramos una serie de ejemplos para vectores específicos. Entonces, debido a que $\lambda$ es un atributo de la matriz de coeficientes $A$, se puede generalizar el vector $\vec{x}$ para encontrar todos los valores que contiene y que satisfacen $A \vec{x} = \lambda \vec{x}$. 
+
+Utilizando la matriz \@ref(eq:A-problema), tenemos que para $\lambda_1 = -1$:
+
+\begin{equation}
+\left[
+\begin{array}{cc}
+1 & 2 \\
+3 & 2
+\end{array} 
+\right]
+\left[
+\begin{array}{cc}
+x_1  \\
+x_2
+\end{array} 
+\right]
+=
+\left[
+-1 \begin{array}{cc}
+x_1  \\
+x_2
+\end{array}
+\right]
+\end{equation}
+
+lo que se traduce en las siguiente ecuaciones
+
+\begin{align}
+x_1 + 2x_2 &= -x_1 \\ \notag
+3x_1 + 2x_2 &= -x_2 \notag
+\end{align}
+
+y al resolverlas, encontramos las soluciones:
+
+\begin{equation}
+\left[ 
+\begin{array}{c}
+x_1 \\ x_2
+\end{array}
+\right] =
+\left[ 
+\begin{array}{c}
+1 \\ -1
+\end{array}
+\right] 
+\end{equation}
+
+Sustituyendo $\lambda_2 = 4$, obtenemos el vector propio $\left[ \begin{array}{c} 2 \\ 3 \end{array} \right]$.
+
