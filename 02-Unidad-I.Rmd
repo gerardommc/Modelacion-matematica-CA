@@ -9,6 +9,10 @@
 
 ## Funciones básicas y su representación en el plano cartesiano
 
+```{r echo = F, child = "Unidad-I/La-funcion.Rmd"}
+
+```
+
 ```{r echo = F, child="Unidad-I/Recta.Rmd"}
 
 ```

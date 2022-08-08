@@ -1,6 +1,6 @@
-fig:unnamed-chunk-19
 fig:unnamed-chunk-20
 fig:unnamed-chunk-21
+fig:unnamed-chunk-22
 fig:parabola
 fig:parabola-2
 fig:parabola-3
@@ -22,7 +22,7 @@ eq:poblac
 fig:log
 eq:crec-pobl
 fig:tasa-crec
-fig:unnamed-chunk-22
+fig:unnamed-chunk-23
 fig:sin-soln
 eq:sist-matriz
 eq:Aumentada
@@ -70,6 +70,7 @@ contacto
 unidad-i-modelos-determinísticos
 introducción-a-la-modelación
 funciones-básicas-y-su-representación-en-el-plano-cartesiano
+las-funciones
 la-línea-recta
 representaciones-gráficas-de-la-recta
 la-parábola

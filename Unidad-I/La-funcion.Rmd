@@ -1,0 +1,14 @@
+### Las funciones
+
+En ciencias frecuentemente se estudia cómo un fenómeno afecta a otro. Por ejemplo, cómo la disponibilidad de recurso afecta el crecimiento poblacional. Estas relaciones pueden ser representadas matemáticamente utilizando el concepto de función. Una función es una regla de correspondencia entre dos conjuntos $x$ y $y$, de modo que para cada elemento del conjunto $x$ existe un solo elemento del conjunto $y$. Los elementos de $y$ son llamados la imagen de $x$ bajo la regla de correspondencia $f$, que se denota como $f(x)$. La función $f(x)$ se lee $f$ de $x$, y el conjunto $x$ es el *dominio* y $y$ es el *codominio* de $f$.
+
+Debido a que todos los valores de $y$ son producidos por la función $f$, a $x$ también se le conoce como variable independiente y a $y$ como dependiente (puesto que depende de $x$). En términos prácticos $f(x) = y(x)$.
+
+En esta unidad estaremos hablando de funciones, concretamente de:
+
+- Lineales
+- Cuadráticas
+- La curva normal
+- Trigonométricas 
+
+Para finalizar la unidad veremos una serie de aplicaciones de esta función, haciendo especial énfasis en la lineal.
